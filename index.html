@@ -167,6 +167,32 @@
             color: #0d1a2f;
             margin-bottom: 15px;
         }
+        .ir-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stock-price {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #0d1a2f;
+            margin: 0;
+        }
+        .stock-change {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .stock-change.up { color: #2ecc71; }
+        .stock-date {
+            color: #777;
+            font-size: 1rem;
+        }
         .slider-btn {
             position: absolute;
             top: 40%;
@@ -232,10 +258,8 @@
             color: #3498db;
             font-style: italic;
             margin-top: 5px;
-            transition: all 0.3s ease; /* 부드러운 전환 효과 */
+            transition: all 0.3s ease;
         }
-        
-        /* ===== 명대사 스타일 (새로 추가) ===== */
         .cast-item .catchphrase {
             font-size: 1rem;
             font-weight: 600;
@@ -245,14 +269,11 @@
             margin: 0;
             transition: all 0.4s ease-out;
         }
-
-        /* ===== 마우스를 올렸을 때의 명대사 스타일 (새로 추가) ===== */
         .cast-item a:hover .catchphrase {
-            height: 20px; /* 명대사가 차지할 높이 */
+            height: 20px;
             opacity: 1;
-            margin-top: 10px; /* 키워드와 명대사 사이의 간격 */
+            margin-top: 10px;
         }
-
         #prevBtn { left: -25px; }
         #nextBtn { right: -25px; }
         .video-slider-container { position: relative; }
@@ -333,6 +354,7 @@
             .hero-subtitle-ko { font-size: 1.1rem; }
             .slider-btn { display: none; }
             .section { margin: 0 2%; margin-bottom: 30px; }
+            .stock-price { font-size: 3.5rem; }
         }
     </style>
 </head>
@@ -346,6 +368,7 @@
                 <ul>
                     <li><a href="#about">회사 소개</a></li>
                     <li><a href="#services">사업 분야</a></li>
+                    <li><a href="#ir">투자 정보</a></li>
                     <li><a href="#cast">출연진</a></li>
                     <li><a href="#video">대표 영상</a></li>
                 </ul>
@@ -378,6 +401,18 @@
             </div>
         </div>
     </section>
+
+    <section id="ir" class="section">
+        <div class="container">
+            <h2>투자 정보 (IR)</h2>
+            <div class="ir-container">
+                <p class="stock-price"></p>
+                <p class="stock-change"></p>
+                <p class="stock-date"></p>
+            </div>
+        </div>
+    </section>
+
     <section id="cast" class="section">
         <div class="container">
             <h2>고래상사가 선택한 인재들</h2>
@@ -410,31 +445,11 @@
             <h2>대표 영상</h2>
             <div class="video-slider-container">
                 <div class="video-slider">
-                    <div class="video-item">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/NXijyI004-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-placeholder">
-                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-placeholder">
-                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-placeholder">
-                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-placeholder">
-                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
-                        </div>
-                    </div>
+                    <div class="video-item"><div class="video-container"><iframe src="https://www.youtube.com/embed/NXijyI004-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="video-item"><div class="video-placeholder"><p>다음 영상은<br>추후 추가될 예정입니다</p></div></div>
+                    <div class="video-item"><div class="video-placeholder"><p>다음 영상은<br>추후 추가될 예정입니다</p></div></div>
+                    <div class="video-item"><div class="video-placeholder"><p>다음 영상은<br>추후 추가될 예정입니다</p></div></div>
+                    <div class="video-item"><div class="video-placeholder"><p>다음 영상은<br>추후 추가될 예정입니다</p></div></div>
                 </div>
                 <button id="videoPrevBtn" class="slider-btn">‹</button>
                 <button id="videoNextBtn" class="slider-btn">›</button>
@@ -484,6 +499,39 @@
             const scrollAmount = videoSlider.clientWidth;
             videoSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         });
+
+        // ===== 주가 정보 자동 계산 스크립트 (새로 추가) =====
+        // ===== 여기 숫자만 수정하세요 =====
+        const currentPrice = 38120; // 현재 주가
+        const changeAmount = 1000;   // 변동량 (오르면 양수, 내리면 음수)
+        // ===============================
+
+        const stockPriceElement = document.querySelector('.stock-price');
+        const stockChangeElement = document.querySelector('.stock-change');
+        const stockDateElement = document.querySelector('.stock-date');
+
+
+        const previousPrice = currentPrice - changeAmount;
+        const percentageChange = ((changeAmount / previousPrice) * 100).toFixed(2); // 소수점 둘째 자리까지
+
+
+        stockPriceElement.textContent = `${currentPrice.toLocaleString()} KRW`;
+
+
+        if (changeAmount > 0) {
+            stockChangeElement.classList.add('up'); // 'up' 클래스 추가하여 초록색으로
+            stockChangeElement.textContent = `▲ ${changeAmount.toLocaleString()} (+${percentageChange}%)`;
+        } else {
+            stockChangeElement.classList.remove('up'); // 'up' 클래스 제거하여 기본색(빨간색)으로
+
+            stockChangeElement.textContent = `▼ ${Math.abs(changeAmount).toLocaleString()} (${percentageChange}%)`;
+        }
+
+
+        const today = new Date();
+        const formattedDate = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일 기준`;
+        stockDateElement.textContent = formattedDate;
+
 
         const canvas = document.getElementById('background-canvas');
         const ctx = canvas.getContext('2d');
@@ -561,6 +609,4 @@
         animate();
     </script>
 </body>
-
 </html>
-
