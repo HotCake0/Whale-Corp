@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고래상사</title>
+
+    <meta name="description" content="고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다.">
+    <meta property="og:title" content="고래상사 | 함께하는 성장의 가치">
+    <meta property="og:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
+    <meta property="og:image" content="https://postfiles.pstatic.net/MjAyNTA5MTlfMTM0/MDAxNzU4Mjg4OTY2NjI3.Qmq6xyzGTnO4cexBqEmeAkKg9HiOHmy-hzmIXQ71c8cg.so7-jYWQ_G0tKR8zPzbd8d_cKv5_rRylwQKiBymke98g.PNG/alflqhrl.png?type=w773">
+    <meta property="og:url" content="https://www.goraesangsa.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="고래상사 | 함께하는 성장의 가치">
+    <meta name="twitter:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
+    <meta name="twitter:image" content="https://postfiles.pstatic.net/MjAyNTA5MTlfMTM0/MDAxNzU4Mjg4OTY2NjI3.Qmq6xyzGTnO4cexBqEmeAkKg9HiOHmy-hzmIXQ71c8cg.so7-jYWQ_G0tKR8zPzbd8d_cKv5_rRylwQKiBymke98g.PNG/alflqhrl.png?type=w773">
+
+    <style>
+        @keyframes fadeInSlideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            background-color: #0d1a2f; 
+        }
+        #background-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-header {
+            background-color: rgba(13, 26, 47, 0.85);
+            backdrop-filter: blur(5px);
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        .main-nav li { margin-left: 25px; }
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .main-nav a:hover { color: #3498db; }
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero-content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 50px 60px;
+            border-radius: 15px;
+            opacity: 0;
+            animation: fadeInSlideUp 1s 0.5s ease-out forwards;
+        }
+        .hero-title {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero-subtitle-en {
+            margin: 20px 0 10px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+        .hero-subtitle-ko {
+            margin: 10px 0 30px 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        .hero-button {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero-button:hover {
+            background-color: #fff;
+            color: #0d1a2f;
+        }
+        .section {
+            padding: 100px 0;
+            background-color: rgba(255, 255, 255, 0.85); 
+            margin: 0 5%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        #about { margin-top: 50px; }
+        .section h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+            color: #0d1a2f;
+        }
+        .bg-light { background-color: rgba(248, 249, 250, 0.85); }
+        .services-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-item {
+            background: #fff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: #0d1a2f;
+            margin-bottom: 15px;
+        }
+        .slider-btn {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .slider-btn:hover {
+            background-color: #3498db;
+            color: #fff;
+            border-color: #3498db;
+        }
+        .cast-slider-container { position: relative; }
+        .cast-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 10px;
+            margin: 0 -10px;
+        }
+        .cast-slider::-webkit-scrollbar { display: none; }
+        .cast-slider { -ms-overflow-style: none; scrollbar-width: none; }
+        .cast-item {
+            flex: 0 0 280px;
+            margin: 0 10px;
+            text-align: center;
+            scroll-snap-align: center;
+        }
+        .cast-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .cast-item a:hover {
+            transform: scale(1.03);
+            background-color: #f0f6fa;
+        }
+        .cast-item img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .cast-item h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #0d1a2f;
+        }
+        .cast-item .keywords {
+            color: #3498db;
+            font-style: italic;
+            margin-top: 5px;
+            transition: all 0.3s ease; /* 부드러운 전환 효과 */
+        }
+        
+        /* ===== 명대사 스타일 (새로 추가) ===== */
+        .cast-item .catchphrase {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #e74c3c;
+            height: 0;
+            opacity: 0;
+            margin: 0;
+            transition: all 0.4s ease-out;
+        }
+
+        /* ===== 마우스를 올렸을 때의 명대사 스타일 (새로 추가) ===== */
+        .cast-item a:hover .catchphrase {
+            height: 20px; /* 명대사가 차지할 높이 */
+            opacity: 1;
+            margin-top: 10px; /* 키워드와 명대사 사이의 간격 */
+        }
+
+        #prevBtn { left: -25px; }
+        #nextBtn { right: -25px; }
+        .video-slider-container { position: relative; }
+        .video-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .video-slider::-webkit-scrollbar { display: none; }
+        .video-slider { -ms-overflow-style: none; scrollbar-width: none; }
+        .video-item {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #1a1a1a;
+            color: #aaa;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .video-placeholder p {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .video-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto 0 auto;
+        }
+        .video-description .hero-button {
+            background-color: #0d1a2f;
+            border-color: #0d1a2f;
+            color: #fff;
+        }
+        .video-description .hero-button:hover {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        #videoPrevBtn { left: -25px; top: 50%; }
+        #videoNextBtn { right: -25px; top: 50%; }
+        .main-footer {
+            background-color: transparent;
+            color: #fff;
+            padding: 50px 0 30px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .footer-info p { margin: 5px 0; }
+        .copyright { margin-top: 30px; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .main-header .container { flex-direction: column; }
+            .main-nav ul { margin-top: 15px; }
+            .hero-title { font-size: 2.8rem; }
+            .hero-subtitle-en { font-size: 1rem; }
+            .hero-subtitle-ko { font-size: 1.1rem; }
+            .slider-btn { display: none; }
+            .section { margin: 0 2%; margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">고래상사</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">회사 소개</a></li>
+                    <li><a href="#services">사업 분야</a></li>
+                    <li><a href="#cast">출연진</a></li>
+                    <li><a href="#video">대표 영상</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">고래상사</h1>
+            <p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p>
+            <p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p>
+            <a href="#about" class="hero-button">더 알아보기</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <h2>고래상사 이야기</h2>
+            <p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p>
+        </div>
+    </section>
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>사업 분야</h2>
+            <div class="services-grid">
+                <div class="service-item"><h3>대규모 컨텐츠</h3><p>전국민적 웃음과 화제를 이끌어내는 대규모 기획 및 제작</p></div>
+                <div class="service-item"><h3>몰입형 엔터테인먼트</h3><p>참여와 몰입으로 오감을 자극하는 콘텐츠 제작</p></div>
+                <div class="service-item"><h3>쉽게 해어 나올 수 없는 재미</h3><p>웃음으로 하나 되는 멈출수없는 꽁트</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="cast" class="section">
+        <div class="container">
+            <h2>고래상사가 선택한 인재들</h2>
+            <div class="cast-slider-container">
+                <div class="cast-slider">
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/bach023" target="_blank"><img src="https://cafeptthumb-phinf.pstatic.net/MjAyNTAzMTVfOTEg/MDAxNzQyMDQwNDkyNDE3.0Cm_YqZQtANC5IMcvnrYDz_ufdvZGaqX1of-3R1eyJQg.Ym5Mizxf7kgqwATR6L97qrF6wP2z2yrzpgtpwwPFDEAg.PNG/%EA%BD%83%EB%AF%B8%EB%82%A8_%EC%A4%B1%EC%A3%BC.png?type=w1600" alt="울산큰고래"><h3>울산큰고래</h3><p class="keywords">#바지사장 #기획 #변삼</p><p class="catchphrase">"25살 미혼 스타트업사장"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/gyeonjahee" target="_blank"><img src="https://preview.files.api.ogq.me/NEW-PROFILE/e7807751/6161f1577087e/5c1744e2836243d089d592f6022fb1d5.png?format=r240_240" alt="견자희"><h3>견자희</h3><p class="keywords">#목소리 #눈나</p><p class="catchphrase">"커피는 둘둘셋으로"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/melodingding" target="_blank"><img src="https://yt3.googleusercontent.com/5iml9EfI1SwZKPBrmuHWmjMOdLjLKOWOTMZ5EFkFCAP9wi4sfwdBrw1EN596NRW4NR6fN5Kh5WQ=s900-c-k-c0x00ffffff-no-rj" alt="멜로딩딩"><h3>멜로딩딩</h3><p class="keywords">#비서 #1800살</p><p class="catchphrase">"그건 비방으로..."</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/soyoung6056" target="_blank"><img src="https://postfiles.pstatic.net/MjAyNTA5MTlfMTIy/MDAxNzU4Mjc1MzI3NDgz.yDWg6SUDNi6Ql3-55coiQ0UK1pkD5OT8TqaCHB-gjcIg.b6YszUBjN3w-v6Vuw3Dc-B8KlGASsc-_ZFOXmHf1P_wg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-09-19_182956.png?type=w773" alt="빡쏘"><h3>빡쏘</h3><p class="keywords">#유명인 #꽁트력</p><p class="catchphrase">"다들 내가 누군지 알지?"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nunknown314" target="_blank"><img src="https://i.namu.wiki/i/M-MUsbXOn3SNhSgbbOtkiIpQaIvToEqYwNb-vKnWK_nbPCUziKGeWWMwinyKi-olBtHjASm2tZGxyG1fAUhhQmynbPcprJ2vcqr2ePyRPsQB9HkrF9Eoa973ZIOf5lhXvBOr3Q08FGIaKWoyVhXTEw.webp" alt="미현영"><h3>미현영</h3><p class="keywords">#매운맛 #뒷디코</p><p class="catchphrase">"짜히늼~"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/akdma9692" target="_blank"><img src="https://yt3.googleusercontent.com/CBz-0qDjmGMUGrC8Yj_NSYSEWvw4mgLDncSnvKu2z5RXrDxxVDPR6JJc2uBBYaeGZ4TMufxS6s4=s160-c-k-c0x00ffffff-no-rj" alt="온자두"><h3>온자두</h3><p class="keywords">#미친사람 #눈물</p><p class="catchphrase">"야 좆주야!!"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nlov555jij" target="_blank"><img src="https://postfiles.pstatic.net/MjAyNTA5MTlfMTgw/MDAxNzU4Mjc1MzI4ODA3.Kz9H5NhQysLU5UYN7I8W8sd-Y9lJHnJy5WGRJKBREMEg.feqKp9_7PxA238ZS0eaejW58rwi_zR--rIJdfuWnshsg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-09-19_183252.png?type=w773" alt="삐요코"><h3>삐요코</h3><p class="keywords">#19금 #성우</p><p class="catchphrase">"아 찌빨"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/xpdpfv2" target="_blank"><img src="https://yt3.googleusercontent.com/ZEy7Nh-U0_9kh2isuyZ0hzxzF45kawWkNAbsDlyGvHXSQJK9Lxul56Pdcj5s62ZKK08msDKwng=s160-c-k-c0x00ffffff-no-rj" alt="이지수"><h3>이지수</h3><p class="keywords">#분위기메이커</p><p class="catchphrase">"따당님!"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/gatgdf" target="_blank"><img src="https://postfiles.pstatic.net/MjAyNTA5MTlfMTk4/MDAxNzU4Mjc1MzMxNzMx.2O4jsi3-JmlgxAroVMucAeTPn15IP40MGXmfikZsbNwg.W_jmjjiEjTtWAhK-Qb5PHvz3x4RPR96wRt-IhZHaV0kg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-09-19_183635.png?type=w773" alt="쏭이"><h3>쏭이</h3><p class="keywords">#오빠 #우리기</p><p class="catchphrase">"오빵~"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/kimmaren77" target="_blank"><img src="https://yt3.googleusercontent.com/eutNDkdwcAjfspCFJGikFX8A_MpCFeuoRuU0lNqpOZd7MNpJIHWRQZofVcWTmmOZUUxZoy5c9Q=s160-c-k-c0x00ffffff-no-rj" alt="김마렌"><h3>김마렌</h3><p class="keywords">#상여자 #억제기</p><p class="catchphrase">"엄마 그러지말라니깐"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/doki0818" target="_blank"><img src="https://yt3.googleusercontent.com/hkF88wlrW5C30GpofImpUIPLVqkVqiBZt7j_U4u-H830J80hk86IaoEPIOYmAscQRSJEcI_e=s160-c-k-c0x00ffffff-no-rj" alt="감자가비"><h3>감자가비</h3><p class="keywords">#DK #골키퍼</p><p class="catchphrase">"구른다!"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/dmng50" target="_blank"><img src="https://postfiles.pstatic.net/MjAyNTA5MTlfMTEw/MDAxNzU4Mjc1MzI4MTYz.rjvYTryRUmacS3Yp3Mjudzlol5nyiQkcPPhQuyJg2Lkg.PvX5gbR3KcUN7rKzCD2lYWZmW5fsZn-2_XOl6N88W8Ug.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-09-19_183909.png?type=w773" alt="빵땅콩"><h3>빵땅콩</h3><p class="keywords">#진짜취직 #비서짬통</p><p class="catchphrase">"포스터 제작중"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/ducke77" target="_blank"><img src="https://i.namu.wiki/i/ssrANm7KEHGor0CG54vyGv6dgL5taQzTVwfVUadBo4bv9qughViGiiHGfoiLDAYvu9-cxReNzFvdxhXpb6QXN8nmRcJyDaEMkxqm33NQoia9Ab9sZNRoIDMx-yemWjBE-rVLGPwkCmqncucuKsNaDg.webp" alt="밀크티냠"><h3>밀크티냠</h3><p class="keywords">#에이스 #에겐력</p><p class="catchphrase">"밀냠 으로 불러주세요"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/joaras2" target="_blank"><img src="https://postfiles.pstatic.net/MjAyNTA5MTlfNzMg/MDAxNzU4Mjc1MzMwMzM5.pywYG3TPIly_Uc1dKKsC77DbBpx3Tb29kzgWnNvQR9Qg.MYG1TFfBopgrwQ5FgdapujP2RBsT5LDFO_nRKABv-Hsg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-09-19_184301.png?type=w773" alt="조아라"><h3>조아라</h3><p class="keywords">#허스키 #일꾼</p><p class="catchphrase">"서장님 아 사장님"</p></a></div>
+                    <div class="cast-item"><a href="https://www.sooplive.co.kr/station/podone1104" target="_blank"><img src="https://i.namu.wiki/i/Op9dMHz_wQg45MVvD0YNj2dgZsS7-jlHv0XWZAyj9sYFQ21ASaKOLPJuf48Qg6KqMwAyspIz6y_4ZroEQeSgOE5LIwJLJ5JJlRK42EASPmxFxXQEhVJrNOaLOsw83tZRBluusAoOyqZX2jgb_wFwLA.webp" alt="포도네"><h3>포도네</h3><p class="keywords">#TTS #게임실력</p><p class="catchphrase">"꽥꽥"</p></a></div>
+                </div>
+                <button id="prevBtn" class="slider-btn">‹</button>
+                <button id="nextBtn" class="slider-btn">›</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="section">
+        <div class="container">
+            <h2>대표 영상</h2>
+            <div class="video-slider-container">
+                <div class="video-slider">
+                    <div class="video-item">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/NXijyI004-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">
+                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">
+                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">
+                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">
+                            <p>다음 영상은<br>추후 추가될 예정입니다</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="videoPrevBtn" class="slider-btn">‹</button>
+                <button id="videoNextBtn" class="slider-btn">›</button>
+            </div>
+            <div class="video-description">
+                <p>고래상사의 대표적인 콘텐츠 시리즈들을 감상해 보세요. 저희는 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p>
+                <a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>고래상사</h3>
+                <p>Los Santos Maze Bank Tower 74~81F</p>
+                <p>전화: 02-1234-5678 | 이메일: whale@gorae.co.kr</p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 GORAECORP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        const castSlider = document.querySelector('.cast-slider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const castScrollAmount = 300; 
+        nextBtn.addEventListener('click', () => { castSlider.scrollBy({ left: castScrollAmount, behavior: 'smooth' }); });
+        prevBtn.addEventListener('click', () => { castSlider.scrollBy({ left: -castScrollAmount, behavior: 'smooth' }); });
+
+        const videoSlider = document.querySelector('.video-slider');
+        const videoPrevBtn = document.getElementById('videoPrevBtn');
+        const videoNextBtn = document.getElementById('videoNextBtn');
+        videoNextBtn.addEventListener('click', () => {
+            const scrollAmount = videoSlider.clientWidth;
+            videoSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+        videoPrevBtn.addEventListener('click', () => {
+            const scrollAmount = videoSlider.clientWidth;
+            videoSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        const canvas = document.getElementById('background-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray;
+        const mouse = { x: null, y: null, radius: 150 };
+        window.addEventListener('mousemove', function(event){ mouse.x = event.x; mouse.y = event.y; });
+        function setCanvasSize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        setCanvasSize();
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) { this.x = x; this.y = y; this.directionX = directionX; this.directionY = directionY; this.size = size; this.color = color; }
+            draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false); ctx.fillStyle = this.color; ctx.fill(); }
+            update() {
+                if (this.x > canvas.width || this.x < 0) { this.directionX = -this.directionX; }
+                if (this.y > canvas.height || this.y < 0) { this.directionY = -this.directionY; }
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx*dx + dy*dy);
+                if (distance < mouse.radius + this.size){
+                    if(mouse.x < this.x && this.x < canvas.width - this.size * 10){ this.x += 5; }
+                    if(mouse.x > this.x && this.x > this.size * 10){ this.x -= 5; }
+                    if(mouse.y < this.y && this.y < canvas.height - this.size * 10){ this.y += 5; }
+                    if(mouse.y > this.y && this.y > this.size * 10){ this.y -= 5; }
+                }
+                this.x += this.directionX;
+                this.y += this.directionY;
+                this.draw();
+            }
+        }
+        function init() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 9000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 4) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 0.4) - 0.2;
+                let directionY = (Math.random() * 0.4) - 0.2;
+                let color = 'rgba(173, 216, 230, ' + (Math.random() * 0.5 + 0.2) + ')';
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0,0,innerWidth, innerHeight);
+            let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#1a2a4f');
+            gradient.addColorStop(1, '#346a9a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connect();
+        }
+        function connect(){
+            let opacityValue = 1;
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                    if (distance < (canvas.width/7) * (canvas.height/7)) {
+                        opacityValue = 1 - (distance/20000);
+                        ctx.strokeStyle='rgba(173, 216, 230, ' + opacityValue + ')';
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        window.addEventListener('resize', function(){ setCanvasSize(); init(); });
+        window.addEventListener('mouseout', function(){ mouse.x = undefined; mouse.y = undefined; });
+        init();
+        animate();
+    </script>
+</body>
+</html>
