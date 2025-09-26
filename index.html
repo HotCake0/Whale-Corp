@@ -159,6 +159,9 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .service-item:hover {
             transform: translateY(-10px);
@@ -168,32 +171,6 @@
             font-size: 1.5rem;
             color: #0d1a2f;
             margin-bottom: 15px;
-        }
-        .ir-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .stock-price {
-            font-size: 4.5rem;
-            font-weight: 700;
-            color: #0d1a2f;
-            margin: 0;
-        }
-        .stock-change {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #e74c3c;
-            margin: 10px 0;
-        }
-        .stock-change.up { color: #2ecc71; }
-        .stock-date {
-            color: #777;
-            font-size: 1rem;
         }
         .slider-btn {
             position: absolute;
@@ -308,7 +285,6 @@
         .video-description .hero-button:hover {
             background-color: #3498db;
             border-color: #3498db;
-            color: #fff;
         }
         .md-slider-container { position: relative; }
         .md-slider {
@@ -397,7 +373,7 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.5);
             max-width: 90%;
-            width: 350px; /* 팝업 크기 수정 */
+            width: 350px;
             animation: modalFadeIn 0.4s ease-out;
         }
         .modal-content img {
@@ -442,7 +418,6 @@
             .hero-subtitle-ko { font-size: 1.1rem; }
             .slider-btn { display: none; }
             .section { margin: 0 2%; margin-bottom: 30px; }
-            .stock-price { font-size: 3.5rem; }
             .logo-image { height: 40px; }
         }
     </style>
@@ -468,7 +443,6 @@
                 <ul>
                     <li><a href="#about">회사 소개</a></li>
                     <li><a href="#services">사업 분야</a></li>
-                    <li><a href="#ir">투자 정보</a></li>
                     <li><a href="#cast">출연진</a></li>
                     <li><a href="#video">대표 영상</a></li>
                     <li><a href="#md-shop">MD샵</a></li>
@@ -479,25 +453,45 @@
     
     <section id="home" class="hero"><div class="hero-content"><h1 class="hero-title">고래상사</h1><p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p><p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p><a href="#about" class="hero-button">더 알아보기</a></div></section>
     <section id="about" class="section"><div class="container" style="text-align: center; max-width: 800px;"><h2>고래상사 이야기</h2><p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p></div></section>
-    <section id="services" class="section bg-light"><div class="container"><h2>사업 분야</h2><div class="services-grid"><div class="service-item"><h3>대규모 컨텐츠</h3><p>전국민적 웃음과 화제를 이끌어내는 대규모 기획 및 제작</p></div><div class="service-item"><h3>몰입형 엔터테인먼트</h3><p>참여와 몰입으로 오감을 자극하는 콘텐츠 제작</p></div><div class="service-item"><h3>쉽게 해어 나올 수 없는 재미</h3><p>웃음으로 하나 되는 멈출수없는 꽁트</p></div></div></div></section>
-    <section id="ir" class="section"><div class="container"><h2>투자 정보 (IR)</h2><div class="ir-container"><p class="stock-price"></p><p class="stock-change"></p><p class="stock-date"></p></div></div></section>
+    
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>사업 분야</h2>
+            <div class="services-grid">
+                <a href="#" class="service-item">
+                    <h3>대규모 컨텐츠</h3>
+                    <p>전국민적 웃음과 화제를 이끌어내는 대규모 기획 및 제작</p>
+                </a>
+                <a href="#" class="service-item">
+                    <h3>몰입형 엔터테인먼트</h3>
+                    <p>참여와 몰입으로 오감을 자극하는 콘텐츠 제작</p>
+                </a>
+                <a href="#" class="service-item">
+                    <h3>쉽게 헤어 나올 수 없는 재미</h3>
+                    <p>웃음으로 하나 되는 멈출수없는 꽁트</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section id="cast" class="section"><div class="container"><h2>고래상사가 선택한 인재들</h2><div class="cast-slider-container"><div class="cast-slider"><div class="cast-item"><a href="https://www.sooplive.co.kr/station/bach023" target="_blank"><img src="꽃미남_성주.png" alt="울산큰고래"><h3>울산큰고래</h3><p class="keywords">#바지사장 #기획 #변삼</p><p class="catchphrase">"25살 미혼 스타트업사장"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/gyeonjahee" target="_blank"><img src="견자희.png" alt="견자희"><h3>견자희</h3><p class="keywords">#목소리 #눈나</p><p class="catchphrase">"커피는 둘둘셋으로"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/melodingding" target="_blank"><img src="멜로딩딩.png" alt="멜로딩딩"><h3>멜로딩딩</h3><p class="keywords">#비서 #1800살</p><p class="catchphrase">"그건 비방으로..."</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/soyoung6056" target="_blank"><img src="빡쏘.png" alt="빡쏘"><h3>빡쏘</h3><p class="keywords">#유명인 #꽁트력</p><p class="catchphrase">"다들 내가 누군지 알지?"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nunknown314" target="_blank"><img src="미현영.png" alt="미현영"><h3>미현영</h3><p class="keywords">#매운맛 #뒷디코</p><p class="catchphrase">"짜히늼~"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/soyoung6056" target="_blank"><img src="빡쏘.png" alt="빡쏘"><h3>빡쏘</h3><p class="keywords">#유명인 #흠 그정도인가</p><p class="catchphrase">"다들 내가 누군지 알지?"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nunknown314" target="_blank"><img src="미현영.png" alt="미현영"><h3>미현영</h3><p class="keywords">#매운맛 #뒷디코</p><p class="catchphrase">"짜희님~"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/akdma9692" target="_blank"><img src="온자두.png" alt="온자두"><h3>온자두</h3><p class="keywords">#미친사람 #눈물</p><p class="catchphrase">"야 좆주야!!"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nlov555jij" target="_blank"><img src="삐요코.png" alt="삐요코"><h3>삐요코</h3><p class="keywords">#19금 #성우</p><p class="catchphrase">"아 찌빨"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/nlov555jij" target="_blank"><img src="삐요코.png" alt="삐요코"><h3>삐요코</h3><p class="keywords">#19금 #성우 #아님</p><p class="catchphrase">"아 찌빨"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/xpdpfv2" target="_blank"><img src="이지수.png" alt="이지수"><h3>이지수</h3><p class="keywords">#분위기메이커</p><p class="catchphrase">"따당님!"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/gatgdf" target="_blank"><img src="쏭이.png" alt="쏭이"><h3>쏭이</h3><p class="keywords">#오빠 #우리기</p><p class="catchphrase">"오빵~"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/kimmaren77" target="_blank"><img src="김마렌.png" alt="김마렌"><h3>김마렌</h3><p class="keywords">#상여자 #억제기</p><p class="catchphrase">"엄마 그러지말라니깐"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/doki0818" target="_blank"><img src="감자가비.png" alt="감자가비"><h3>감자가비</h3><p class="keywords">#DK #골키퍼</p><p class="catchphrase">"구른다!"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/kimmaren77" target="_blank"><img src="김마렌.png" alt="김마렌"><h3>김마렌</h3><p class="keywords">#상여자 #애긔</p><p class="catchphrase">"엄마 그러지말라니깐"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/doki0818" target="_blank"><img src="감자가비.png" alt="감자가비"><h3>감자가비</h3><p class="keywords">#웃음맛집 #골키퍼</p><p class="catchphrase">"깔깔깔깔깔깔"</p></a></div>
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/dmng50" target="_blank"><img src="빵땅콩.png" alt="빵땅콩"><h3>빵땅콩</h3><p class="keywords">#진짜취직 #비서짬통</p><p class="catchphrase">"포스터 제작중"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/ducke77" target="_blank"><img src="밀크티냠.png" alt="밀크티냠"><h3>밀크티냠</h3><p class="keywords">#에이스 #에겐력</p><p class="catchphrase">"밀냠 으로 불러주세요"</p></a></div>
-        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/joaras2" target="_blank"><img src="조아라.png" alt="조아라"><h3>조아라</h3><p class="keywords">#허스키 #일꾼</p><p class="catchphrase">"서장님 아 사장님"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/ducke77" target="_blank"><img src="밀크티냠.png" alt="밀크티냠"><h3>밀크티냠</h3><p class="keywords">#에겐력 #직장인</p><p class="catchphrase">"^^;;;"</p></a></div>
+        <div class="cast-item"><a href="https://www.sooplive.co.kr/station/joaras2" target="_blank"><img src="조아라.png" alt="조아라"><h3>조아라</h3><p class="keywords">#허스키 #얼굴보기힘듬</p><p class="catchphrase">"서장님 아 사장님"</p></a></div>
         <button id="prevBtn" class="slider-btn">‹</button><button id="nextBtn" class="slider-btn">›</button></div></div></section>
     
-    <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vC6HpuZCgMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></section> <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
+    <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vC6HpuZCgMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
+    <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
         <div class="md-item"><div class="md-image-container"><img src="울큰고_자메이카.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 자메이카 치킨.</p><a href="https://youtube.com/shopcollection/SCUCdRr9r6WHKXEABRR4J5MAxH1k9JFQUeh2w?si=hQfujU14f7WiHroo" target="_blank" class="hero-button md-button">구매하기</a></div></div>
         <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_굿즈.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
         <div class="md-item"><div class="md-image-container"><img src="밀크티냠_상품.png" alt="밀크티냠 굿즈"></div><div class="md-info"><h3>밀크티냠 에디션</h3><p>시청하면서 먹기 딱! 좋은 팝콘을 가지고 왔습니다!!</p><a href="https://smartstore.naver.com/passac/products/11150360146" target="_blank" class="hero-button md-button">구매하기</a></div></div>
@@ -542,12 +536,12 @@
                     return;
                 }
                 nextBtn.addEventListener('click', () => {
-                    const item = slider.querySelector('div');
+                    const item = slider.querySelector('div, a');
                     const scrollAmount = item.clientWidth + (parseInt(getComputedStyle(item).marginLeft) * 2);
                     slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
                 });
                 prevBtn.addEventListener('click', () => {
-                    const item = slider.querySelector('div');
+                    const item = slider.querySelector('div, a');
                     const scrollAmount = item.clientWidth + (parseInt(getComputedStyle(item).marginLeft) * 2);
                     slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
                 });
@@ -557,57 +551,14 @@
             setupSlider('.cast-slider', 'prevBtn', 'nextBtn');
             setupSlider('.md-slider', 'mdPrevBtn', 'mdNextBtn');
             
-            // --- Live Stock Ticker ---
-            function startLiveTicker() {
-                const stockPriceElement = document.querySelector('.stock-price');
-                if (!stockPriceElement) return;
-                
-                const stockChangeElement = document.querySelector('.stock-change');
-                const stockDateElement = document.querySelector('.stock-date');
-                const yesterdayPrice = 48000;
-                const todayBasePrice = 47201;
-                const maxFluctuation = 1000;
-                let currentPrice = todayBasePrice;
-
-                const updateStockDisplay = (price) => {
-                    const currentChange = price - yesterdayPrice;
-                    const percentageChange = ((currentChange / yesterdayPrice) * 100).toFixed(2);
-                    stockPriceElement.textContent = `${Math.round(price).toLocaleString()} KRW`;
-                    if (currentChange >= 0) {
-                        stockChangeElement.classList.add('up');
-                        stockChangeElement.textContent = `▲ ${Math.round(currentChange).toLocaleString()} (+${percentageChange}%)`;
-                    } else {
-                        stockChangeElement.classList.remove('up');
-                        stockChangeElement.textContent = `▼ ${Math.abs(Math.round(currentChange)).toLocaleString()} (${percentageChange}%)`;
-                    }
-                };
-                
-                const today = new Date();
-                stockDateElement.textContent = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일 기준`;
-                updateStockDisplay(currentPrice);
-
-                setInterval(() => {
-                    let fluctuation = Math.floor(Math.random() * 1001) - 500;
-                    let nextPrice = currentPrice + fluctuation;
-                    if (nextPrice > todayBasePrice + maxFluctuation || nextPrice < todayBasePrice - maxFluctuation) {
-                        fluctuation = -fluctuation;
-                    }
-                    currentPrice += fluctuation;
-                    updateStockDisplay(currentPrice);
-                }, 2000); 
-            }
-            startLiveTicker();
-
-            // --- Pop-up Modal (수정됨) ---
+            // --- Pop-up Modal ---
             const modal = document.getElementById('popup-modal');
             const closeBtn = document.getElementById('modal-close-btn');
             
-            // 페이지가 로드되면 바로 팝업을 띄웁니다.
             if (modal) {
                 modal.classList.add('active');
             }
 
-            // 팝업을 닫는 함수입니다. sessionStorage 관련 코드를 제거했습니다.
             const closeModal = () => {
                 modal.classList.remove('active');
             };
