@@ -396,7 +396,7 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.5);
             max-width: 90%;
-            width: 500px;
+            width: 350px; /* ===== 1. 팝업 크기 수정 ===== */
             animation: modalFadeIn 0.4s ease-out;
         }
         .modal-content img {
@@ -496,11 +496,7 @@
         <div class="cast-item"><a href="https://www.sooplive.co.kr/station/joaras2" target="_blank"><img src="조아라.png" alt="조아라"><h3>조아라</h3><p class="keywords">#허스키 #일꾼</p><p class="catchphrase">"서장님 아 사장님"</p></a></div>
         <button id="prevBtn" class="slider-btn">‹</button><button id="nextBtn" class="slider-btn">›</button></div></div></section>
     
-    <section id="video" class="section"><div class="container"><h2>대표 영상</h2>
-        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vC6HpuZCgMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
-    
-    
+    <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vC6HpuZCgMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/@goraesangsa" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
     <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
         <div class="md-item"><div class="md-image-container"><img src="울큰고_자메이카.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 자메이카 치킨.</p><a href="https://youtube.com/shopcollection/SCUCdRr9r6WHKXEABRR4J5MAxH1k9JFQUeh2w?si=hQfujU14f7WiHroo" target="_blank" class="hero-button md-button">구매하기</a></div></div>
         <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_굿즈.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
@@ -602,17 +598,18 @@
             }
             startLiveTicker();
 
-            // --- Pop-up Modal ---
+            // --- Pop-up Modal (수정됨) ---
             const modal = document.getElementById('popup-modal');
             const closeBtn = document.getElementById('modal-close-btn');
             
-            if (modal && sessionStorage.getItem('popupShown') !== 'true') {
+            // 페이지가 로드되면 바로 팝업을 띄웁니다.
+            if (modal) {
                 modal.classList.add('active');
             }
 
+            // 팝업을 닫는 함수입니다. sessionStorage 관련 코드를 제거했습니다.
             const closeModal = () => {
                 modal.classList.remove('active');
-                sessionStorage.setItem('popupShown', 'true');
             };
 
             closeBtn.addEventListener('click', closeModal);
@@ -690,4 +687,3 @@
     </script>
 </body>
 </html>
-
