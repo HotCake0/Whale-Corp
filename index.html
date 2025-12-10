@@ -3,207 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고래상사 | 함께하는 성장의 가치</title>
+    <title>고래상사</title>
+
+    <meta name="description" content="고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다.">
+    <meta property="og:title" content="고래상사 | 함께하는 성장의 가치">
+    <meta property="og:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
+    <meta property="og:image" content="미리보기.png">
+    <meta property="og:url" content="https://www.goraesangsa.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="고래상사 | 함께하는 성장의 가치">
+    <meta name="twitter:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
+    <meta name="twitter:image" content="미리보기.png">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <canvas id="background-canvas"></canvas>
 
+    <div id="popup-modal" class="modal-overlay">
+        <div class="modal-content">
+            <a href="https://www.sooplive.co.kr/station/bach023/post/178759547" target="_blank">
+                <img src="맹든링.png" alt="이벤트 팝업">
+            </a>
+            <button id="modal-close-btn" class="modal-close">&times;</button>
+        </div>
+    </div>
+
     <header class="main-header">
-        <div class="container header-flex">
-            <a href="#" class="logo-link" onclick="showMainPage()">
+        <div class="container">
+            <a href="#home" class="logo-link">
                 <img src="logo.png" alt="고래상사 로고" class="logo-image">
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" onclick="showMainPage()">회사 소개</a></li>
-                    <li><a href="#" onclick="showCastPage()">상사 소개</a></li>
-                    <li><a href="#video" onclick="showMainPage()">대표 영상</a></li>
-                    <li><a href="#md-shop" onclick="showMainPage()">MD샵</a></li>
+                    <li><a href="#about">회사 소개</a></li>
+                    <li><a href="#services">사업 분야</a></li>
+                    <li><a href="#cast">출연진</a></li>
+                    <li><a href="#video">대표 영상</a></li>
+                    <li><a href="#md-shop">MD샵</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <div id="page-slider-wrapper">
-        
-        <div class="page-section" id="main-page">
-            <section id="home" class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">고래상사</h1>
-                    <p class="hero-subtitle-en">Shaping the future of sustainable broadcasting.</p>
-                    <p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p>
-                    <button class="hero-button" onclick="showCastPage()">멤버 보러가기</button>
-                </div>
-            </section>
-
-            <section id="about" class="section">
-                <div class="container" style="text-align: center;">
-                    <h2>고래상사 이야기</h2>
-                    <p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다.</p>
-                </div>
-            </section>
-
-            <section id="services" class="section bg-light">
-                <div class="container">
-                    <h2>사업 분야</h2>
-                    <div class="services-grid">
-                        <div class="service-item"><h3>대규모 컨텐츠</h3><p>전국민적 웃음과 화제를 이끌어내는 기획</p></div>
-                        <div class="service-item"><h3>몰입형 엔터</h3><p>참여와 몰입으로 오감을 자극하는 콘텐츠</p></div>
-                        <div class="service-item"><h3>멈출 수 없는 재미</h3><p>웃음으로 하나 되는 꽁트</p></div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="video" class="section">
-                <div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/y6UPzAMRWMI" frameborder="0" allowfullscreen></iframe></div></div>
-            </section>
-
-            <section id="md-shop" class="section bg-light">
-                <div class="container"><h2>MD샵</h2><p style="text-align:center;">다양한 굿즈를 만나보세요.</p></div>
-            </section>
-
-            <footer class="main-footer">
-                <div class="container"><p>© 2025 GORAECORP. All Rights Reserved.</p></div>
-            </footer>
-        </div>
-
-        <div class="page-section" id="cast-page">
-            <div class="container cast-container">
-                <div class="cast-header">
-                    <h2>고래상사 인재들</h2>
-                    <button onclick="showMainPage()" class="back-btn"><i class="fas fa-arrow-left"></i> 돌아가기</button>
-                </div>
-
-                <div class="cast-controls">
-                    <div class="search-wrapper">
-                        <i class="fas fa-search"></i>
-                        <input type="text" id="searchInput" placeholder="멤버 이름 검색...">
-                    </div>
-                    <div class="filter-wrapper">
-                        <button class="filter-btn active" onclick="filterMembers('all')">전체</button>
-                        <button class="filter-btn" onclick="filterMembers('live')">방송중</button>
-                        <button class="filter-btn" onclick="filterMembers('off')">휴식중</button>
-                    </div>
-                </div>
-
-                <div id="member-grid" class="cast-grid">
-                    </div>
+    <section id="home" class="hero"><div class="hero-content"><h1 class="hero-title">고래상사</h1><p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p><p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p><a href="#about" class="hero-button">더 알아보기</a></div></section>
+    <section id="about" class="section"><div class="container" style="text-align: center; max-width: 800px;"><h2>고래상사 이야기</h2><p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p></div></section>
+    
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>사업 분야</h2>
+            <div class="services-grid">
+                <a href="#" class="service-item">
+                    <h3>대규모 컨텐츠</h3>
+                    <p>전국민적 웃음과 화제를 이끌어내는 대규모 기획 및 제작</p>
+                </a>
+                <a href="#" class="service-item">
+                    <h3>몰입형 엔터테인먼트</h3>
+                    <p>참여와 몰입으로 오감을 자극하는 콘텐츠 제작</p>
+                </a>
+                <a href="#" class="service-item">
+                    <h3>쉽게 헤어 나올 수 없는 재미</h3>
+                    <p>웃음으로 하나 되는 멈출수없는 꽁트</p>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="cast" class="section">
+        <div class="container">
+            <h2>고래상사가 선택한 인재들</h2>
+            <div class="cast-slider-container">
+                <div class="cast-slider">
+                    <div class="cast-item" data-bj-id="bach023">
+                        <a href="https://www.sooplive.co.kr/station/bach023" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="꽃미남_성주.png" alt="울산큰고래">
+                            <h3>울산큰고래</h3>
+                            <p class="keywords">#바지사장 #멘헤라상사</p>
+                            <p class="catchphrase">"아 제발 똥 그만!!"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="gyeonjahee">
+                        <a href="https://www.sooplive.co.kr/station/gyeonjahee" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="견자희.png" alt="견자희">
+                            <h3>견자희</h3>
+                            <p class="keywords">#장미상사 #눈나</p>
+                            <p class="catchphrase">"견머니"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="melodingding">
+                        <a href="https://www.sooplive.co.kr/station/melodingding" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="멜로딩딩.png" alt="멜로딩딩">
+                            <h3>멜로딩딩</h3>
+                            <p class="keywords">#비서 #노예</p>
+                            <p class="catchphrase">"그건 비방으로..."</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="nunknown314">
+                        <a href="https://www.sooplive.co.kr/station/nunknown314" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="미현영.png" alt="미현영">
+                            <h3>미현영</h3>
+                            <p class="keywords">#만트라Q #투지</p>
+                            <p class="catchphrase">"사장님 즐거우시죠"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="soyoung6056">
+                        <a href="https://www.sooplive.co.kr/station/soyoung6056" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="빡쏘.png" alt="빡쏘">
+                            <h3>빡쏘</h3>
+                            <p class="keywords">#빡보성 #친해지길바라</p>
+                            <p class="catchphrase">"사장님 서운해요"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="akdma9692">
+                        <a href="https://www.sooplive.co.kr/station/akdma9692" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="온자두.png" alt="온자두">
+                            <h3>온자두</h3>
+                            <p class="keywords">#미친사람 #에겐</p>
+                            <p class="catchphrase">"맨헤라라고 하지마라"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="nlov555jij">
+                        <a href="https://www.sooplive.co.kr/station/nlov555jij" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="삐요코.png" alt="삐요코">
+                            <h3>삐요코</h3>
+                            <p class="keywords">#요즘은15금 #뿅</p>
+                            <p class="catchphrase">"아 찌빨"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="xpdpfv2">
+                        <a href="https://www.sooplive.co.kr/station/xpdpfv2" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="이지수.png" alt="이지수">
+                            <h3>이지수</h3>
+                            <p class="keywords">#배그말고는 #태무쏭이</p>
+                            <p class="catchphrase">"따당님!"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="gatgdf">
+                        <a href="https://www.sooplive.co.kr/station/gatgdf" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="쏭이.png" alt="쏭이">
+                            <h3>쏭이</h3>
+                            <p class="keywords">#오빠 #싸패</p>
+                            <p class="catchphrase">"오빵~"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="kimmaren77">
+                        <a href="https://www.sooplive.co.kr/station/kimmaren77" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="김마렌.png" alt="김마렌">
+                            <h3>김마렌</h3>
+                            <p class="keywords">#꽁트괴물 #RP의 신</p>
+                            <p class="catchphrase">"쯰훈!!"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="doki0818">
+                        <a href="https://www.sooplive.co.kr/station/doki0818" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="감자가비.png" alt="감자가비">
+                            <h3>감자가비</h3>
+                            <p class="keywords">#웃음맛집 #쌍욕맛집</p>
+                            <p class="catchphrase">"남편구해요"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="dmng50">
+                        <a href="https://www.sooplive.co.kr/station/dmng50" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="빵땅콩.png" alt="빵땅콩">
+                            <h3>빵땅콩</h3>
+                            <p class="keywords">#억소속감 #말못함</p>
+                            <p class="catchphrase">"소속감은 스스로"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="ducke77">
+                        <a href="https://www.sooplive.co.kr/station/ducke77" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="밀크티냠.png" alt="밀크티냠">
+                            <h3>밀크티냠</h3>
+                            <p class="keywords">#직장인 #남친있네</p>
+                            <p class="catchphrase">"^^;;;"</p>
+                        </a>
+                    </div>
+                    <div class="cast-item" data-bj-id="joaras2">
+                        <a href="https://www.sooplive.co.kr/station/joaras2" target="_blank">
+                            <div class="live-badge">LIVE</div>
+                            <img src="조아라.png" alt="조아라">
+                            <h3>조아라</h3>
+                            <p class="keywords">#짐승 #똥방귀</p>
+                            <p class="catchphrase">"아 머리 나올뻔"</p>
+                        </a>
+                    </div>
+                    <button id="prevBtn" class="slider-btn">‹</button><button id="nextBtn" class="slider-btn">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/y6UPzAMRWMI?si=QIbyXr1VZRT2C27J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
+    <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
+        <div class="md-item"><div class="md-image-container"><img src="울큰고_소바바_킥.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 고매 소바바치킨.</p><a href="https://www.youtube.com/shopcollection/SCUCMFwpgB_rjp4Jk-oopLMFIoAuZSVHWHoJQ?scp=EAE%3D" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_상품.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="김마렌_상품.png" alt="김마렌 굿즈"></div><div class="md-info"><h3>김마렌 에디션</h3><p>(독)개구리대장, 김마렌의 팬덤 올챙구의 수많은 감정들!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/61f7eb8badb1e" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="견자희_상품.png" alt="견자희 굿즈"></div><div class="md-info"><h3>견자희 에디션</h3><p>견자희의 팬덤 장미들의 인방생활 OGQ!!</p><a href="https://ogqmarket.sooplive.co.kr/search/%EA%B2%AC%EC%9E%90%ED%9D%AC" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="감자가비_상품.png" alt="감자가비 굿즈"></div><div class="md-info"><h3>감자가비 에디션</h3><p>감자가비와 팬들의 일상을 담은 귀여운 이모티콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/63d34efbda135" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="빵땅콩_상품.png" alt="빵땅콩 굿즈"></div><div class="md-info"><h3>빵땅콩 에디션</h3><p>고래상사 최고의 모기 빵땅콩의 빵땅콩콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/6435451a4f3a9" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="상품준비중.png" alt="상품준비중"></div><div class="md-info"><h3>상품준비중</h3><p>상품준비중</p><a href="#" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+        <div class="md-item"><div class="md-image-container"><img src="상품준비중.png" alt="상품준비중"></div><div class="md-info"><h3>상품준비중</h3><p>상품준비중</p><a href="#" target="_blank" class="hero-button md-button">구매하기</a></div></div></div>
+        <button id="mdPrevBtn" class="slider-btn">‹</button><button id="mdNextBtn" class="slider-btn">›</button></div></div></section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>고래상사</h3>
+                <p>Los Santos Maze Bank Tower 74~81F</p>
+                <p>전화: 02-1234-5678 | 이메일: whale@gorae.co.kr</p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 GORAECORP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // 1. 멤버 설정
-        const members = [
-            { id: "bach023", name: "울산큰고래", img: "꽃미남_성주.png", kw: "#바지사장 #멘헤라" },
-            { id: "gyeonjahee", name: "견자희", img: "견자희.png", kw: "#장미상사 #견머니" },
-            { id: "melodingding", name: "멜로딩딩", img: "멜로딩딩.png", kw: "#비서 #노예" },
-            { id: "nunknown314", name: "미현영", img: "미현영.png", kw: "#만트라Q #투지" },
-            { id: "soyoung6056", name: "빡쏘", img: "빡쏘.png", kw: "#빡보성 #서운해" },
-            { id: "akdma9692", name: "온자두", img: "온자두.png", kw: "#미친사람 #에겐" },
-            { id: "nlov555jij", name: "삐요코", img: "삐요코.png", kw: "#15금 #아찌빨" },
-            { id: "xpdpfv2", name: "이지수", img: "이지수.png", kw: "#배그원툴 #따당님" },
-            { id: "gatgdf", name: "쏭이", img: "쏭이.png", kw: "#오빠 #싸패" },
-            { id: "kimmaren77", name: "김마렌", img: "김마렌.png", kw: "#RP의신 #쯰훈" },
-            { id: "doki0818", name: "감자가비", img: "감자가비.png", kw: "#욕맛집 #남편구함" },
-            { id: "dmng50", name: "빵땅콩", img: "빵땅콩.png", kw: "#억소속감 #모기" },
-            { id: "ducke77", name: "밀크티냠", img: "밀크티냠.png", kw: "#직장인 #^^;;" },
-            { id: "joaras2", name: "조아라", img: "조아라.png", kw: "#짐승 #똥방귀" }
-        ];
+        document.addEventListener('DOMContentLoaded', function() {
 
-        let liveData = {};
-        let currentFilter = 'all';
-
-        // 2. 데이터 불러오기
-        async function loadCastData() {
-            try {
-                const res = await fetch('streamer_data.json?t=' + Date.now());
-                if(res.ok) liveData = await res.json();
-                renderGrid();
-            } catch(e) { console.log("로딩 실패", e); }
-        }
-
-        // 3. 그리드 그리기
-        function renderGrid() {
-            const grid = document.getElementById('member-grid');
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            grid.innerHTML = '';
-
-            // 방송중 우선 정렬
-            const sorted = [...members].sort((a,b) => {
-                const aL = liveData[a.id]?.is_live ? 1 : 0;
-                const bL = liveData[b.id]?.is_live ? 1 : 0;
-                return bL - aL;
+            // --- Smooth Scrolling ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
             });
 
-            sorted.forEach(m => {
-                const info = liveData[m.id] || { is_live: false, title: "", thumb: "", view_cnt: 0 };
-                
-                // 필터링
-                if(currentFilter === 'live' && !info.is_live) return;
-                if(currentFilter === 'off' && info.is_live) return;
-                if(!m.name.toLowerCase().includes(search) && !m.kw.includes(search)) return;
+            // --- Generic Slider Function ---
+            function setupSlider(sliderClass, prevBtnId, nextBtnId) {
+                const slider = document.querySelector(sliderClass);
+                if (!slider) return;
+                const prevBtn = document.getElementById(prevBtnId);
+                const nextBtn = document.getElementById(nextBtnId);
+                const items = slider.children;
+                if (items.length <= 3 && window.innerWidth > 768) {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                    return;
+                }
+                nextBtn.addEventListener('click', () => {
+                    const item = slider.querySelector('div, a');
+                    const scrollAmount = item.clientWidth + (parseInt(getComputedStyle(item).marginLeft) * 2);
+                    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+                prevBtn.addEventListener('click', () => {
+                    const item = slider.querySelector('div, a');
+                    const scrollAmount = item.clientWidth + (parseInt(getComputedStyle(item).marginLeft) * 2);
+                    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+            }
+            
+            // --- Sliders Initialization ---
+            setupSlider('.cast-slider', 'prevBtn', 'nextBtn');
+            setupSlider('.md-slider', 'mdPrevBtn', 'mdNextBtn');
+            
+            // --- Pop-up Modal ---
+            const modal = document.getElementById('popup-modal');
+            const closeBtn = document.getElementById('modal-close-btn');
+            
+            if (modal) {
+                modal.classList.add('active');
+            }
 
-                // 카드 HTML
-                const card = document.createElement('div');
-                card.className = 'grid-item';
-                
-                const imgUrl = (info.is_live && info.thumb) ? info.thumb : m.img;
-                const link = `https://www.sooplive.co.kr/station/${m.id}`;
+            const closeModal = () => {
+                modal.classList.remove('active');
+            };
 
-                card.innerHTML = `
-                    <a href="${link}" target="_blank">
-                        <div class="thumb-box">
-                            ${info.is_live ? '<span class="badge live">LIVE</span>' : '<span class="badge off">OFF</span>'}
-                            <img src="${imgUrl}" alt="${m.name}" class="${info.is_live ? 'is-live-img' : ''}">
-                            ${info.is_live ? `<span class="badge view"><i class="fas fa-user"></i> ${info.view_cnt}</span>` : ''}
-                        </div>
-                        <div class="info-box">
-                            <h3>${m.name}</h3>
-                            <p class="keywords">${m.kw}</p>
-                            <p class="title">${info.is_live ? info.title : "방송 준비중입니다."}</p>
-                        </div>
-                    </a>
-                `;
-                grid.appendChild(card);
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
             });
-        }
 
-        // 4. 화면 전환 함수
-        function showCastPage() {
-            document.getElementById('page-slider-wrapper').classList.add('slide-active');
-            window.scrollTo(0,0);
-            loadCastData();
-        }
-        function showMainPage() {
-            document.getElementById('page-slider-wrapper').classList.remove('slide-active');
-            window.scrollTo(0,0);
-        }
-        function filterMembers(type) {
-            currentFilter = type;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
-            renderGrid();
-        }
-
-        document.getElementById('searchInput').addEventListener('input', renderGrid);
-        
-        // 초기 실행
-        loadCastData();
-        setInterval(loadCastData, 60000);
-
-        // 배경 캔버스 애니메이션 (간단 버전)
-        const canvas = document.getElementById('background-canvas');
-        const ctx = canvas.getContext('2d');
-        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
-        window.addEventListener('resize', resize); resize();
-        function animate() {
-            ctx.fillStyle = '#0d1a2f'; ctx.fillRect(0,0,canvas.width, canvas.height);
-            requestAnimationFrame(animate);
-        }
-        animate();
+            // --- Canvas Background Animation ---
+            const canvas = document.getElementById('background-canvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let particlesArray;
+                const mouse = { x: null, y: null, radius: 150 };
+                const setCanvasSize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
+                class Particle {
+                    constructor(x, y, dX, dY, size, color) { this.x=x; this.y=y; this.directionX=dX; this.directionY=dY; this.size=size; this.color=color; }
+                    draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI*2, false); ctx.fillStyle=this.color; ctx.fill(); }
+                    update() {
+                        if(this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+                        if(this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+                        if(mouse.x !== null) {
+                            let dx = mouse.x - this.x, dy = mouse.y - this.y, distance = Math.sqrt(dx*dx+dy*dy);
+                            if (distance < mouse.radius + this.size) {
+                                if(mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 5;
+                                if(mouse.x > this.x && this.x > this.size * 10) this.x -= 5;
+                                if(mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 5;
+                                if(mouse.y > this.y && this.y > this.size * 10) this.y -= 5;
+                            }
+                        }
+                        this.x += this.directionX; this.y += this.directionY; this.draw();
+                    }
+                }
+                const init = () => {
+                    particlesArray = [];
+                    let num = (canvas.height * canvas.width) / 9000;
+                    for (let i = 0; i < num; i++) {
+                        let size = (Math.random() * 4) + 1;
+                        let x = Math.random() * (innerWidth - size * 2) + size;
+                        let y = Math.random() * (innerHeight - size * 2) + size;
+                        let dX = (Math.random() * 0.4) - 0.2, dY = (Math.random() * 0.4) - 0.2;
+                        let color = `rgba(173, 216, 230, ${Math.random() * 0.5 + 0.2})`;
+                        particlesArray.push(new Particle(x, y, dX, dY, size, color));
+                    }
+                };
+                const connect = () => {
+                    const dist = (canvas.width/7) * (canvas.height/7);
+                    for (let a = 0; a < particlesArray.length; a++) {
+                        for (let b = a; b < particlesArray.length; b++) {
+                            let distance = ((particlesArray[a].x - particlesArray[b].x) ** 2) + ((particlesArray[a].y - particlesArray[b].y) ** 2);
+                            if (distance < dist) {
+                                let opacity = 1 - (distance / 20000);
+                                ctx.strokeStyle = `rgba(173, 216, 230, ${opacity})`;
+                                ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(particlesArray[a].x, particlesArray[a].y); ctx.lineTo(particlesArray[b].x, particlesArray[b].y); ctx.stroke();
+                            }
+                        }
+                    }
+                };
+                const animate = () => {
+                    requestAnimationFrame(animate);
+                    ctx.clearRect(0, 0, innerWidth, innerHeight);
+                    let grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+                    grad.addColorStop(0, '#1a2a4f'); grad.addColorStop(1, '#346a9a');
+                    ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    particlesArray.forEach(p => p.update());
+                    connect();
+                };
+                window.addEventListener('mousemove', (e) => { mouse.x = e.x; mouse.y = e.y; });
+                window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
+                window.addEventListener('resize', () => { setCanvasSize(); init(); });
+                setCanvasSize(); init(); animate();
+            }
+        });
     </script>
 </body>
 </html>
