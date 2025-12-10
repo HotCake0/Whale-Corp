@@ -354,6 +354,70 @@
                 window.addEventListener('resize', () => { setCanvasSize(); init(); });
                 setCanvasSize(); init(); animate();
             }
+
+            // --- SOOP Live Status Check (SOOP API) ---
+            async function checkLiveStatus() {
+                const castItems = document.querySelectorAll('.cast-item');
+                
+                castItems.forEach(async (item) => {
+                    const bjId = item.dataset.bjId;
+                    if (!bjId) return;
+
+                    // 원본 프로필 이미지 주소 저장 (방송 종료 시 복구용)
+                    const imgElement = item.querySelector('img');
+                    if (!item.dataset.origSrc) {
+                        item.dataset.origSrc = imgElement.src;
+                    }
+
+                    // SOOP Station API (BJ 스테이션 정보)
+                    const apiUrl = `https://bjapi.sooplive.co.kr/api/${bjId}/station`;
+
+                    try {
+                        const response = await fetch(apiUrl, {
+                            headers: { 'Content-Type': 'application/json' }
+                        });
+                        const data = await response.json();
+
+                        // 방송 중인지 확인 (broad_start 값이 존재하면 방송 중)
+                        if (data.broad_start) {
+                            item.classList.add('live');
+
+                            // 1. 실시간 썸네일로 교체
+                            // broad_no를 이용해 썸네일 URL 생성
+                            const thumbUrl = `https://liveimg.sooplive.co.kr/m/${data.broad_no}`;
+                            
+                            // 깜빡임 방지: 주소가 다를 때만 교체
+                            if (imgElement.src !== thumbUrl) {
+                                imgElement.src = thumbUrl;
+                            }
+                            
+                            // 2. 시청자 수 표시
+                            const linkElement = item.querySelector('a');
+                            let viewerBadge = item.querySelector('.viewer-count');
+                            
+                            if (!viewerBadge) {
+                                viewerBadge = document.createElement('div');
+                                viewerBadge.className = 'viewer-count';
+                                linkElement.appendChild(viewerBadge);
+                            }
+                            
+                            const viewerCount = new Intl.NumberFormat().format(data.total_view_cnt);
+                            viewerBadge.innerHTML = `👤 ${viewerCount}`;
+
+                        } else {
+                            // 방송 중이 아닐 때: 상태 초기화
+                            item.classList.remove('live');
+                            imgElement.src = item.dataset.origSrc; // 원본 프로필 복구
+                        }
+                    } catch (error) {
+                        console.error(`Error fetching status for ${bjId}:`, error);
+                    }
+                });
+            }
+
+            // 최초 실행 및 60초마다 갱신
+            checkLiveStatus();
+            setInterval(checkLiveStatus, 60000);
         });
     </script>
 </body>
