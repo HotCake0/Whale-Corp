@@ -14,18 +14,18 @@ bj_ids = [
 def get_live_status():
     live_data = {}
     
-    # 봇이 아니라 일반 사용자인 척 위장하는 헤더 (User-Agent)
+    # [중요] SOOP(숲) 홈페이지에서 접속한 것처럼 위장하는 헤더
     headers = {
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
-        'Referer': 'https://m.afreecatv.com/'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Referer': 'https://www.sooplive.co.kr/'
     }
     
-    print(f"--- 📡 모바일 데이터망 접속 시작 ({len(bj_ids)}명) ---")
+    print(f"--- 📡 SOOP 데이터망(BJAPI) 접속 시작 ({len(bj_ids)}명) ---")
     
     for bj_id in bj_ids:
         try:
-            # [핵심] 아프리카TV 모바일 웹페이지가 데이터를 받아오는 실제 주소
-            target_url = f"https://hp.afreecatv.com/api/main/station/{bj_id}"
+            # [핵심] 현재 SOOP 홈페이지가 실제로 사용하는 방송 정보 주소 (bjapi)
+            target_url = f"https://bjapi.afreecatv.com/api/{bj_id}/station"
             
             response = requests.get(target_url, headers=headers, timeout=5)
             data = response.json()
@@ -33,26 +33,26 @@ def get_live_status():
             is_live = False
             title = ""
             
-            # 데이터 구조 분석: data > station > broad 정보가 있으면 방송 중
-            if "data" in data and "station" in data["data"]:
-                station_data = data["data"]["station"]
+            # 데이터 구조 분석 (station > broad 안에 정보가 있으면 방송중)
+            if "station" in data and "broad" in data["station"]:
+                broad_data = data["station"]["broad"]
                 
-                # 'broad' 항목이 존재하고 비어있지 않으면 방송 중
-                if "broad" in station_data and station_data["broad"]:
+                # 방송 정보가 비어있지 않으면(None이 아니면) 방송 중!
+                if broad_data:
                     is_live = True
-                    title = station_data["broad"].get("broad_title", "방송 중")
+                    title = broad_data.get("broad_title", "방송 중")
                     print(f"🔥 LIVE 확인: {bj_id} - {title}")
                 else:
                     print(f"💤 OFF: {bj_id}")
             else:
-                print(f"❓ 데이터 확인 불가: {bj_id}")
+                print(f"💤 OFF: {bj_id} (데이터 없음)")
 
             live_data[bj_id] = {
                 "is_live": is_live,
                 "title": title
             }
             
-            # 서버 차단 방지를 위해 약간의 딜레이 (0.1초~0.3초)
+            # 서버 부하 방지를 위해 0.1~0.3초 대기
             time.sleep(random.uniform(0.1, 0.3))
             
         except Exception as e:
