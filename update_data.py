@@ -1,11 +1,9 @@
 import requests
 import json
-import os
+import time
+import random
 
-CLIENT_ID = os.environ.get('SOOP_CLIENT_ID')
-CLIENT_SECRET = os.environ.get('SOOP_CLIENT_SECRET')
-
-# 지금 방송 중인 그 멤버의 ID를 맨 앞에 적어주세요! (테스트를 위해)
+# BJ ID 목록
 bj_ids = [
     "bach023", "gyeonjahee", "melodingding", "nunknown314", 
     "soyoung6056", "akdma9692", "nlov555jij", "xpdpfv2", 
@@ -14,52 +12,52 @@ bj_ids = [
 ]
 
 def get_live_status():
-    if not CLIENT_ID:
-        print("❌ API 키 없음")
-        return {}
-
-    url = "https://openapi.afreecatv.com/broad/list"
-    
-    # 아까 성공했던 그 헤더 방식
-    headers = { "ClientId": CLIENT_ID, "Content-Type": "application/x-www-form-urlencoded" }
-    
     live_data = {}
-    print(f"--- 🕵️ 디버깅 모드 시작 ---")
+    
+    # 봇이 아니라 일반 사용자인 척 위장하는 헤더 (User-Agent)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
+        'Referer': 'https://m.afreecatv.com/'
+    }
+    
+    print(f"--- 📡 모바일 데이터망 접속 시작 ({len(bj_ids)}명) ---")
     
     for bj_id in bj_ids:
         try:
-            params = { "client_id": CLIENT_ID, "select_key": "bj_id", "select_value": bj_id }
-            response = requests.get(url, headers=headers, params=params, timeout=5)
+            # [핵심] 아프리카TV 모바일 웹페이지가 데이터를 받아오는 실제 주소
+            target_url = f"https://hp.afreecatv.com/api/main/station/{bj_id}"
+            
+            response = requests.get(target_url, headers=headers, timeout=5)
+            data = response.json()
             
             is_live = False
             title = ""
             
-            if response.status_code == 200:
-                data = response.json()
+            # 데이터 구조 분석: data > station > broad 정보가 있으면 방송 중
+            if "data" in data and "station" in data["data"]:
+                station_data = data["data"]["station"]
                 
-                # [중요] 방송 중인 사람의 데이터는 무조건 출력해서 눈으로 확인!
-                if "broad" in data and data["broad"]:
-                    print(f"\n✅ {bj_id} 데이터를 찾았습니다!")
-                    print(json.dumps(data, indent=2, ensure_ascii=False)) # 데이터 전체 출력
-                    
+                # 'broad' 항목이 존재하고 비어있지 않으면 방송 중
+                if "broad" in station_data and station_data["broad"]:
                     is_live = True
-                    title = data["broad"][0].get("broad_title", "")
+                    title = station_data["broad"].get("broad_title", "방송 중")
+                    print(f"🔥 LIVE 확인: {bj_id} - {title}")
                 else:
-                    # 방송 중이라는데 데이터가 비어있다면, 그 이유를 알기 위해 빈 껍데기도 출력해봅니다.
-                    # 너무 길어질 수 있으니 첫 번째 사람(bach023) 것만 출력
-                    if bj_id == bj_ids[0]:
-                        print(f"\n❓ {bj_id}: 방송 중이라는데 API는 없다고 함. 원본 데이터:")
-                        print(json.dumps(data, indent=2, ensure_ascii=False))
-                    else:
-                        print(f"💤 {bj_id}: OFF")
-
+                    print(f"💤 OFF: {bj_id}")
             else:
-                print(f"⚠️ {bj_id}: 에러 {response.status_code}")
+                print(f"❓ 데이터 확인 불가: {bj_id}")
 
-            live_data[bj_id] = { "is_live": is_live, "title": title }
+            live_data[bj_id] = {
+                "is_live": is_live,
+                "title": title
+            }
+            
+            # 서버 차단 방지를 위해 약간의 딜레이 (0.1초~0.3초)
+            time.sleep(random.uniform(0.1, 0.3))
             
         except Exception as e:
-            print(f"❌ {bj_id} 에러: {e}")
+            print(f"❌ 에러 {bj_id}: {e}")
+            live_data[bj_id] = { "is_live": False, "title": "" }
 
     return live_data
 
