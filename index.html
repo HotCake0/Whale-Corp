@@ -355,6 +355,47 @@
                 setCanvasSize(); init(); animate();
             }
         });
+        // 기존 코드 아래에 추가하세요.
+
+    // 방송 상태 확인 및 적용 함수
+    function checkLiveStatus() {
+        // 랜덤 숫자를 붙여서 캐시 방지 (항상 최신 파일 읽기)
+        fetch('streamer_data.json?t=' + new Date().getTime())
+            .then(response => response.json())
+            .then(data => {
+                // 데이터(data)를 가지고 화면을 수정
+                for (const [bjId, info] of Object.entries(data)) {
+                    // data-bj-id가 일치하는 태그 찾기
+                    const card = document.querySelector(`.cast-item[data-bj-id="${bjId}"]`);
+                    if (card) {
+                        const badge = card.querySelector('.live-badge');
+                        const link = card.querySelector('a');
+                        
+                        if (info.is_live) {
+                            // 방송 중: 뱃지 보이기
+                            if(badge) badge.style.display = 'block';
+                            // 마우스 올리면 방송 제목 뜨게 하기
+                            if(link) link.setAttribute('title', '방송중: ' + info.title);
+                            // 스타일 효과 추가 (필요시 CSS에서 .live-on 활용)
+                            card.classList.add('live-on');
+                        } else {
+                            // 방송 종료: 뱃지 숨기기
+                            if(badge) badge.style.display = 'none';
+                            if(link) link.removeAttribute('title');
+                            card.classList.remove('live-on');
+                        }
+                    }
+                }
+            })
+            .catch(err => console.log('아직 방송 데이터 파일이 없거나 읽을 수 없습니다.'));
+    }
+
+    // 1. 페이지 열리자마자 실행
+    checkLiveStatus();
+
+    // 2. 그 후 1분마다 자동으로 새로고침 없이 확인
+    setInterval(checkLiveStatus, 60000);
     </script>
 </body>
+
 </html>
