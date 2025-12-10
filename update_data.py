@@ -14,58 +14,57 @@ bj_ids = [
 def get_live_status():
     live_data = {}
     
-    # [핵심] SOOP 홈페이지에서 접속한 것처럼 위장하는 헤더
+    # Player API (로그인 불필요, 가장 빠름)
+    url = "https://live.afreecatv.com/afreeca/player_live_api.php"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Referer': 'https://www.sooplive.co.kr/'
+        'Content-Type': 'application/x-www-form-urlencoded'
     }
     
-    print(f"--- 📡 SOOP 데이터망(BJAPI) 접속 시작 ({len(bj_ids)}명) ---")
+    print(f"--- 📡 데이터 수집 시작 ({len(bj_ids)}명) ---")
     
     for bj_id in bj_ids:
         try:
-            # [수정됨] 현재 살아있는 방송 정보 주소 (bjapi)
-            # 이 주소는 로그인 없이도 19금 여부와 방송 정보를 줍니다.
-            target_url = f"https://bjapi.afreecatv.com/api/{bj_id}/station"
-            
-            response = requests.get(target_url, headers=headers, timeout=5)
-            data = response.json()
+            data = { "bid": bj_id, "type": "live" }
+            response = requests.post(url, headers=headers, data=data, timeout=5)
+            res_json = response.json()
             
             is_live = False
             title = ""
+            thumb = ""
+            view_cnt = "0"
             
-            # 데이터 구조 분석: station 안에 broad가 있으면 방송 중
-            if "station" in data and "broad" in data["station"]:
-                broad_data = data["station"]["broad"]
+            if "CHANNEL" in res_json and res_json["CHANNEL"].get("RESULT") == 1:
+                channel = res_json["CHANNEL"]
+                is_live = True
+                title = channel.get("BROAD_TITLE", "")
+                view_cnt = channel.get("VIEW_CNT", "0")
                 
-                # 방송 정보가 비어있지 않으면(None이 아니면) 방송 중!
-                if broad_data:
-                    is_live = True
-                    title = broad_data.get("broad_title", "방송 중")
-                    print(f"🔥 LIVE 확인: {bj_id} - {title}")
-                else:
-                    print(f"💤 OFF: {bj_id}")
+                # 썸네일 URL 생성 (Player API 방식)
+                broad_no = channel.get("BROAD_NO")
+                if broad_no:
+                    thumb = f"https://liveimg.afreecatv.com/m/{broad_no}.gif"
+                
+                print(f"🔥 LIVE: {bj_id} ({view_cnt}명)")
             else:
-                # station 정보는 왔는데 broad가 없으면 방송 안 하는 것
-                print(f"💤 OFF: {bj_id}")
+                print(f"💤 OFF : {bj_id}")
 
             live_data[bj_id] = {
                 "is_live": is_live,
-                "title": title
+                "title": title,
+                "thumb": thumb,
+                "view_cnt": view_cnt
             }
             
-            # 서버 부하 방지를 위해 0.1~0.3초 대기
-            time.sleep(random.uniform(0.1, 0.3))
+            time.sleep(random.uniform(0.05, 0.1)) # 차단 방지 딜레이
             
         except Exception as e:
-            # bjapi 접속 실패 시 로그 출력
             print(f"❌ 에러 {bj_id}: {e}")
-            live_data[bj_id] = { "is_live": False, "title": "" }
+            live_data[bj_id] = { "is_live": False, "title": "", "thumb": "", "view_cnt": "0" }
 
     return live_data
 
 if __name__ == "__main__":
     data = get_live_status()
-    # 결과 저장
     with open("streamer_data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
