@@ -14,7 +14,7 @@ bj_ids = [
 def get_live_status():
     live_data = {}
     
-    # [중요] SOOP(숲) 홈페이지에서 접속한 것처럼 위장하는 헤더
+    # [핵심] SOOP 홈페이지에서 접속한 것처럼 위장하는 헤더
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Referer': 'https://www.sooplive.co.kr/'
@@ -24,7 +24,8 @@ def get_live_status():
     
     for bj_id in bj_ids:
         try:
-            # [핵심] 현재 SOOP 홈페이지가 실제로 사용하는 방송 정보 주소 (bjapi)
+            # [수정됨] 현재 살아있는 방송 정보 주소 (bjapi)
+            # 이 주소는 로그인 없이도 19금 여부와 방송 정보를 줍니다.
             target_url = f"https://bjapi.afreecatv.com/api/{bj_id}/station"
             
             response = requests.get(target_url, headers=headers, timeout=5)
@@ -33,7 +34,7 @@ def get_live_status():
             is_live = False
             title = ""
             
-            # 데이터 구조 분석 (station > broad 안에 정보가 있으면 방송중)
+            # 데이터 구조 분석: station 안에 broad가 있으면 방송 중
             if "station" in data and "broad" in data["station"]:
                 broad_data = data["station"]["broad"]
                 
@@ -45,7 +46,8 @@ def get_live_status():
                 else:
                     print(f"💤 OFF: {bj_id}")
             else:
-                print(f"💤 OFF: {bj_id} (데이터 없음)")
+                # station 정보는 왔는데 broad가 없으면 방송 안 하는 것
+                print(f"💤 OFF: {bj_id}")
 
             live_data[bj_id] = {
                 "is_live": is_live,
@@ -56,6 +58,7 @@ def get_live_status():
             time.sleep(random.uniform(0.1, 0.3))
             
         except Exception as e:
+            # bjapi 접속 실패 시 로그 출력
             print(f"❌ 에러 {bj_id}: {e}")
             live_data[bj_id] = { "is_live": False, "title": "" }
 
@@ -63,5 +66,6 @@ def get_live_status():
 
 if __name__ == "__main__":
     data = get_live_status()
+    # 결과 저장
     with open("streamer_data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
