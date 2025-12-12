@@ -355,13 +355,15 @@
                 setCanvasSize(); init(); animate();
             }
         });
-// --- 실시간 방송 상태 확인, 썸네일 교체 및 정렬 기능 ---
+// --- 실시간 방송 상태 확인 및 링크 교체 기능 ---
             async function updateLiveStatus() {
                 try {
-                    const response = await fetch('./status.json?v=' + new Date().getTime());
+                    // 깃허브 주소로 수정 필요
+                    const response = await fetch('https://본인아이디.github.io/저장소이름/status.json?v=' + new Date().getTime());
+                    // const response = await fetch('./status.json?v=' + new Date().getTime()); // 로컬 테스트용
+                    
                     const data = await response.json();
                     
-                    // 1. 상태 업데이트 및 '방송중' 표시 남기기
                     data.forEach(member => {
                         const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
                         
@@ -370,83 +372,89 @@
                             const img = memberElement.querySelector('img');
                             const link = memberElement.querySelector('a');
                             const originalSrc = img.getAttribute('data-original-src');
+                            
+                            // [중요] 원래 방송국 주소(station)를 기억해둡니다 (처음 한 번만 실행)
+                            if (!link.getAttribute('data-original-href')) {
+                                link.setAttribute('data-original-href', link.getAttribute('href'));
+                            }
+                            const originalHref = link.getAttribute('data-original-href');
 
                             if (member.is_live) {
                                 // [방송 중]
-                                // 나중에 정렬하기 위해 태그에 표시를 해둡니다.
                                 memberElement.setAttribute('data-is-live', 'true');
-
                                 if(badge) badge.style.display = 'block';
                                 
-                                // 썸네일 교체
+                                // 1. 썸네일 교체
                                 if (member.thumbnail && img.src !== member.thumbnail) {
                                     img.src = member.thumbnail;
                                 }
 
-                                // 16:9 비율 스타일
+                                // 2. 링크 교체 (여기가 핵심!)
+                                // 방송 중이면 '플레이어' 주소로 바꿔치기합니다.
+                                if (member.live_url) {
+                                    link.href = member.live_url;
+                                }
+
+                                // 3. 스타일 변경
                                 img.style.width = '256px';
                                 img.style.height = '144px';
                                 img.style.borderRadius = '12px';
                                 img.style.borderColor = '#e74c3c';
                                 img.style.borderWidth = '3px';
-                                
                                 link.title = `방송중: ${member.title}`;
 
                             } else {
                                 // [방송 종료]
                                 memberElement.setAttribute('data-is-live', 'false');
-
                                 if(badge) badge.style.display = 'none';
 
-                                // 이미지 복구
+                                // 1. 이미지 복구
                                 if (originalSrc && img.src !== originalSrc) {
                                     img.src = originalSrc;
                                 }
                                 
-                                // 스타일 복구 (원형)
+                                // 2. 링크 복구 (원래 방송국 주소로 되돌림)
+                                if (originalHref) {
+                                    link.href = originalHref;
+                                }
+
+                                // 3. 스타일 복구
                                 img.style.width = '180px';
                                 img.style.height = '180px';
                                 img.style.borderRadius = '50%';
                                 img.style.borderColor = '#fff';
                                 img.style.borderWidth = '5px';
-                                
                                 link.title = '';
                             }
                         }
                     });
 
-                    // 2. 방송 중인 순서대로 요소 재배치 (정렬)
+                    // 정렬 로직
                     const container = document.querySelector('.cast-slider');
-                    // 현재 화면에 있는 멤버들과 버튼들을 다 가져옵니다.
                     const items = Array.from(container.querySelectorAll('.cast-item'));
                     const buttons = Array.from(container.querySelectorAll('.slider-btn'));
 
-                    // 정렬 로직: 방송 중(true)인 사람이 앞으로 오도록 함
                     items.sort((a, b) => {
                         const aLive = a.getAttribute('data-is-live') === 'true';
                         const bLive = b.getAttribute('data-is-live') === 'true';
-
-                        if (aLive && !bLive) return -1; // a가 방송중이면 앞으로
-                        if (!aLive && bLive) return 1;  // b가 방송중이면 앞으로
-                        return 0; // 둘 다 상태가 같으면 원래 순서 유지
+                        if (aLive && !bLive) return -1;
+                        if (!aLive && bLive) return 1;
+                        return 0;
                     });
 
-                    // 정렬된 순서대로 다시 컨테이너에 집어넣습니다.
                     items.forEach(item => container.appendChild(item));
-                    
-                    // 화살표 버튼이 지워지지 않고 맨 뒤에 붙도록 다시 넣어줍니다.
                     buttons.forEach(btn => container.appendChild(btn));
 
-                    console.log("방송 상태 업데이트 및 정렬 완료");
+                    console.log("방송 상태 업데이트 완료");
 
                 } catch (error) {
                     console.error("방송 정보를 가져오지 못했습니다.", error);
                 }
             }
 
-            // 초기 실행 및 주기적 실행
             updateLiveStatus();
-            setInterval(updateLiveStatus, 60000); // 1분마다 갱신
+            setInterval(updateLiveStatus, 60000);
     </script>
 </body>
 </html>
+
