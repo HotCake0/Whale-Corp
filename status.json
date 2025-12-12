@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 오늘은 방송 16주년입니다. 그래서 빨리 온 건 아니고.. (1500개 레전드 풀메 방셀)",
-        "viewers": 536,
+        "viewers": 533,
         "thumbnail": "https://liveimg.afreecatv.com/m/289897552"
     },
     {
@@ -17,14 +17,14 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 좋은 저녁입니다:-) 빵구워",
-        "viewers": 82,
+        "viewers": 73,
         "thumbnail": "https://liveimg.afreecatv.com/m/289901128"
     },
     {
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 오메기떡 먹다가 죽을뻔한 사람... DNF 화이팅!",
-        "viewers": 21,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/289900882"
     },
     {
@@ -68,6 +68,9 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[말티즈/고래상사] 애두라 모하니",
+        "viewers": 16,
+        "thumbnail": "https://liveimg.afreecatv.com/m/289903264"
     }
 ]
