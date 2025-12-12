@@ -31,14 +31,20 @@ def check_member_live(bj_id, bj_name):
         
         if broad_data:
             broad_no = broad_data.get("broad_no")
+            # 썸네일 주소
             thumb_url = f"https://liveimg.afreecatv.com/m/{broad_no}"
+            
+            # [추가됨] 생방송 플레이어 직행 주소 생성
+            # PC 플레이어 기준 주소입니다. 모바일에서도 잘 연결됩니다.
+            live_url = f"https://play.sooplive.co.kr/{bj_id}/{broad_no}"
             
             return {
                 "id": bj_id,
                 "is_live": True,
                 "title": broad_data.get('broad_title', ''),
                 "viewers": broad_data.get('current_sum_viewer', 0),
-                "thumbnail": thumb_url 
+                "thumbnail": thumb_url,
+                "live_url": live_url  # 이 주소를 웹으로 보냅니다
             }
         else:
             return {"id": bj_id, "is_live": False}
