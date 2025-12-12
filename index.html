@@ -38,7 +38,6 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#about">회사 소개</a></li>
-                    <li><a href="#services">사업 분야</a></li>
                     <li><a href="#cast">출연진</a></li>
                     <li><a href="#video">대표 영상</a></li>
                     <li><a href="#md-shop">MD샵</a></li>
@@ -48,28 +47,16 @@
     </header>
     
     <section id="home" class="hero"><div class="hero-content"><h1 class="hero-title">고래상사</h1><p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p><p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p><a href="#about" class="hero-button">더 알아보기</a></div></section>
-    <section id="about" class="section"><div class="container" style="text-align: center; max-width: 800px;"><h2>고래상사 이야기</h2><p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p></div></section>
     
-    <section id="services" class="section bg-light">
-        <div class="container">
-            <h2>사업 분야</h2>
-            <div class="services-grid">
-                <a href="#" class="service-item">
-                    <h3>대규모 컨텐츠</h3>
-                    <p>전국민적 웃음과 화제를 이끌어내는 대규모 기획 및 제작</p>
-                </a>
-                <a href="#" class="service-item">
-                    <h3>몰입형 엔터테인먼트</h3>
-                    <p>참여와 몰입으로 오감을 자극하는 콘텐츠 제작</p>
-                </a>
-                <a href="#" class="service-item">
-                    <h3>쉽게 헤어 나올 수 없는 재미</h3>
-                    <p>웃음으로 하나 되는 멈출수없는 꽁트</p>
-                </a>
-            </div>
+    <section id="about" class="section">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <h2>고래상사 이야기</h2>
+            <p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p>
+            
+            <a href="intro.html" class="about-button">자세히 알아보기</a>
         </div>
     </section>
-
+    
     <section id="cast" class="section">
         <div class="container">
             <h2>고래상사가 선택한 인재들</h2>
@@ -355,110 +342,80 @@
                 setCanvasSize(); init(); animate();
             }
         });
-
+        
 async function updateLiveStatus() {
     try {
-        // [수정됨] './'는 "현재 위치"를 뜻합니다. 
-        // 깃허브 아이디나 저장소 이름을 몰라도 알아서 찾아줍니다.
+        // [중요] 깃허브 페이지에서 작동하도록 상대 경로 사용
         const response = await fetch('./status.json?v=' + new Date().getTime());
         
         if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
 
         const data = await response.json();
-// ------------------------------------------------------------------
+        
+        data.forEach(member => {
+            const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
+            
+            if (memberElement) {
+                const badge = memberElement.querySelector('.live-badge');
+                const img = memberElement.querySelector('img');
+                const link = memberElement.querySelector('a');
+                const originalSrc = img.getAttribute('data-original-src');
+                
+                if (!link.getAttribute('data-original-href')) {
+                    link.setAttribute('data-original-href', link.getAttribute('href'));
+                }
+                const originalHref = link.getAttribute('data-original-href');
+
+                if (member.is_live) {
+                    memberElement.setAttribute('data-is-live', 'true');
+                    if(badge) badge.style.display = 'block';
+                    if (member.thumbnail && img.src !== member.thumbnail) img.src = member.thumbnail;
+                    if (member.live_url) link.href = member.live_url;
                     
-                    data.forEach(member => {
-                        const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
-                        
-                        if (memberElement) {
-                            const badge = memberElement.querySelector('.live-badge');
-                            const img = memberElement.querySelector('img');
-                            const link = memberElement.querySelector('a');
-                            const originalSrc = img.getAttribute('data-original-src');
-                            
-                            // 원래 링크 저장
-                            if (!link.getAttribute('data-original-href')) {
-                                link.setAttribute('data-original-href', link.getAttribute('href'));
-                            }
-                            const originalHref = link.getAttribute('data-original-href');
+                    img.style.width = '256px';
+                    img.style.height = '144px';
+                    img.style.borderRadius = '12px';
+                    img.style.borderColor = '#e74c3c';
+                    img.style.borderWidth = '3px';
+                    link.title = `방송중: ${member.title}`;
+                } else {
+                    memberElement.setAttribute('data-is-live', 'false');
+                    if(badge) badge.style.display = 'none';
+                    if (originalSrc && img.src !== originalSrc) img.src = originalSrc;
+                    if (originalHref) link.href = originalHref;
 
-                            if (member.is_live) {
-                                // [방송 중]
-                                memberElement.setAttribute('data-is-live', 'true');
-                                if(badge) badge.style.display = 'block';
-                                
-                                // 썸네일 변경
-                                if (member.thumbnail && img.src !== member.thumbnail) {
-                                    img.src = member.thumbnail;
-                                }
-
-                                // 링크 변경 (플레이어로)
-                                if (member.live_url) {
-                                    link.href = member.live_url;
-                                    // 새 창으로 열리게 하고 싶으면 아래 주석 해제
-                                    // link.target = "_blank"; 
-                                }
-
-                                // 스타일 변경
-                                img.style.width = '256px';
-                                img.style.height = '144px';
-                                img.style.borderRadius = '12px';
-                                img.style.borderColor = '#e74c3c';
-                                img.style.borderWidth = '3px';
-                                link.title = `방송중: ${member.title}`;
-
-                            } else {
-                                // [방송 종료]
-                                memberElement.setAttribute('data-is-live', 'false');
-                                if(badge) badge.style.display = 'none';
-
-                                // 이미지 복구
-                                if (originalSrc && img.src !== originalSrc) {
-                                    img.src = originalSrc;
-                                }
-                                
-                                // 링크 복구
-                                if (originalHref) {
-                                    link.href = originalHref;
-                                }
-
-                                // 스타일 복구
-                                img.style.width = '180px';
-                                img.style.height = '180px';
-                                img.style.borderRadius = '50%';
-                                img.style.borderColor = '#fff';
-                                img.style.borderWidth = '5px';
-                                link.title = '';
-                            }
-                        }
-                    });
-
-                    // 정렬 로직
-                    const container = document.querySelector('.cast-slider');
-                    const items = Array.from(container.querySelectorAll('.cast-item'));
-                    const buttons = Array.from(container.querySelectorAll('.slider-btn'));
-
-                    items.sort((a, b) => {
-                        const aLive = a.getAttribute('data-is-live') === 'true';
-                        const bLive = b.getAttribute('data-is-live') === 'true';
-                        if (aLive && !bLive) return -1;
-                        if (!aLive && bLive) return 1;
-                        return 0;
-                    });
-
-                    items.forEach(item => container.appendChild(item));
-                    buttons.forEach(btn => container.appendChild(btn));
-
-                } catch (error) {
-                    console.error("데이터 로드 실패:", error);
+                    img.style.width = '180px';
+                    img.style.height = '180px';
+                    img.style.borderRadius = '50%';
+                    img.style.borderColor = '#fff';
+                    img.style.borderWidth = '5px';
+                    link.title = '';
                 }
             }
+        });
 
-            updateLiveStatus();
-            setInterval(updateLiveStatus, 60000);
+        const container = document.querySelector('.cast-slider');
+        const items = Array.from(container.querySelectorAll('.cast-item'));
+        const buttons = Array.from(container.querySelectorAll('.slider-btn'));
+
+        items.sort((a, b) => {
+            const aLive = a.getAttribute('data-is-live') === 'true';
+            const bLive = b.getAttribute('data-is-live') === 'true';
+            if (aLive && !bLive) return -1;
+            if (!aLive && bLive) return 1;
+            return 0;
+        });
+
+        items.forEach(item => container.appendChild(item));
+        buttons.forEach(btn => container.appendChild(btn));
+
+    } catch (error) {
+        console.error("데이터 로드 실패:", error);
+    }
+}
+
+updateLiveStatus();
+setInterval(updateLiveStatus, 60000);
     </script>
 </body>
 </html>
-
-
-
