@@ -10,16 +10,16 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 헌걸과 뉴걸의 코인노래방 w.쏭이",
-        "viewers": 34,
+        "title": "[고래상사] ㅋㅋ",
+        "viewers": 36,
         "thumbnail": "https://liveimg.afreecatv.com/m/289901128",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/289901128"
     },
     {
         "id": "ducke77",
         "is_live": true,
-        "title": "[고래상사] 후열 리매치 연습 드가자",
-        "viewers": 19,
+        "title": "[고래상사] 후열 리매치 연습 드가자 w울산큰고래 김마렌 삐요코 쏭이",
+        "viewers": 24,
         "thumbnail": "https://liveimg.afreecatv.com/m/289900882",
         "live_url": "https://play.sooplive.co.kr/ducke77/289900882"
     },
@@ -47,15 +47,15 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 오르카 데뷔 1일차/ 리매치의 신 삐요코",
-        "viewers": 44,
+        "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/289910696",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/289910696"
     },
     {
         "id": "gatgdf",
         "is_live": true,
-        "title": "[고래상사/수니문서버] 싱크룸 w.양꼬.지수",
-        "viewers": 33,
+        "title": "[고래상사/수니문서버] 리매치크루대전연습",
+        "viewers": 49,
         "thumbnail": "https://liveimg.afreecatv.com/m/289906062",
         "live_url": "https://play.sooplive.co.kr/gatgdf/289906062"
     },
@@ -63,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙리매치연습 내 축구화 가져와🐸",
-        "viewers": 78,
+        "viewers": 88,
         "thumbnail": "https://liveimg.afreecatv.com/m/289907318",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/289907318"
     },
@@ -73,10 +73,6 @@
     },
     {
         "id": "nunknown314",
-        "is_live": true,
-        "title": "[말티즈/고래상사] 리매치 벤치멤이여도 노력해요",
-        "viewers": 35,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289903264",
-        "live_url": "https://play.sooplive.co.kr/nunknown314/289903264"
+        "is_live": false
     }
 ]
