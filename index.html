@@ -355,21 +355,17 @@
                 setCanvasSize(); init(); animate();
             }
         });
-async function updateLiveStatus() {
-                try {
-                    // ============================================================
-                    // [중요] 테스트 환경에 맞춰 아래 두 줄 중 하나만 쓰세요!
-                    // ============================================================
-                    
-                    // 1. 내 컴퓨터에서 테스트할 때 (이걸 쓰세요)
-                    // const response = await fetch('./status.json?v=' + new Date().getTime());
-                    
-                    // 2. 깃허브에 올렸을 때 (본인 아이디로 수정해서 쓰세요)
-                    const response = await fetch('https://아이디.github.io/저장소이름/status.json?v=' + new Date().getTime());
-                    
-                    if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
 
-                    const data = await response.json();
+async function updateLiveStatus() {
+    try {
+        // [수정됨] './'는 "현재 위치"를 뜻합니다. 
+        // 깃허브 아이디나 저장소 이름을 몰라도 알아서 찾아줍니다.
+        const response = await fetch('./status.json?v=' + new Date().getTime());
+        
+        if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
+
+        const data = await response.json();
+// ------------------------------------------------------------------
                     
                     data.forEach(member => {
                         const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
@@ -463,5 +459,6 @@ async function updateLiveStatus() {
     </script>
 </body>
 </html>
+
 
 
