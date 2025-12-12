@@ -467,3 +467,25 @@ body {
     .section { margin: 0 2%; margin-bottom: 30px; }
     .logo-image { height: 40px; }
 }
+
+/* --- [추가됨] '자세히 알아보기' 버튼 스타일 --- */
+.about-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    background-color: #0d1a2f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-button:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
+    cursor: pointer;
+}
