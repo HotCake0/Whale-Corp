@@ -2,7 +2,7 @@ name: Update Live Status
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분마다 실행 (깃허브 무료 정책상 5~10분 딜레이가 있을 수 있음)
+    - cron: '*/5 * * * *' # 10분마다 실행 (깃허브 무료 정책상 5~10분 딜레이가 있을 수 있음)
   workflow_dispatch: # 수동으로 버튼 눌러서 실행 가능하게 함
 
 jobs:
