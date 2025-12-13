@@ -23,17 +23,13 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 10일차  / API 저금통 환영🌹",
-        "viewers": 195,
+        "viewers": 197,
         "thumbnail": "https://liveimg.afreecatv.com/m/289922700",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/289922700"
     },
     {
         "id": "melodingding",
-        "is_live": true,
-        "title": "[고래상사] 맹든링 // 나만 누렁이타고다녀...ㅠㅠ // 운못생",
-        "viewers": 20,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289926288",
-        "live_url": "https://play.sooplive.co.kr/melodingding/289926288"
+        "is_live": false
     },
     {
         "id": "soyoung6056",
@@ -47,7 +43,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 시참 리매치",
-        "viewers": 69,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/289931334",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/289931334"
     },
@@ -59,17 +55,13 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙내 세상이 다시 열렸다,, 오늘은,,?🐸",
-        "viewers": 28,
+        "viewers": 27,
         "thumbnail": "https://liveimg.afreecatv.com/m/289924384",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/289924384"
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 50,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289923100",
-        "live_url": "https://play.sooplive.co.kr/dmng50/289923100"
+        "is_live": false
     },
     {
         "id": "nunknown314",
