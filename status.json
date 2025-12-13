@@ -21,7 +21,11 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": false
+        "is_live": true,
+        "title": "🌹 [고래상사/파국]  맹든링 10일차  / API 저금통 환영🌹",
+        "viewers": 93,
+        "thumbnail": "https://liveimg.afreecatv.com/m/289922700",
+        "live_url": "https://play.sooplive.co.kr/gyeonjahee/289922700"
     },
     {
         "id": "melodingding",
