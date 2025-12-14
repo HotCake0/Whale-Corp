@@ -37,11 +37,7 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] 이제 곧 끌겁니다",
-        "viewers": 42,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289959356",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/289959356"
+        "is_live": false
     },
     {
         "id": "gatgdf",
@@ -51,7 +47,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙히든있는 개찐마단^_^🐸",
-        "viewers": 23,
+        "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/289951380",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/289951380"
     },
