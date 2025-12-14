@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 후열",
-        "viewers": 527,
+        "viewers": 505,
         "thumbnail": "https://liveimg.afreecatv.com/m/289956116",
         "live_url": "https://play.sooplive.co.kr/bach023/289956116"
     },
@@ -14,8 +14,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사/개찐마단] 이번엔 각이다",
-        "viewers": 25,
+        "title": "[고래상사/개찐마단] 이번엔 각이다 / 산타걸 한정방셀 1473개",
+        "viewers": 22,
         "thumbnail": "https://liveimg.afreecatv.com/m/289952518",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/289952518"
     },
@@ -23,7 +23,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "고[고래상사] 크루대전 리매치 연습할게요 w. 삐요코 미현영 김마렌 조아라",
-        "viewers": 23,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/289963220",
         "live_url": "https://play.sooplive.co.kr/ducke77/289963220"
     },
@@ -39,7 +39,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 11일차  / API 저금통 환영🌹",
-        "viewers": 212,
+        "viewers": 213,
         "thumbnail": "https://liveimg.afreecatv.com/m/289949388",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/289949388"
     },
@@ -47,7 +47,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 맹든링 // 나혼자 누렁이타고다녀...ㅠㅠ // 운못생",
-        "viewers": 23,
+        "viewers": 22,
         "thumbnail": "https://liveimg.afreecatv.com/m/289955112",
         "live_url": "https://play.sooplive.co.kr/melodingding/289955112"
     },
@@ -55,7 +55,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 아롱하세용",
-        "viewers": 80,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/289951566",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/289951566"
     },
@@ -67,7 +67,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 고래상사 리매치 연습할게요 w. 울산큰고래 밀크티냠 미현영 김마렌 조아라",
-        "viewers": 48,
+        "viewers": 49,
         "thumbnail": "https://liveimg.afreecatv.com/m/289959356",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/289959356"
     },
@@ -79,7 +79,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙짬내서 연습하긔🐸",
-        "viewers": 36,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/289951380",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/289951380"
     },
@@ -87,16 +87,12 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 71,
+        "viewers": 68,
         "thumbnail": "https://liveimg.afreecatv.com/m/289949212",
         "live_url": "https://play.sooplive.co.kr/dmng50/289949212"
     },
     {
         "id": "nunknown314",
-        "is_live": true,
-        "title": "[말티즈/고래상사] 리매치 진짜 얼마 안남았다 시참 연스으으읍 (w. 밀크티냠 삐요코 김마렌 조아라)",
-        "viewers": 35,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289952708",
-        "live_url": "https://play.sooplive.co.kr/nunknown314/289952708"
+        "is_live": false
     }
 ]
