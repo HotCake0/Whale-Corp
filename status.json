@@ -27,17 +27,13 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 크루소개 다시 쪼끔만 같이보기",
-        "viewers": 53,
+        "viewers": 54,
         "thumbnail": "https://liveimg.afreecatv.com/m/289978676",
         "live_url": "https://play.sooplive.co.kr/melodingding/289978676"
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "[고래상사/무래곤볼] 3계층 열리는 날 이에오",
-        "viewers": 59,
-        "thumbnail": "https://liveimg.afreecatv.com/m/289973226",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/289973226"
+        "is_live": false
     },
     {
         "id": "akdma9692",
