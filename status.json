@@ -21,7 +21,11 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": false
+        "is_live": true,
+        "title": "🌹 [고래상사/파국]  맹든링 12일차  / API 저금통 환영🌹",
+        "viewers": 236,
+        "thumbnail": "https://liveimg.afreecatv.com/m/289972262",
+        "live_url": "https://play.sooplive.co.kr/gyeonjahee/289972262"
     },
     {
         "id": "melodingding",
@@ -35,7 +39,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사/파국] 난.. 글럿어 잠못잤어",
-        "viewers": 26,
+        "viewers": 15,
         "thumbnail": "https://liveimg.afreecatv.com/m/289971640",
         "live_url": "https://play.sooplive.co.kr/akdma9692/289971640"
     },
@@ -53,7 +57,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
+        "viewers": 51,
+        "thumbnail": "https://liveimg.afreecatv.com/m/289972856",
+        "live_url": "https://play.sooplive.co.kr/dmng50/289972856"
     },
     {
         "id": "nunknown314",
