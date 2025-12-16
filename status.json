@@ -1,7 +1,11 @@
 [
     {
         "id": "bach023",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 리매치 크루대전 대회날! 6번째 우승은 고래상사를 위해서.",
+        "viewers": 331,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290001840",
+        "live_url": "https://play.sooplive.co.kr/bach023/290001840"
     },
     {
         "id": "doki0818",
@@ -17,17 +21,25 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사100일] 오늘이다 버종대2 리매치",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290001842",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290001842"
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]심장 튀어나가으갹ㄱ각 / 즐찾 이벤트 많관부",
+        "viewers": 22,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290001824",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290001824"
     },
     {
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 11일차  / 어렵다🌹",
-        "viewers": 182,
+        "viewers": 242,
         "thumbnail": "https://liveimg.afreecatv.com/m/289998520",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/289998520"
     },
@@ -39,7 +51,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 아롱하데욘",
-        "viewers": 32,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/289998730",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/289998730"
     },
@@ -53,7 +65,11 @@
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]리매치 크루대전 대기",
+        "viewers": 10,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290002084",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/290002084"
     },
     {
         "id": "kimmaren77",
@@ -63,7 +79,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 66,
+        "viewers": 73,
         "thumbnail": "https://liveimg.afreecatv.com/m/289998356",
         "live_url": "https://play.sooplive.co.kr/dmng50/289998356"
     },
