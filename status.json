@@ -1,17 +1,13 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 이게 고래상사야!!!!! 우승 & 100일 기념 후열",
-        "viewers": 607,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290001840",
-        "live_url": "https://play.sooplive.co.kr/bach023/290001840"
+        "is_live": false
     },
     {
         "id": "doki0818",
         "is_live": true,
-        "title": "[고래상사]리매치 크루대전 은퇴했었는데 후...",
-        "viewers": 25,
+        "title": "[고래상사]리매치 크루대전 감뽕티비",
+        "viewers": 105,
         "thumbnail": "https://liveimg.afreecatv.com/m/290003018",
         "live_url": "https://play.sooplive.co.kr/doki0818/290003018"
     },
@@ -19,7 +15,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사/개찐마단] 나무 토막내기중 🎄크리스마스 룰렛open",
-        "viewers": 19,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/289999396",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/289999396"
     },
@@ -31,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]고래상사 우승~!!!!!!!!!!!!!!!!/ 즐찾 이벤트 많관부",
-        "viewers": 32,
+        "viewers": 65,
         "thumbnail": "https://liveimg.afreecatv.com/m/290001824",
         "live_url": "https://play.sooplive.co.kr/joaras2/290001824"
     },
@@ -39,7 +35,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 13일차  / 흠🌹",
-        "viewers": 204,
+        "viewers": 206,
         "thumbnail": "https://liveimg.afreecatv.com/m/289998520",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/289998520"
     },
@@ -63,22 +59,18 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 삐요코 득점왕 고래상사 우승!!우승 & 100일 기념 후열",
-        "viewers": 42,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/290002394",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290002394"
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사]리매치 크루대전 고래상사 우승",
-        "viewers": 28,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290002084",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/290002084"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
-        "title": "[고래상사/개찐마단]💙크루대전 리매치 우승!! 고래상사 백일 축하해~🐸",
+        "title": "[고래상사/개찐마단]💙내실하러가자.🐸",
         "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290002398",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290002398"
@@ -87,7 +79,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 65,
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/289998356",
         "live_url": "https://play.sooplive.co.kr/dmng50/289998356"
     },
@@ -95,7 +87,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[말티즈/고래상사] 고래상사. 우승",
-        "viewers": 30,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290002396",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290002396"
     }
