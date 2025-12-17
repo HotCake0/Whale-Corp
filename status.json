@@ -1,7 +1,11 @@
 [
     {
         "id": "bach023",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 프로필사진 촬영 in용산",
+        "viewers": 142,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290021646",
+        "live_url": "https://play.sooplive.co.kr/bach023/290021646"
     },
     {
         "id": "doki0818",
