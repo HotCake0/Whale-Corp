@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 밥만 먹고 갑니다",
+        "viewers": 29,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290019872",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290019872"
     },
     {
         "id": "joaras2",
