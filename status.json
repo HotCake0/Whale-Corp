@@ -31,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 히히 악의 9강이당",
-        "viewers": 47,
+        "viewers": 64,
         "thumbnail": "https://liveimg.afreecatv.com/m/290024324",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290024324"
     },
@@ -49,11 +49,7 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": true,
-        "title": "[고래상사/개찐마단]💙출근해라, 개찐마단!🐸",
-        "viewers": 25,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290026380",
-        "live_url": "https://play.sooplive.co.kr/kimmaren77/290026380"
+        "is_live": false
     },
     {
         "id": "dmng50",
