@@ -27,7 +27,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 14일차  / API 도와주세요!🌹",
-        "viewers": 204,
+        "viewers": 200,
         "thumbnail": "https://liveimg.afreecatv.com/m/290023948",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290023948"
     },
@@ -39,7 +39,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 킹의 도움 부탁ㄱ드립니다 !! 100개 역팬 도전이로 !!",
-        "viewers": 100,
+        "viewers": 86,
         "thumbnail": "https://liveimg.afreecatv.com/m/290024324",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290024324"
     },
@@ -51,23 +51,19 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 조아라 농장 털기",
-        "viewers": 66,
+        "viewers": 81,
         "thumbnail": "https://liveimg.afreecatv.com/m/290027346",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290027346"
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사/수니문서버] 조아라 농장털기",
-        "viewers": 34,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290031832",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/290031832"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙출근해라, 개찐마단!🐸",
-        "viewers": 30,
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/290026380",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290026380"
     },
@@ -75,7 +71,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 68,
+        "viewers": 75,
         "thumbnail": "https://liveimg.afreecatv.com/m/290023916",
         "live_url": "https://play.sooplive.co.kr/dmng50/290023916"
     },
