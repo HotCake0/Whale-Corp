@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 버드컵 단츄용형팀 코치. 전 슈챔 박성주의 날카로운 분석",
-        "viewers": 457,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290047156",
-        "live_url": "https://play.sooplive.co.kr/bach023/290047156"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -35,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 피고난 하루에용",
-        "viewers": 35,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/290050382",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290050382"
     },
@@ -59,7 +55,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 296,
+        "viewers": 330,
         "thumbnail": "https://liveimg.afreecatv.com/m/290050014",
         "live_url": "https://play.sooplive.co.kr/dmng50/290050014"
     },
