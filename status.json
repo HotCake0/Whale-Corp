@@ -31,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 저는 현모양처에여",
-        "viewers": 47,
+        "viewers": 60,
         "thumbnail": "https://liveimg.afreecatv.com/m/290075784",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290075784"
     },
@@ -49,11 +49,7 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": true,
-        "title": "[고래상사/개찐마단]💙엄마는 바쁘다🐸",
-        "viewers": 24,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290077620",
-        "live_url": "https://play.sooplive.co.kr/kimmaren77/290077620"
+        "is_live": false
     },
     {
         "id": "dmng50",
