@@ -10,8 +10,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사/개찐마단] 도비 is Free!!! 🎄크리스마스 룰렛open",
-        "viewers": 26,
+        "title": "[고래상사/개찐마단] 도비 is Free!",
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290107180",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290107180"
     },
@@ -22,8 +22,8 @@
     {
         "id": "joaras2",
         "is_live": true,
-        "title": "[유니버스/고래상사]도깨비 13화 스타또 / 즐찾 이벤트 많관부",
-        "viewers": 65,
+        "title": "[유니버스/고래상사]도깨비 14화 달리는 중 / 즐찾 이벤트 많관부",
+        "viewers": 86,
         "thumbnail": "https://liveimg.afreecatv.com/m/290107582",
         "live_url": "https://play.sooplive.co.kr/joaras2/290107582"
     },
@@ -35,23 +35,19 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 운못생 // 돈버는듕",
-        "viewers": 32,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290110050",
         "live_url": "https://play.sooplive.co.kr/melodingding/290110050"
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "[고래상사/무래곤볼] 히히 3-2 깻지롱",
-        "viewers": 38,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290109100",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/290109100"
+        "is_live": false
     },
     {
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사/파국] 잔잔한 날 맹든링",
-        "viewers": 18,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/290101288",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290101288"
     },
@@ -61,17 +57,13 @@
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사] 녹방아닙니다.",
-        "viewers": 171,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290111210",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/290111210"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙8명분 내실 매드무비🐸",
-        "viewers": 47,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/290106468",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290106468"
     },
@@ -79,7 +71,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 73,
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/290102494",
         "live_url": "https://play.sooplive.co.kr/dmng50/290102494"
     },
