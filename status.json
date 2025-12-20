@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 토요일 밀냠도 새롭지?",
+        "viewers": 11,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290098176",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290098176"
     },
     {
         "id": "joaras2",
