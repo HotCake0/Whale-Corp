@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁이에요",
+        "viewers": 10,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290107180",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290107180"
     },
     {
         "id": "ducke77",
@@ -51,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙멀티태스킹을 많이하면 치매가 빨리 온대요🐸",
-        "viewers": 46,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290106468",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290106468"
     },
@@ -59,7 +63,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 99,
+        "viewers": 106,
         "thumbnail": "https://liveimg.afreecatv.com/m/290102494",
         "live_url": "https://play.sooplive.co.kr/dmng50/290102494"
     },
