@@ -3,27 +3,31 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 오늘 아주 중요합니다",
-        "viewers": 488,
+        "viewers": 543,
         "thumbnail": "https://liveimg.afreecatv.com/m/290134038",
         "live_url": "https://play.sooplive.co.kr/bach023/290134038"
     },
     {
         "id": "doki0818",
         "is_live": true,
-        "title": "[고래상사]비실비실한 상태임니다",
+        "title": "[고래상사]셜록홈즈 재밋겟당 히히",
         "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/290133830",
         "live_url": "https://play.sooplive.co.kr/doki0818/290133830"
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 도비는 크리스마스 트리 준비중^^",
+        "viewers": 11,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290136696",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290136696"
     },
     {
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] DNF 응원하기 펍지 마스터즈 인비테이셔널 DAY 3 수니문서버 도박자금 모으면서",
-        "viewers": 35,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/290123266",
         "live_url": "https://play.sooplive.co.kr/ducke77/290123266"
     },
@@ -31,7 +35,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]반갑시봉 / 즐찾 이벤트 많관부",
-        "viewers": 3,
+        "viewers": 22,
         "thumbnail": "https://liveimg.afreecatv.com/m/290135974",
         "live_url": "https://play.sooplive.co.kr/joaras2/290135974"
     },
@@ -39,7 +43,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 18일차 / 화이팅 ＞_＜!!🌹",
-        "viewers": 256,
+        "viewers": 239,
         "thumbnail": "https://liveimg.afreecatv.com/m/290128840",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290128840"
     },
@@ -49,7 +53,11 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사/무래곤볼] 내가와따 !",
+        "viewers": 18,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290136530",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/290136530"
     },
     {
         "id": "akdma9692",
@@ -67,7 +75,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙끝나가는 이 느낌.....🐸",
-        "viewers": 82,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290131458",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290131458"
     },
@@ -75,7 +83,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 473,
+        "viewers": 463,
         "thumbnail": "https://liveimg.afreecatv.com/m/290128470",
         "live_url": "https://play.sooplive.co.kr/dmng50/290128470"
     },
@@ -83,7 +91,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[말티즈/고래상사] 어제 모든걸 다 잃은 도박거지가 돌아왔습니다. 수니문서버",
-        "viewers": 35,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290125036",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290125036"
     }
