@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 일요일 뱅온~~",
+        "viewers": 20,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290123266",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290123266"
     },
     {
         "id": "joaras2",
@@ -25,11 +29,7 @@
     },
     {
         "id": "melodingding",
-        "is_live": true,
-        "title": "[고래상사] 운못생 // 돈버는듕",
-        "viewers": 27,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290110050",
-        "live_url": "https://play.sooplive.co.kr/melodingding/290110050"
+        "is_live": false
     },
     {
         "id": "soyoung6056",
