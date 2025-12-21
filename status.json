@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 오늘 아주 중요합니다",
-        "viewers": 480,
+        "viewers": 488,
         "thumbnail": "https://liveimg.afreecatv.com/m/290134038",
         "live_url": "https://play.sooplive.co.kr/bach023/290134038"
     },
@@ -11,7 +11,7 @@
         "id": "doki0818",
         "is_live": true,
         "title": "[고래상사]비실비실한 상태임니다",
-        "viewers": 20,
+        "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/290133830",
         "live_url": "https://play.sooplive.co.kr/doki0818/290133830"
     },
@@ -29,13 +29,17 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]반갑시봉 / 즐찾 이벤트 많관부",
+        "viewers": 3,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290135974",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290135974"
     },
     {
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사/파국]  맹든링 18일차 / 화이팅 ＞_＜!!🌹",
-        "viewers": 262,
+        "viewers": 256,
         "thumbnail": "https://liveimg.afreecatv.com/m/290128840",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290128840"
     },
@@ -63,7 +67,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙끝나가는 이 느낌.....🐸",
-        "viewers": 84,
+        "viewers": 82,
         "thumbnail": "https://liveimg.afreecatv.com/m/290131458",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290131458"
     },
@@ -71,15 +75,15 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 479,
+        "viewers": 473,
         "thumbnail": "https://liveimg.afreecatv.com/m/290128470",
         "live_url": "https://play.sooplive.co.kr/dmng50/290128470"
     },
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[말티즈/고래상사] 오늘만... 역팬갑 시참 야추다이스 내기빵 갑니다",
-        "viewers": 37,
+        "title": "[말티즈/고래상사] 어제 모든걸 다 잃은 도박거지가 돌아왔습니다. 수니문서버",
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290125036",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290125036"
     }
