@@ -9,11 +9,7 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사/개찐마단] 도비의 크리스마스 준비",
-        "viewers": 23,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290136696",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290136696"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -25,11 +21,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사/파국]  맹든링 18일차 / 화이팅 ＞_＜!!🌹",
-        "viewers": 197,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290128840",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290128840"
+        "is_live": false
     },
     {
         "id": "melodingding",
@@ -39,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 나폴레옹 수면법 조진다",
-        "viewers": 26,
+        "viewers": 25,
         "thumbnail": "https://liveimg.afreecatv.com/m/290136530",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290136530"
     },
@@ -59,17 +51,13 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙끝나가는 이 느낌.....🐸",
-        "viewers": 29,
+        "viewers": 28,
         "thumbnail": "https://liveimg.afreecatv.com/m/290131458",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290131458"
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 75,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290128470",
-        "live_url": "https://play.sooplive.co.kr/dmng50/290128470"
+        "is_live": false
     },
     {
         "id": "nunknown314",
