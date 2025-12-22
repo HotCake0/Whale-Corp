@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 으악!!!!!!!!",
-        "viewers": 310,
+        "viewers": 416,
         "thumbnail": "https://liveimg.afreecatv.com/m/290156200",
         "live_url": "https://play.sooplive.co.kr/bach023/290156200"
     },
@@ -21,7 +21,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]반갑시봉~ / 즐찾 이벤트 많관부",
+        "viewers": 15,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290156876",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290156876"
     },
     {
         "id": "gyeonjahee",
@@ -35,7 +39,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 마지막 계층주만 남아써요",
-        "viewers": 25,
+        "viewers": 24,
         "thumbnail": "https://liveimg.afreecatv.com/m/290155822",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290155822"
     },
@@ -55,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙유종의 미 거두기🐸",
-        "viewers": 33,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290155834",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290155834"
     },
@@ -63,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]억마사냥꾼 가축/ api 이벤트 중입니다",
-        "viewers": 169,
+        "viewers": 158,
         "thumbnail": "https://liveimg.afreecatv.com/m/290153022",
         "live_url": "https://play.sooplive.co.kr/dmng50/290153022"
     },
