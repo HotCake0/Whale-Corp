@@ -31,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 꼴등 무래곤볼 드디어 빛을 발했어요",
-        "viewers": 41,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290181452",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290181452"
     },
@@ -57,11 +57,7 @@
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사][억마사냥꾼] 미궁하드 맛보러 갑니다",
-        "viewers": 120,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290181430",
-        "live_url": "https://play.sooplive.co.kr/dmng50/290181430"
+        "is_live": false
     },
     {
         "id": "nunknown314",
