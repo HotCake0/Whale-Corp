@@ -115,11 +115,13 @@ body {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
 }
 .hero-button:hover {
     background-color: #fff;
     color: #0d1a2f;
+    transform: translateY(-2px);
 }
 .section {
     padding: 100px 0;
@@ -137,31 +139,34 @@ body {
     color: #0d1a2f;
 }
 .bg-light { background-color: rgba(248, 249, 250, 0.85); }
-.services-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+
+/* --- [신규] 멀티뷰 섹션 스타일 --- */
+.bg-multiview {
+    background: linear-gradient(135deg, rgba(26, 42, 79, 0.9) 0%, rgba(52, 106, 154, 0.9) 100%);
+    color: #fff;
 }
-.service-item {
-    background: #fff;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-decoration: none;
-    color: inherit;
-    display: block;
+.bg-multiview h2 { color: #fff !important; }
+.bg-multiview p { 
+    font-size: 1.2rem; 
+    margin-bottom: 30px; 
+    color: rgba(255,255,255,0.9); 
 }
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-.service-item h3 {
-    font-size: 1.5rem;
-    color: #0d1a2f;
+.beta-badge {
+    display: inline-block;
+    background: #e74c3c;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
+.bg-multiview .hero-button:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
+}
+
 .slider-btn {
     position: absolute;
     top: 40%;
@@ -206,7 +211,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     transition: transform 0.3s, background-color 0.3s;
-    position: relative; /* 자식 요소 절대 위치 기준 */
+    position: relative;
 }
 .cast-item a:hover {
     transform: scale(1.03);
@@ -219,7 +224,7 @@ body {
     object-fit: cover;
     border: 5px solid #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s; /* 애니메이션 효과 추가 */
+    transition: all 0.3s;
 }
 .cast-item h3 {
     margin-top: 20px;
@@ -230,7 +235,6 @@ body {
     color: #3498db;
     font-style: italic;
     margin-top: 5px;
-    transition: all 0.3s ease;
 }
 .cast-item .catchphrase {
     font-size: 1rem;
@@ -246,7 +250,6 @@ body {
     opacity: 1;
     margin-top: 10px;
 }
-/* 라이브 뱃지 스타일 */
 .live-badge {
     position: absolute;
     top: 20px;
@@ -260,45 +263,8 @@ body {
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     animation: blink 2s infinite;
-    display: none; /* 기본은 숨김 */
+    display: none;
 }
-
-/* --- 추가된 스타일: 방송 중일 때 프로필 변경 --- */
-.cast-item.live img {
-    width: 100%; /* 카드 너비에 맞춤 */
-    height: auto;
-    border-radius: 10px; /* 사각형 */
-    aspect-ratio: 16 / 9; /* 방송 화면 비율 */
-    border: 3px solid #e74c3c; /* 빨간 테두리 */
-    box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
-}
-
-.cast-item.live .live-badge {
-    display: block; /* 방송 중이면 배지 표시 */
-}
-
-/* 시청자 수 배지 스타일 */
-.viewer-count {
-    position: absolute;
-    /* 16:9 비율 이미지 하단 즈음에 위치하도록 조정 */
-    top: 125px; 
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: none; /* 기본 숨김 */
-    align-items: center;
-    gap: 4px;
-    z-index: 10;
-}
-
-.cast-item.live .viewer-count {
-    display: flex; /* 방송 중이면 표시 */
-}
-
 
 #prevBtn, #mdPrevBtn { left: -25px; }
 #nextBtn, #mdNextBtn { right: -25px; }
@@ -404,47 +370,24 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden; opacity: 0;
     transition: visibility 0s 0.3s, opacity 0.3s ease-out;
 }
 .modal-overlay.active {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible; opacity: 1;
     transition: opacity 0.3s ease-out;
 }
 .modal-content {
-    position: relative;
-    background: #fff;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    max-width: 90%;
-    width: 350px;
+    position: relative; background: #fff; padding: 8px; border-radius: 8px;
+    max-width: 90%; width: 350px;
     animation: modalFadeIn 0.4s ease-out;
 }
-.modal-content img {
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-}
+.modal-content img { display: block; width: 100%; border-radius: 4px; }
 .modal-close {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
+    position: absolute; top: -15px; right: -15px; width: 35px; height: 35px;
+    background: #fff; border: none; border-radius: 50%; font-size: 24px;
+    cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex; justify-content: center; align-items: center;
 }
 
 .main-footer {
@@ -452,7 +395,6 @@ body {
     color: #fff;
     padding: 50px 0 30px;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 .footer-info p { margin: 5px 0; }
 .copyright { margin-top: 30px; font-size: 0.9rem; }
@@ -461,14 +403,10 @@ body {
     .main-header .container { flex-direction: column; }
     .main-nav ul { margin-top: 15px; }
     .hero-title { font-size: 2.8rem; }
-    .hero-subtitle-en { font-size: 1rem; }
-    .hero-subtitle-ko { font-size: 1.1rem; }
     .slider-btn { display: none; }
     .section { margin: 0 2%; margin-bottom: 30px; }
-    .logo-image { height: 40px; }
 }
 
-/* --- [추가됨] '자세히 알아보기' 버튼 스타일 --- */
 .about-button {
     display: inline-block;
     margin-top: 30px;
@@ -478,14 +416,9 @@ body {
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    font-size: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
 .about-button:hover {
     background-color: #3498db;
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
-    cursor: pointer;
 }
