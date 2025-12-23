@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고래상사 멀티뷰 - LIVE 전용</title>
+    <title>고래상사 LIVE 멀티뷰</title>
     <style>
+        /* 기본 스타일 설정 */
         :root {
-            --bg-color: #0f0f0f;
+            --bg-dark: #0f0f0f;
             --card-bg: #1e1e1e;
-            --accent-color: #00ffa3;
-            --text-color: #ffffff;
+            --accent-green: #00ffa3;
+            --text-white: #ffffff;
+            --text-gray: #aaaaaa;
         }
 
         body {
-            font-family: 'Pretendard', -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
             margin: 0;
             display: flex;
             flex-direction: column;
@@ -23,65 +25,83 @@
             overflow: hidden;
         }
 
-        /* 방송 중인 멤버 선택 바 */
-        #live-selector {
+        /* 1. 상단 선택 바 */
+        header {
             background-color: var(--card-bg);
-            padding: 10px 20px;
+            padding: 12px 20px;
             display: flex;
-            gap: 12px;
-            overflow-x: auto;
-            border-bottom: 2px solid #333;
             align-items: center;
-            min-height: 80px;
+            gap: 15px;
+            border-bottom: 2px solid #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            z-index: 10;
         }
 
-        .member-card {
+        .live-dot {
+            width: 10px; height: 10px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0.3; } }
+
+        #member-list {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .member-btn {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             background: #2a2a2a;
-            padding: 5px 12px;
-            border-radius: 8px;
-            cursor: pointer;
             border: 2px solid transparent;
-            transition: 0.2s;
+            padding: 6px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.2s all ease;
             white-space: nowrap;
         }
 
-        .member-card:hover { background: #333; }
-        .member-card.active { border-color: var(--accent-color); background: #1a3a2a; }
+        .member-btn:hover { background: #3a3a3a; }
+        .member-btn.active {
+            border-color: var(--accent-green);
+            background: #1a3a2a;
+        }
 
-        .thumb-mini {
-            width: 40px;
-            height: 25px;
+        .member-btn img {
+            width: 32px; height: 20px;
             object-fit: cover;
             border-radius: 4px;
         }
 
-        .info-mini { display: flex; flex-direction: column; }
-        .name { font-size: 0.9rem; font-weight: bold; }
-        .viewers { font-size: 0.75rem; color: #aaa; }
+        .member-info { font-size: 0.85rem; font-weight: 600; }
+        .viewer-count { font-size: 0.7rem; color: var(--text-gray); }
 
-        /* 멀티뷰 영역 */
+        /* 2. 멀티뷰 그리드 레이아웃 */
         #view-grid {
             flex-grow: 1;
             display: grid;
             gap: 5px;
             padding: 5px;
-            background: #000;
+            background-color: #000;
         }
 
-        /* 선택 인원수에 따른 그리드 레이아웃 조절 */
+        /* 인원수에 따른 동적 그리드 클래스 */
         .grid-1 { grid-template-columns: 1fr; }
         .grid-2 { grid-template-columns: 1fr 1fr; }
         .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
         .grid-5, .grid-6 { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; }
 
-        .video-container {
+        .video-wrapper {
             position: relative;
             width: 100%;
             height: 100%;
-            background: #000;
+            background: #121212;
         }
 
         iframe {
@@ -90,115 +110,126 @@
             border: none;
         }
 
-        .no-data {
+        .empty-msg {
             position: absolute;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            color: #666;
+            color: #555;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div id="live-selector">
-        <span style="color: var(--accent-color); font-weight: bold; margin-right: 10px;">LIVE NOW 🔴</span>
-        <div id="member-list" style="display: flex; gap: 10px;">
+    <header>
+        <div style="display: flex; align-items: center; gap: 8px; min-width: 110px;">
+            <span class="live-dot"></span>
+            <strong style="font-size: 0.9rem;">LIVE NOW</strong>
+        </div>
+        <div id="member-list">
             </div>
-    </div>
+    </header>
 
     <div id="view-grid" class="grid-1">
-        <div class="no-data">방송 중인 직원을 선택해 주세요.</div>
+        <div class="empty-msg">
+            <h2>고래상사 멀티뷰</h2>
+            <p>상단에서 방송 중인 직원을 선택하여 시청하세요!</p>
+        </div>
     </div>
 
     <script>
-        let selectedIds = new Set();
-        let crewData = [];
+        let selectedMembers = new Set();
+        let statusData = [];
 
-        // 1. status.json 데이터 불러오기
-        async function loadStatus() {
+        // 1. JSON 파일 로드 (파이썬이 생성한 status.json)
+        async function fetchStatus() {
             try {
-                // 파이썬이 생성한 파일을 가져옵니다.
                 const response = await fetch('status.json');
-                crewData = await response.json();
+                if (!response.ok) throw new Error('파일을 찾을 수 없습니다.');
+                statusData = await response.json();
                 renderSelector();
-            } catch (error) {
-                console.error("데이터를 불러오는데 실패했습니다.", error);
-                document.getElementById('member-list').innerHTML = "JSON 데이터를 찾을 수 없습니다.";
+            } catch (err) {
+                console.error("Error:", err);
+                document.getElementById('member-list').innerHTML = 
+                    '<span style="color:#666; font-size:0.8rem;">데이터를 불러올 수 없습니다. (서버 확인 필요)</span>';
             }
         }
 
-        // 2. 방송 중인 멤버만 상단에 표시
+        // 2. 상단 버튼 렌더링 (is_live가 true인 직원만)
         function renderSelector() {
-            const listEl = document.getElementById('member-list');
-            listEl.innerHTML = '';
+            const listContainer = document.getElementById('member-list');
+            listContainer.innerHTML = '';
 
-            const liveMembers = crewData.filter(m => m.is_live);
+            const liveOnes = statusData.filter(m => m.is_live);
 
-            if (liveMembers.length === 0) {
-                listEl.innerHTML = "<span style='font-size: 0.9rem; color: #888;'>현재 방송 중인 직원이 없습니다.</span>";
+            if (liveOnes.length === 0) {
+                listContainer.innerHTML = '<span style="color:#666;">현재 방송 중인 직원이 없습니다.</span>';
                 return;
             }
 
-            liveMembers.forEach(member => {
-                const card = document.createElement('div');
-                card.className = `member-card ${selectedIds.has(member.id) ? 'active' : ''}`;
-                card.onclick = () => toggleStream(member.id);
+            liveOnes.forEach(member => {
+                const btn = document.createElement('div');
+                btn.className = `member-btn ${selectedMembers.has(member.id) ? 'active' : ''}`;
+                btn.onclick = () => toggleView(member.id);
                 
-                card.innerHTML = `
-                    <img class="thumb-mini" src="${member.thumbnail}" onerror="this.src='https://via.placeholder.com/40x25'">
-                    <div class="info-mini">
-                        <span class="name">${member.id}</span>
-                        <span class="viewers">👤 ${member.viewers}명</span>
+                btn.innerHTML = `
+                    <img src="${member.thumbnail}" onerror="this.src='https://via.placeholder.com/32x20?text=NO'">
+                    <div class="member-info">
+                        <div>${member.id}</div>
+                        <div class="viewer-count">👤 ${member.viewers.toLocaleString()}</div>
                     </div>
                 `;
-                listEl.appendChild(card);
+                listContainer.appendChild(btn);
             });
         }
 
-        // 3. 클릭 시 선택/해제 토글
-        function toggleStream(id) {
-            if (selectedIds.has(id)) {
-                selectedIds.delete(id);
+        // 3. 멀티뷰 토글 기능
+        function toggleView(id) {
+            if (selectedMembers.has(id)) {
+                selectedMembers.delete(id);
             } else {
-                selectedIds.add(id);
+                selectedMembers.add(id);
             }
             renderSelector();
             updateGrid();
         }
 
-        // 4. 아이프레임 그리드 업데이트
+        // 4. 아이프레임 그리드 업데이트 (SOOP 정식 주소 사용)
         function updateGrid() {
-            const gridEl = document.getElementById('view-grid');
-            gridEl.innerHTML = '';
+            const gridContainer = document.getElementById('view-grid');
+            gridContainer.innerHTML = '';
 
-            if (selectedIds.size === 0) {
-                gridEl.innerHTML = '<div class="no-data">방송 중인 직원을 선택해 주세요.</div>';
+            const count = selectedMembers.size;
+            if (count === 0) {
+                gridContainer.innerHTML = '<div class="empty-msg"><p>선택된 방송이 없습니다.</p></div>';
                 return;
             }
 
-            // 인원수에 맞춰 그리드 클래스 변경
-            const count = selectedIds.size;
-            gridEl.className = count >= 5 ? 'grid-5' : count >= 3 ? 'grid-3' : count === 2 ? 'grid-2' : 'grid-1';
+            // 인원수에 맞춰 그리드 레이아웃 설정
+            gridContainer.className = 
+                count >= 5 ? 'grid-5' : 
+                count >= 3 ? 'grid-3' : 
+                count === 2 ? 'grid-2' : 'grid-1';
 
-            selectedIds.forEach(id => {
-                const container = document.createElement('div');
-                container.className = 'video-container';
+            selectedMembers.forEach(id => {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'video-wrapper';
                 
-                // SOOP 임베드 URL은 play.soop.nm/embed/아이디 형식을 사용합니다.
-                container.innerHTML = `
+                // SOOP 공식 임베드 주소: https://play.sooplive.co.kr/{아이디}/embed
+                wrapper.innerHTML = `
                     <iframe 
-                        src="https://play.soop.nm/embed/${id}" 
-                        allowfullscreen>
+                        src="https://play.sooplive.co.kr/${id}/embed" 
+                        allowfullscreen 
+                        scrolling="no">
                     </iframe>
                 `;
-                gridEl.appendChild(container);
+                gridContainer.appendChild(wrapper);
             });
         }
 
-        // 초기 실행
-        loadStatus();
-        // 1분마다 상태 자동 갱신
-        setInterval(loadStatus, 60000);
+        // 초기 로드 및 30초마다 갱신 (자동 업데이트)
+        fetchStatus();
+        setInterval(fetchStatus, 30000); 
     </script>
 </body>
 </html>
