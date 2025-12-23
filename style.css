@@ -278,24 +278,34 @@ body {
     border-top: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
-.multiview-banner p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 25px;
+/* 멀티뷰 배너 영역: 버튼을 중앙으로 */
+.multiview-banner {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    margin-top: 50px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* 상단 구분선 */
+    width: 100%;
 }
 
+/* 멀티뷰 버튼 스타일 */
 .multiview-btn {
     background-color: #0d1a2f;
     border-color: #0d1a2f;
     color: #fff;
     font-size: 1.1rem;
-    padding: 16px 45px;
+    padding: 16px 50px;      /* 버튼 크기 조정 */
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .multiview-btn:hover {
     background-color: #3498db;
     border-color: #3498db;
     color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
 }
 
 /* ==========================================================================
@@ -426,3 +436,4 @@ body {
     .section { margin: 0 3% 30px; padding: 60px 0; }
     .section h2 { font-size: 2rem; }
 }
+
