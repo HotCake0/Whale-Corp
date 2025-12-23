@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고래상사 LIVE 멀티뷰</title>
     <style>
-        /* 기본 스타일 설정 */
         :root {
             --bg-dark: #0f0f0f;
             --card-bg: #1e1e1e;
@@ -25,7 +24,7 @@
             overflow: hidden;
         }
 
-        /* 1. 상단 선택 바 */
+        /* 상단 선택 바 */
         header {
             background-color: var(--card-bg);
             padding: 12px 20px;
@@ -33,7 +32,6 @@
             align-items: center;
             gap: 15px;
             border-bottom: 2px solid #333;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             z-index: 10;
         }
 
@@ -44,14 +42,12 @@
             display: inline-block;
             animation: blink 1.5s infinite;
         }
-
         @keyframes blink { 50% { opacity: 0.3; } }
 
         #member-list {
             display: flex;
             gap: 10px;
             overflow-x: auto;
-            scrollbar-width: thin;
         }
 
         .member-btn {
@@ -63,11 +59,10 @@
             padding: 6px 14px;
             border-radius: 30px;
             cursor: pointer;
-            transition: 0.2s all ease;
+            transition: 0.2s;
             white-space: nowrap;
         }
 
-        .member-btn:hover { background: #3a3a3a; }
         .member-btn.active {
             border-color: var(--accent-green);
             background: #1a3a2a;
@@ -79,10 +74,10 @@
             border-radius: 4px;
         }
 
-        .member-info { font-size: 0.85rem; font-weight: 600; }
-        .viewer-count { font-size: 0.7rem; color: var(--text-gray); }
+        .member-info { font-size: 0.85rem; font-weight: bold; }
+        .viewer-count { font-size: 0.7rem; color: var(--text-gray); font-weight: normal; }
 
-        /* 2. 멀티뷰 그리드 레이아웃 */
+        /* 멀티뷰 그리드 */
         #view-grid {
             flex-grow: 1;
             display: grid;
@@ -91,24 +86,12 @@
             background-color: #000;
         }
 
-        /* 인원수에 따른 동적 그리드 클래스 */
         .grid-1 { grid-template-columns: 1fr; }
         .grid-2 { grid-template-columns: 1fr 1fr; }
         .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
-        .grid-5, .grid-6 { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; }
 
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: #121212;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        .video-wrapper { position: relative; width: 100%; height: 100%; }
+        iframe { width: 100%; height: 100%; border: none; }
 
         .empty-msg {
             position: absolute;
@@ -122,112 +105,115 @@
 <body>
 
     <header>
-        <div style="display: flex; align-items: center; gap: 8px; min-width: 110px;">
+        <div style="min-width: 110px;">
             <span class="live-dot"></span>
-            <strong style="font-size: 0.9rem;">LIVE NOW</strong>
+            <strong style="font-size: 0.9rem; margin-left: 5px;">LIVE (<span id="count">0</span>/4)</strong>
         </div>
-        <div id="member-list">
-            </div>
+        <div id="member-list"></div>
     </header>
 
     <div id="view-grid" class="grid-1">
         <div class="empty-msg">
             <h2>고래상사 멀티뷰</h2>
-            <p>상단에서 방송 중인 직원을 선택하여 시청하세요!</p>
+            <p>최대 4명까지 선택하여 시청할 수 있습니다.</p>
         </div>
     </div>
 
     <script>
+        // 1. 직원 ID와 이름 매핑
+        const MEMBER_NAMES = {
+            "bach023": "울산큰고래",
+            "doki0818": "감자가비",
+            "xpdpfv2": "이지수",
+            "ducke77": "밀크티냠",
+            "joaras2": "조아라",
+            "gyeonjahee": "견자희",
+            "melodingding": "멜로딩딩",
+            "soyoung6056": "빡쏘",
+            "akdma9692": "온자두",
+            "nlov555jij": "삐요코",
+            "gatgdf": "쏭이",
+            "kimmaren77": "김마렌",
+            "dmng50": "빵땅콩",
+            "nunknown314": "미현영"
+        };
+
         let selectedMembers = new Set();
         let statusData = [];
 
-        // 1. JSON 파일 로드 (파이썬이 생성한 status.json)
         async function fetchStatus() {
             try {
                 const response = await fetch('status.json');
-                if (!response.ok) throw new Error('파일을 찾을 수 없습니다.');
                 statusData = await response.json();
                 renderSelector();
             } catch (err) {
-                console.error("Error:", err);
-                document.getElementById('member-list').innerHTML = 
-                    '<span style="color:#666; font-size:0.8rem;">데이터를 불러올 수 없습니다. (서버 확인 필요)</span>';
+                console.error("데이터 로드 실패");
             }
         }
 
-        // 2. 상단 버튼 렌더링 (is_live가 true인 직원만)
         function renderSelector() {
             const listContainer = document.getElementById('member-list');
             listContainer.innerHTML = '';
-
             const liveOnes = statusData.filter(m => m.is_live);
-
-            if (liveOnes.length === 0) {
-                listContainer.innerHTML = '<span style="color:#666;">현재 방송 중인 직원이 없습니다.</span>';
-                return;
-            }
 
             liveOnes.forEach(member => {
                 const btn = document.createElement('div');
                 btn.className = `member-btn ${selectedMembers.has(member.id) ? 'active' : ''}`;
                 btn.onclick = () => toggleView(member.id);
                 
+                // 이름 매핑 확인 후 표시
+                const displayName = MEMBER_NAMES[member.id] || member.id;
+
                 btn.innerHTML = `
-                    <img src="${member.thumbnail}" onerror="this.src='https://via.placeholder.com/32x20?text=NO'">
+                    <img src="${member.thumbnail}">
                     <div class="member-info">
-                        <div>${member.id}</div>
+                        <div>${displayName}</div>
                         <div class="viewer-count">👤 ${member.viewers.toLocaleString()}</div>
                     </div>
                 `;
                 listContainer.appendChild(btn);
             });
+            document.getElementById('count').innerText = selectedMembers.size;
         }
 
-        // 3. 멀티뷰 토글 기능
         function toggleView(id) {
             if (selectedMembers.has(id)) {
                 selectedMembers.delete(id);
             } else {
+                // 인원 제한 로직 (4명)
+                if (selectedMembers.size >= 4) {
+                    alert("멀티뷰는 최대 4명까지만 시청 가능합니다.");
+                    return;
+                }
                 selectedMembers.add(id);
             }
             renderSelector();
             updateGrid();
         }
 
-        // 4. 아이프레임 그리드 업데이트 (SOOP 정식 주소 사용)
         function updateGrid() {
             const gridContainer = document.getElementById('view-grid');
             gridContainer.innerHTML = '';
-
             const count = selectedMembers.size;
+
             if (count === 0) {
                 gridContainer.innerHTML = '<div class="empty-msg"><p>선택된 방송이 없습니다.</p></div>';
                 return;
             }
 
-            // 인원수에 맞춰 그리드 레이아웃 설정
-            gridContainer.className = 
-                count >= 5 ? 'grid-5' : 
-                count >= 3 ? 'grid-3' : 
-                count === 2 ? 'grid-2' : 'grid-1';
+            // 레이아웃 클래스 적용 (최대 4인용)
+            gridContainer.className = count >= 3 ? 'grid-3' : count === 2 ? 'grid-2' : 'grid-1';
 
             selectedMembers.forEach(id => {
                 const wrapper = document.createElement('div');
                 wrapper.className = 'video-wrapper';
-                
-                // SOOP 공식 임베드 주소: https://play.sooplive.co.kr/{아이디}/embed
                 wrapper.innerHTML = `
-                    <iframe 
-                        src="https://play.sooplive.co.kr/${id}/embed" 
-                        allowfullscreen 
-                        scrolling="no">
-                    </iframe>
+                    <iframe src="https://play.sooplive.co.kr/${id}/embed" allowfullscreen scrolling="no"></iframe>
                 `;
                 gridContainer.appendChild(wrapper);
             });
         }
 
-        // 초기 로드 및 30초마다 갱신 (자동 업데이트)
         fetchStatus();
         setInterval(fetchStatus, 30000); 
     </script>
