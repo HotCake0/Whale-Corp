@@ -1,32 +1,26 @@
-/* ==========================================================================
-   1. 애니메이션 (Animations)
-   ========================================================================== */
+/* --- 애니메이션 설정 --- */
 @keyframes fadeInSlideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes modalFadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
-
 @keyframes blink { 
     0% { opacity: 1; } 
     50% { opacity: 0.7; } 
     100% { opacity: 1; } 
 }
 
-/* ==========================================================================
-   2. 기본 설정 (Base Styles)
-   ========================================================================== */
+/* --- 기본 스타일 (폰트 원래대로 복구) --- */
 body {
     margin: 0;
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-family: 'Pretendard', sans-serif; /* 원래 설정으로 복구 */
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background-color: #0d1a2f; /* 배경 캔버스 미작동 대비용 */
+    background-color: #0d1a2f; 
 }
 
 #background-canvas {
@@ -45,50 +39,38 @@ body {
     padding: 20px;
 }
 
-/* ==========================================================================
-   3. 헤더 & 네비게이션 (Header & Nav)
-   ========================================================================== */
+/* --- 헤더 스타일 --- */
 .main-header {
     background-color: rgba(13, 26, 47, 0.85);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     color: #fff;
     padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo-image { height: 50px; width: auto; }
-
 .main-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
-
 .main-nav li { margin-left: 25px; }
-
 .main-nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s;
 }
-
 .main-nav a:hover { color: #3498db; }
 
-/* ==========================================================================
-   4. 히어로 섹션 (Hero Section)
-   ========================================================================== */
+/* --- 히어로 섹션 --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -97,343 +79,218 @@ body {
     color: #fff;
     text-align: center;
 }
-
 .hero-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 50px 60px;
-    border-radius: 20px;
+    border-radius: 15px;
     opacity: 0;
     animation: fadeInSlideUp 1s 0.5s ease-out forwards;
 }
-
 .hero-title {
     margin: 0;
     font-size: 4rem;
     font-weight: 900;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-
 .hero-subtitle-ko {
-    margin: 15px 0 35px 0;
+    margin: 10px 0 30px 0;
     font-size: 1.3rem;
-    font-weight: 500;
-    opacity: 0.9;
 }
-
 .hero-button {
     display: inline-block;
-    padding: 14px 35px;
+    padding: 12px 30px;
     border: 2px solid #fff;
     border-radius: 30px;
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
 }
-
 .hero-button:hover {
     background-color: #fff;
     color: #0d1a2f;
-    transform: translateY(-3px);
 }
 
-/* ==========================================================================
-   5. 공통 섹션 스타일 (Section Styles)
-   ========================================================================== */
+/* --- 섹션 공통 --- */
 .section {
     padding: 100px 0;
-    background-color: rgba(255, 255, 255, 0.92); 
+    background-color: rgba(255, 255, 255, 0.85); 
     margin: 0 5% 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
 }
-
 .section h2 {
     text-align: center;
     font-size: 2.8rem;
     margin-bottom: 50px;
     color: #0d1a2f;
-    font-weight: 800;
 }
 
-.bg-light { background-color: rgba(248, 249, 250, 0.92); }
-
-/* ==========================================================================
-   6. 출연진 슬라이더 (Cast Slider)
-   ========================================================================== */
+/* --- 출연진 슬라이더 --- */
 .cast-slider-container { position: relative; }
-
 .cast-slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 20px 0;
-    -ms-overflow-style: none;
     scrollbar-width: none;
+    padding: 10px;
 }
-
 .cast-slider::-webkit-scrollbar { display: none; }
-
 .cast-item {
     flex: 0 0 280px;
-    margin: 0 15px;
+    margin: 0 10px;
     text-align: center;
-    scroll-snap-align: center;
 }
-
 .cast-item a {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 20px;
-    border-radius: 15px;
-    transition: all 0.3s;
+    padding: 15px;
+    transition: 0.3s;
 }
-
-.cast-item a:hover {
-    background-color: #f8f9fa;
-    transform: translateY(-5px);
-}
-
 .cast-item img {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
-.cast-item h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #0d1a2f;
-}
-
-.cast-item .keywords {
-    color: #3498db;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-top: 5px;
-}
-
+.cast-item h3 { margin-top: 20px; font-size: 1.5rem; }
+.cast-item .keywords { color: #3498db; font-style: italic; }
 .cast-item .catchphrase {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 600;
     color: #e74c3c;
-    font-weight: 700;
     opacity: 0;
-    margin-top: 10px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
+.cast-item a:hover .catchphrase { opacity: 1; margin-top: 10px; }
 
-.cast-item a:hover .catchphrase { opacity: 1; }
-
+/* 라이브 뱃지 */
 .live-badge {
     position: absolute;
-    top: 25px;
-    right: 25px; 
+    top: 20px;
+    right: 20px; 
     background-color: #e74c3c;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-weight: 800;
-    font-size: 0.75rem;
-    animation: blink 1.5s infinite;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    animation: blink 2s infinite;
     display: none;
-    box-shadow: 0 3px 8px rgba(231, 76, 60, 0.3);
 }
 
 /* 슬라이더 버튼 */
 .slider-btn {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    background: #fff;
-    border: none;
-    width: 50px;
-    height: 50px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
     border-radius: 50%;
+    width: 50px; height: 50px;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    z-index: 10;
 }
-
-.slider-btn:hover { background: #3498db; color: #fff; }
 #prevBtn { left: -25px; }
 #nextBtn { right: -25px; }
 
-/* ==========================================================================
-   7. 멀티뷰 배너 (Multiview Banner - 출연진 섹션 하단)
-   ========================================================================== */
-.multiview-banner {
-    margin-top: 60px;
-    padding-top: 40px;
-    text-align: center;
-    border-top: 1px dashed rgba(0, 0, 0, 0.1);
-}
-
-/* 멀티뷰 배너 영역: 버튼을 중앙으로 */
+/* =========================================
+   [중요] 멀티뷰 버튼 중앙 정렬 (쓸데없는 말 삭제)
+   ========================================= */
 .multiview-banner {
     display: flex;
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center;     /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
     margin-top: 50px;
-    padding: 40px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* 상단 구분선 */
+    padding: 30px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
-/* 멀티뷰 버튼 스타일 */
 .multiview-btn {
     background-color: #0d1a2f;
     border-color: #0d1a2f;
     color: #fff;
     font-size: 1.1rem;
-    padding: 16px 50px;      /* 버튼 크기 조정 */
+    padding: 16px 60px;
     text-align: center;
-    transition: all 0.3s ease;
 }
-
 .multiview-btn:hover {
     background-color: #3498db;
     border-color: #3498db;
-    color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
 }
 
-/* ==========================================================================
-   8. 비디오 & MD샵 (Video & MD Shop)
-   ========================================================================== */
+/* --- 비디오 섹션 --- */
 .video-wrapper {
     position: relative;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     aspect-ratio: 16 / 9;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
-
 .video-wrapper iframe {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    top: 0; left: 0; width: 100%; height: 100%;
 }
+.video-description { text-align: center; margin-top: 40px; }
 
-.md-slider {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px 0;
-    scrollbar-width: none;
-}
-
+/* --- MD 샵 --- */
+.md-slider { display: flex; overflow-x: auto; scrollbar-width: none; }
 .md-slider::-webkit-scrollbar { display: none; }
-
 .md-item {
     flex: 0 0 300px;
     margin: 0 15px;
     background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 10px;
     overflow: hidden;
-    transition: 0.3s;
 }
-
-.md-item:hover { transform: translateY(-10px); }
-
-.md-image-container img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
 .md-info { padding: 25px; text-align: center; }
 
-/* ==========================================================================
-   9. 모달 (Modal)
-   ========================================================================== */
+/* --- 모달 --- */
 .modal-overlay {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex; justify-content: center; align-items: center;
     z-index: 2000;
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden; opacity: 0;
     transition: 0.3s;
 }
-
 .modal-overlay.active { visibility: visible; opacity: 1; }
-
 .modal-content {
-    position: relative;
-    background: #fff;
-    padding: 10px;
-    border-radius: 12px;
-    width: 380px;
-    max-width: 90%;
-    animation: modalFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative; background: #fff; padding: 8px; border-radius: 8px;
+    width: 350px; animation: modalFadeIn 0.4s;
 }
-
-.modal-content img { width: 100%; border-radius: 8px; display: block; }
-
+.modal-content img { width: 100%; border-radius: 4px; }
 .modal-close {
-    position: absolute;
-    top: -15px; right: -15px;
-    width: 35px; height: 35px;
-    background: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute; top: -15px; right: -15px; width: 35px; height: 35px;
+    background: #fff; border: none; border-radius: 50%; cursor: pointer;
+    display: flex; justify-content: center; align-items: center;
 }
 
-/* ==========================================================================
-   10. 푸터 & 반응형 (Footer & Responsive)
-   ========================================================================== */
-.main-footer {
-    padding: 60px 0;
-    text-align: center;
-    color: #fff;
-}
+/* --- 푸터 --- */
+.main-footer { padding: 50px 0; text-align: center; color: #fff; }
 
 .about-button {
     display: inline-block;
     margin-top: 30px;
-    padding: 14px 40px;
+    padding: 12px 35px;
     background-color: #0d1a2f;
     color: #fff;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    transition: 0.3s;
 }
-
-.about-button:hover { background-color: #3498db; transform: scale(1.05); }
 
 @media (max-width: 768px) {
     .main-header .container { flex-direction: column; }
     .hero-title { font-size: 2.8rem; }
-    .hero-content { padding: 30px; }
     .slider-btn { display: none; }
-    .section { margin: 0 3% 30px; padding: 60px 0; }
-    .section h2 { font-size: 2rem; }
 }
-
