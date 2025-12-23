@@ -16,15 +16,15 @@
     <meta name="twitter:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
     <meta name="twitter:image" content="미리보기.png">
 
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
     <canvas id="background-canvas"></canvas>
 
     <div id="popup-modal" class="modal-overlay">
         <div class="modal-content">
-            <a href="https://www.sooplive.co.kr/station/bach023/post/181464205" target="_blank">
-                <img src="GTA.png" alt="이벤트 팝업">
+            <a href="https://www.sooplive.co.kr/station/bach023/post/178759547" target="_blank">
+                <img src="맹든링.png" alt="이벤트 팝업">
             </a>
             <button id="modal-close-btn" class="modal-close">&times;</button>
         </div>
@@ -39,7 +39,7 @@
                 <ul>
                     <li><a href="#about">회사 소개</a></li>
                     <li><a href="#cast">출연진</a></li>
-                    <li><a href="#multiview">멀티뷰</a></li>
+                    <li><a href="CCTV.html" target="_blank">멀티뷰</a></li>
                     <li><a href="#video">대표 영상</a></li>
                     <li><a href="#md-shop">MD샵</a></li>
                 </ul>
@@ -53,6 +53,7 @@
         <div class="container" style="text-align: center; max-width: 800px;">
             <h2>고래상사 이야기</h2>
             <p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p>
+            
             <a href="https://magic-mink-e82.notion.site/2c5e955ad773803f9036e03d0468d5fa" class="about-button">자세히 알아보기</a>
         </div>
     </section>
@@ -191,14 +192,10 @@
                     <button id="prevBtn" class="slider-btn">‹</button><button id="nextBtn" class="slider-btn">›</button>
                 </div>
             </div>
-            <div id="multiview" class="multiview-banner">
-                <a href="CCTV.html" target="_blank" class="hero-button multiview-btn">멀티뷰 입장하기</a>
-            </div>
         </div>
     </section>
     
     <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/y6UPzAMRWMI?si=QIbyXr1VZRT2C27J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
-    
     <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
         <div class="md-item"><div class="md-image-container"><img src="울큰고_소바바_킥.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 고매 소바바치킨.</p><a href="https://www.youtube.com/shopcollection/SCUCMFwpgB_rjp4Jk-oopLMFIoAuZSVHWHoJQ?scp=EAE%3D" target="_blank" class="hero-button md-button">구매하기</a></div></div>
         <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_상품.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
@@ -209,6 +206,7 @@
         <div class="md-item"><div class="md-image-container"><img src="상품준비중.png" alt="상품준비중"></div><div class="md-info"><h3>상품준비중</h3><p>상품준비중</p><a href="#" target="_blank" class="hero-button md-button">구매하기</a></div></div>
         <div class="md-item"><div class="md-image-container"><img src="상품준비중.png" alt="상품준비중"></div><div class="md-info"><h3>상품준비중</h3><p>상품준비중</p><a href="#" target="_blank" class="hero-button md-button">구매하기</a></div></div></div>
         <button id="mdPrevBtn" class="slider-btn">‹</button><button id="mdNextBtn" class="slider-btn">›</button></div></div></section>
+    
     
     <footer class="main-footer">
         <div class="container">
@@ -225,7 +223,8 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Smooth Scrolling
+
+            // --- Smooth Scrolling ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -233,13 +232,18 @@
                 });
             });
 
-            // Generic Slider Function
+            // --- Generic Slider Function ---
             function setupSlider(sliderClass, prevBtnId, nextBtnId) {
                 const slider = document.querySelector(sliderClass);
                 if (!slider) return;
                 const prevBtn = document.getElementById(prevBtnId);
                 const nextBtn = document.getElementById(nextBtnId);
-                
+                const items = slider.children;
+                if (items.length <= 3 && window.innerWidth > 768) {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                    return;
+                }
                 nextBtn.addEventListener('click', () => {
                     const item = slider.querySelector('div, a');
                     const scrollAmount = item.clientWidth + (parseInt(getComputedStyle(item).marginLeft) * 2);
@@ -252,18 +256,30 @@
                 });
             }
             
+            // --- Sliders Initialization ---
             setupSlider('.cast-slider', 'prevBtn', 'nextBtn');
             setupSlider('.md-slider', 'mdPrevBtn', 'mdNextBtn');
             
-            // Pop-up Modal
+            // --- Pop-up Modal ---
             const modal = document.getElementById('popup-modal');
             const closeBtn = document.getElementById('modal-close-btn');
-            if (modal) modal.classList.add('active');
-            const closeModal = () => modal.classList.remove('active');
-            closeBtn.addEventListener('click', closeModal);
-            modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+            
+            if (modal) {
+                modal.classList.add('active');
+            }
 
-            // Background Canvas
+            const closeModal = () => {
+                modal.classList.remove('active');
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // --- Canvas Background Animation ---
             const canvas = document.getElementById('background-canvas');
             if (canvas) {
                 const ctx = canvas.getContext('2d');
@@ -329,74 +345,81 @@
             }
         });
         
-        // Live Status logic
-        async function updateLiveStatus() {
-            try {
-                const response = await fetch('./status.json?v=' + new Date().getTime());
-                if (!response.ok) throw new Error("파일 로드 실패");
-                const data = await response.json();
+async function updateLiveStatus() {
+    try {
+        // [중요] 깃허브 페이지에서 작동하도록 상대 경로 사용
+        const response = await fetch('./status.json?v=' + new Date().getTime());
+        
+        if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
+
+        const data = await response.json();
+        
+        data.forEach(member => {
+            const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
+            
+            if (memberElement) {
+                const badge = memberElement.querySelector('.live-badge');
+                const img = memberElement.querySelector('img');
+                const link = memberElement.querySelector('a');
+                const originalSrc = img.getAttribute('data-original-src');
                 
-                data.forEach(member => {
-                    const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
-                    if (memberElement) {
-                        const badge = memberElement.querySelector('.live-badge');
-                        const img = memberElement.querySelector('img');
-                        const link = memberElement.querySelector('a');
-                        const originalSrc = img.getAttribute('data-original-src');
-                        
-                        if (!link.getAttribute('data-original-href')) {
-                            link.setAttribute('data-original-href', link.getAttribute('href'));
-                        }
-                        const originalHref = link.getAttribute('data-original-href');
+                if (!link.getAttribute('data-original-href')) {
+                    link.setAttribute('data-original-href', link.getAttribute('href'));
+                }
+                const originalHref = link.getAttribute('data-original-href');
 
-                        if (member.is_live) {
-                            memberElement.setAttribute('data-is-live', 'true');
-                            if(badge) badge.style.display = 'block';
-                            if (member.thumbnail && img.src !== member.thumbnail) img.src = member.thumbnail;
-                            if (member.live_url) link.href = member.live_url;
-                            
-                            // Live styles
-                            img.style.width = '256px'; img.style.height = '144px';
-                            img.style.borderRadius = '12px'; img.style.borderColor = '#e74c3c';
-                            img.style.borderWidth = '3px';
-                        } else {
-                            memberElement.setAttribute('data-is-live', 'false');
-                            if(badge) badge.style.display = 'none';
-                            if (originalSrc && img.src !== originalSrc) img.src = originalSrc;
-                            if (originalHref) link.href = originalHref;
+                if (member.is_live) {
+                    memberElement.setAttribute('data-is-live', 'true');
+                    if(badge) badge.style.display = 'block';
+                    if (member.thumbnail && img.src !== member.thumbnail) img.src = member.thumbnail;
+                    if (member.live_url) link.href = member.live_url;
+                    
+                    img.style.width = '256px';
+                    img.style.height = '144px';
+                    img.style.borderRadius = '12px';
+                    img.style.borderColor = '#e74c3c';
+                    img.style.borderWidth = '3px';
+                    link.title = `방송중: ${member.title}`;
+                } else {
+                    memberElement.setAttribute('data-is-live', 'false');
+                    if(badge) badge.style.display = 'none';
+                    if (originalSrc && img.src !== originalSrc) img.src = originalSrc;
+                    if (originalHref) link.href = originalHref;
 
-                            // Offline styles
-                            img.style.width = '180px'; img.style.height = '180px';
-                            img.style.borderRadius = '50%'; img.style.borderColor = '#fff';
-                            img.style.borderWidth = '5px';
-                        }
-                    }
-                });
+                    img.style.width = '180px';
+                    img.style.height = '180px';
+                    img.style.borderRadius = '50%';
+                    img.style.borderColor = '#fff';
+                    img.style.borderWidth = '5px';
+                    link.title = '';
+                }
+            }
+        });
 
-                // Sorting
-                const container = document.querySelector('.cast-slider');
-                const items = Array.from(container.querySelectorAll('.cast-item'));
-                const buttons = Array.from(container.querySelectorAll('.slider-btn'));
+        const container = document.querySelector('.cast-slider');
+        const items = Array.from(container.querySelectorAll('.cast-item'));
+        const buttons = Array.from(container.querySelectorAll('.slider-btn'));
 
-                items.sort((a, b) => {
-                    const aLive = a.getAttribute('data-is-live') === 'true';
-                    const bLive = b.getAttribute('data-is-live') === 'true';
-                    return (aLive === bLive) ? 0 : aLive ? -1 : 1;
-                });
+        items.sort((a, b) => {
+            const aLive = a.getAttribute('data-is-live') === 'true';
+            const bLive = b.getAttribute('data-is-live') === 'true';
+            if (aLive && !bLive) return -1;
+            if (!aLive && bLive) return 1;
+            return 0;
+        });
 
-                items.forEach(item => container.appendChild(item));
-                buttons.forEach(btn => container.appendChild(btn));
+        items.forEach(item => container.appendChild(item));
+        buttons.forEach(btn => container.appendChild(btn));
 
-            } catch (error) { console.error("데이터 업데이트 중 오류:", error); }
-        }
-        updateLiveStatus();
-        setInterval(updateLiveStatus, 60000);
+    } catch (error) {
+        console.error("데이터 로드 실패:", error);
+    }
+}
+
+updateLiveStatus();
+setInterval(updateLiveStatus, 60000);
     </script>
 </body>
 </html>
-
-
-
-
 
 
