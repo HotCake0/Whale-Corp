@@ -1,28 +1,34 @@
-/* style.css */
-
+/* ==========================================================================
+   1. 애니메이션 (Animations)
+   ========================================================================== */
 @keyframes fadeInSlideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes modalFadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
-/* 라이브 뱃지 깜빡임 애니메이션 */
+
 @keyframes blink { 
     0% { opacity: 1; } 
     50% { opacity: 0.7; } 
     100% { opacity: 1; } 
 }
 
+/* ==========================================================================
+   2. 기본 설정 (Base Styles)
+   ========================================================================== */
 body {
     margin: 0;
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background-color: #0d1a2f; 
+    background-color: #0d1a2f; /* 배경 캔버스 미작동 대비용 */
 }
+
 #background-canvas {
     position: fixed;
     top: 0;
@@ -31,37 +37,45 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
+/* ==========================================================================
+   3. 헤더 & 네비게이션 (Header & Nav)
+   ========================================================================== */
 .main-header {
     background-color: rgba(13, 26, 47, 0.85);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     color: #fff;
     padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo-link { display: inline-block; }
+
 .logo-image { height: 50px; width: auto; }
- 
+
 .main-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
+
 .main-nav li { margin-left: 25px; }
+
 .main-nav a {
     color: #fff;
     text-decoration: none;
@@ -69,7 +83,12 @@ body {
     font-weight: 500;
     transition: color 0.3s;
 }
+
 .main-nav a:hover { color: #3498db; }
+
+/* ==========================================================================
+   4. 히어로 섹션 (Hero Section)
+   ========================================================================== */
 .hero {
     height: 100vh;
     display: flex;
@@ -78,347 +97,332 @@ body {
     color: #fff;
     text-align: center;
 }
+
 .hero-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 50px 60px;
-    border-radius: 15px;
+    border-radius: 20px;
     opacity: 0;
     animation: fadeInSlideUp 1s 0.5s ease-out forwards;
 }
+
 .hero-title {
     margin: 0;
     font-size: 4rem;
     font-weight: 900;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-.hero-subtitle-en {
-    margin: 20px 0 10px 0;
-    font-size: 1.1rem;
-    font-weight: 400;
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-}
+
 .hero-subtitle-ko {
-    margin: 10px 0 30px 0;
+    margin: 15px 0 35px 0;
     font-size: 1.3rem;
     font-weight: 500;
     opacity: 0.9;
 }
+
 .hero-button {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 14px 35px;
     border: 2px solid #fff;
     border-radius: 30px;
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    cursor: pointer;
+    transition: all 0.3s;
 }
+
 .hero-button:hover {
     background-color: #fff;
     color: #0d1a2f;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
+
+/* ==========================================================================
+   5. 공통 섹션 스타일 (Section Styles)
+   ========================================================================== */
 .section {
     padding: 100px 0;
-    background-color: rgba(255, 255, 255, 0.85); 
-    margin: 0 5%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.92); 
+    margin: 0 5% 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
-#about { margin-top: 50px; }
+
 .section h2 {
     text-align: center;
     font-size: 2.8rem;
     margin-bottom: 50px;
     color: #0d1a2f;
-}
-.bg-light { background-color: rgba(248, 249, 250, 0.85); }
-
-/* --- [신규] 멀티뷰 섹션 스타일 --- */
-.bg-multiview {
-    background: linear-gradient(135deg, rgba(26, 42, 79, 0.9) 0%, rgba(52, 106, 154, 0.9) 100%);
-    color: #fff;
-}
-.bg-multiview h2 { color: #fff !important; }
-.bg-multiview p { 
-    font-size: 1.2rem; 
-    margin-bottom: 30px; 
-    color: rgba(255,255,255,0.9); 
-}
-.beta-badge {
-    display: inline-block;
-    background: #e74c3c;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-.bg-multiview .hero-button:hover {
-    background-color: #3498db;
-    border-color: #3498db;
-    color: #fff;
+    font-weight: 800;
 }
 
-.slider-btn {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.slider-btn:hover {
-    background-color: #3498db;
-    color: #fff;
-    border-color: #3498db;
-}
+.bg-light { background-color: rgba(248, 249, 250, 0.92); }
+
+/* ==========================================================================
+   6. 출연진 슬라이더 (Cast Slider)
+   ========================================================================== */
 .cast-slider-container { position: relative; }
+
 .cast-slider {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px;
-    margin: 0 -10px;
+    padding: 20px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-.cast-slider::-webkit-scrollbar, .md-slider::-webkit-scrollbar { display: none; }
-.cast-slider, .md-slider { -ms-overflow-style: none; scrollbar-width: none; }
+
+.cast-slider::-webkit-scrollbar { display: none; }
+
 .cast-item {
     flex: 0 0 280px;
-    margin: 0 10px;
+    margin: 0 15px;
     text-align: center;
     scroll-snap-align: center;
-    position: relative; 
 }
+
 .cast-item a {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s, background-color 0.3s;
-    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s;
 }
+
 .cast-item a:hover {
-    transform: scale(1.03);
-    background-color: #f0f6fa;
+    background-color: #f8f9fa;
+    transform: translateY(-5px);
 }
+
 .cast-item img {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .cast-item h3 {
     margin-top: 20px;
     font-size: 1.5rem;
     color: #0d1a2f;
 }
+
 .cast-item .keywords {
     color: #3498db;
-    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin-top: 5px;
 }
+
 .cast-item .catchphrase {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.95rem;
     color: #e74c3c;
-    height: 0;
+    font-weight: 700;
     opacity: 0;
-    margin: 0;
-    transition: all 0.4s ease-out;
-}
-.cast-item a:hover .catchphrase {
-    height: 20px;
-    opacity: 1;
     margin-top: 10px;
-}
-.live-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px; 
-    background-color: #e74c3c;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 0.8rem;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    animation: blink 2s infinite;
-    display: none;
+    transition: 0.3s;
 }
 
-#prevBtn, #mdPrevBtn { left: -25px; }
-#nextBtn, #mdNextBtn { right: -25px; }
+.cast-item a:hover .catchphrase { opacity: 1; }
+
+.live-badge {
+    position: absolute;
+    top: 25px;
+    right: 25px; 
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 0.75rem;
+    animation: blink 1.5s infinite;
+    display: none;
+    box-shadow: 0 3px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* 슬라이더 버튼 */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.slider-btn:hover { background: #3498db; color: #fff; }
+#prevBtn { left: -25px; }
+#nextBtn { right: -25px; }
+
+/* ==========================================================================
+   7. 멀티뷰 배너 (Multiview Banner - 출연진 섹션 하단)
+   ========================================================================== */
+.multiview-banner {
+    margin-top: 60px;
+    padding-top: 40px;
+    text-align: center;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.multiview-banner p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.multiview-btn {
+    background-color: #0d1a2f;
+    border-color: #0d1a2f;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 16px 45px;
+}
+
+.multiview-btn:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
+}
+
+/* ==========================================================================
+   8. 비디오 & MD샵 (Video & MD Shop)
+   ========================================================================== */
 .video-wrapper {
     position: relative;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
+
 .video-wrapper iframe {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
-.video-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto 0 auto;
-}
-.video-description .hero-button {
-    background-color: #0d1a2f;
-    border-color: #0d1a2f;
-    color: #fff;
-}
-.video-description .hero-button:hover {
-    background-color: #3498db;
-    border-color: #3498db;
-}
-.md-slider-container { position: relative; }
+
 .md-slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px;
-    margin: 0 -10px;
+    padding: 20px 0;
+    scrollbar-width: none;
 }
+
+.md-slider::-webkit-scrollbar { display: none; }
+
 .md-item {
     flex: 0 0 300px;
     margin: 0 15px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    scroll-snap-align: start;
+    transition: 0.3s;
 }
-.md-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
+
+.md-item:hover { transform: translateY(-10px); }
+
 .md-image-container img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     object-fit: cover;
-    transition: transform 0.4s ease-out;
 }
-.md-item:hover .md-image-container img {
-    transform: scale(1.05);
-}
-.md-info {
-    padding: 25px;
-    text-align: center;
-}
-.md-info h3 {
-    font-size: 1.6rem;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #0d1a2f;
-}
-.md-info p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 25px;
-}
-.md-button {
-    background-color: #0d1a2f;
-    border-color: #0d1a2f;
-}
-.md-button:hover {
-    background-color: #3498db;
-    border-color: #3498db;
-    color: #fff;
-}
-#mdPrevBtn, #mdNextBtn { top: 50%; }
- 
-/* --- Pop-up Modal --- */
+
+.md-info { padding: 25px; text-align: center; }
+
+/* ==========================================================================
+   9. 모달 (Modal)
+   ========================================================================== */
 .modal-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    visibility: hidden; opacity: 0;
-    transition: visibility 0s 0.3s, opacity 0.3s ease-out;
-}
-.modal-overlay.active {
-    visibility: visible; opacity: 1;
-    transition: opacity 0.3s ease-out;
-}
-.modal-content {
-    position: relative; background: #fff; padding: 8px; border-radius: 8px;
-    max-width: 90%; width: 350px;
-    animation: modalFadeIn 0.4s ease-out;
-}
-.modal-content img { display: block; width: 100%; border-radius: 4px; }
-.modal-close {
-    position: absolute; top: -15px; right: -15px; width: 35px; height: 35px;
-    background: #fff; border: none; border-radius: 50%; font-size: 24px;
-    cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    display: flex; justify-content: center; align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.main-footer {
-    background-color: transparent;
-    color: #fff;
-    padding: 50px 0 30px;
-    text-align: center;
+.modal-overlay.active { visibility: visible; opacity: 1; }
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    width: 380px;
+    max-width: 90%;
+    animation: modalFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.footer-info p { margin: 5px 0; }
-.copyright { margin-top: 30px; font-size: 0.9rem; }
- 
-@media (max-width: 768px) {
-    .main-header .container { flex-direction: column; }
-    .main-nav ul { margin-top: 15px; }
-    .hero-title { font-size: 2.8rem; }
-    .slider-btn { display: none; }
-    .section { margin: 0 2%; margin-bottom: 30px; }
+
+.modal-content img { width: 100%; border-radius: 8px; display: block; }
+
+.modal-close {
+    position: absolute;
+    top: -15px; right: -15px;
+    width: 35px; height: 35px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================================
+   10. 푸터 & 반응형 (Footer & Responsive)
+   ========================================================================== */
+.main-footer {
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
 }
 
 .about-button {
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 35px;
+    padding: 14px 40px;
     background-color: #0d1a2f;
     color: #fff;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
-.about-button:hover {
-    background-color: #3498db;
-    transform: translateY(-3px);
+
+.about-button:hover { background-color: #3498db; transform: scale(1.05); }
+
+@media (max-width: 768px) {
+    .main-header .container { flex-direction: column; }
+    .hero-title { font-size: 2.8rem; }
+    .hero-content { padding: 30px; }
+    .slider-btn { display: none; }
+    .section { margin: 0 3% 30px; padding: 60px 0; }
+    .section h2 { font-size: 2rem; }
 }
