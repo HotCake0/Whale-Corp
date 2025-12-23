@@ -2,18 +2,26 @@
     {
         "id": "bach023",
         "is_live": true,
-        "title": "[고래상사] 왜 장사가 잘 되는 건데ㅋㅋㅋㅋㅋ",
-        "viewers": 211,
+        "title": "[고래상사] 왜 장사가 잘 되는 건데??? (진짜 모름)",
+        "viewers": 491,
         "thumbnail": "https://liveimg.afreecatv.com/m/290185654",
         "live_url": "https://play.sooplive.co.kr/bach023/290185654"
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]닭발 먹고 싶다아아아아",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290187154",
+        "live_url": "https://play.sooplive.co.kr/doki0818/290187154"
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 빵구워:) 오빠 나 달라진거 없어?",
+        "viewers": 15,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290186836",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290186836"
     },
     {
         "id": "ducke77",
@@ -35,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사/무래곤볼] 진짜 마지막이다",
-        "viewers": 30,
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/290181452",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290181452"
     },
@@ -55,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사/개찐마단]💙진짜 마지막이야!!~!!!!🐸",
-        "viewers": 36,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290181354",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290181354"
     },
@@ -63,7 +71,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼]열밤 드디어 지났다 오늘 부터 빵챕이",
-        "viewers": 373,
+        "viewers": 362,
         "thumbnail": "https://liveimg.afreecatv.com/m/290181430",
         "live_url": "https://play.sooplive.co.kr/dmng50/290181430"
     },
@@ -71,7 +79,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[말티즈/고래상사] 오늘 진짜 뭐함?",
-        "viewers": 37,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290183782",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290183782"
     }
