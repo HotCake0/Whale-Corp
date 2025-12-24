@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 남자친구를 얻고 목소리를 잃었습니다.. 🎅",
-        "viewers": 43,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290206334",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290206334"
     },
@@ -33,13 +33,17 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 메리 크리스마스",
+        "viewers": 14,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290214242",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/290214242"
     },
     {
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 어느덧 마지막 맹든링",
-        "viewers": 19,
+        "viewers": 21,
         "thumbnail": "https://liveimg.afreecatv.com/m/290213672",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290213672"
     },
@@ -47,7 +51,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 🎄가비랑 히나랑 크리스마스 노래불러드립니다🎁",
-        "viewers": 109,
+        "viewers": 111,
         "thumbnail": "https://liveimg.afreecatv.com/m/290204386",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290204386"
     },
@@ -55,7 +59,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 크리스마스 방셀팔아욧",
-        "viewers": 48,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290209690",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290209690"
     },
@@ -71,7 +75,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사][억마사냥꾼] 맹든링 마지막",
-        "viewers": 112,
+        "viewers": 111,
         "thumbnail": "https://liveimg.afreecatv.com/m/290207132",
         "live_url": "https://play.sooplive.co.kr/dmng50/290207132"
     },
