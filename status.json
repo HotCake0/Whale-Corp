@@ -1,7 +1,11 @@
 [
     {
         "id": "bach023",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 저는 그렇게 생각합니다..",
+        "viewers": 280,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290235886",
+        "live_url": "https://play.sooplive.co.kr/bach023/290235886"
     },
     {
         "id": "doki0818",
@@ -10,8 +14,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 🎅메리크리스마스🎄",
-        "viewers": 51,
+        "title": "[고래상사] 🎅메리 크리스마스🎄 7시 오아산타를 잡아라",
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290231792",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290231792"
     },
@@ -19,7 +23,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 솔로 모여라 나 홀로 클쓰파티 중  7시 무엇이든 공감해드립니다.",
-        "viewers": 45,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290228136",
         "live_url": "https://play.sooplive.co.kr/ducke77/290228136"
     },
@@ -58,8 +62,8 @@
     {
         "id": "dmng50",
         "is_live": true,
-        "title": "[고래상사]크리스마스!!!",
-        "viewers": 181,
+        "title": "[고래상사]7시)얼빵목빙 크리스마스 합방",
+        "viewers": 152,
         "thumbnail": "https://liveimg.afreecatv.com/m/290232804",
         "live_url": "https://play.sooplive.co.kr/dmng50/290232804"
     },
