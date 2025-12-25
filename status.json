@@ -3,19 +3,23 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 저는 그렇게 생각합니다..",
-        "viewers": 617,
+        "viewers": 618,
         "thumbnail": "https://liveimg.afreecatv.com/m/290235886",
         "live_url": "https://play.sooplive.co.kr/bach023/290235886"
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]메리크리스마스! 방셀 1225개에 드려요 데헷~",
+        "viewers": 15,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290239468",
+        "live_url": "https://play.sooplive.co.kr/doki0818/290239468"
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 🎅메리 크리스마스🎄 7시 오아산타를 잡아라",
-        "viewers": 25,
+        "viewers": 23,
         "thumbnail": "https://liveimg.afreecatv.com/m/290231792",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290231792"
     },
@@ -23,7 +27,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 사연 고민 고해성사 밀크F냠 다 공감해드림!",
-        "viewers": 35,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/290228136",
         "live_url": "https://play.sooplive.co.kr/ducke77/290228136"
     },
@@ -31,7 +35,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]유니버스 메이드카페 오픈 룰렛 55개 대결이 부탁드립니다,,,/ 즐찾 이벤트 많관부",
-        "viewers": 18,
+        "viewers": 23,
         "thumbnail": "https://liveimg.afreecatv.com/m/290236398",
         "live_url": "https://play.sooplive.co.kr/joaras2/290236398"
     },
@@ -57,13 +61,17 @@
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 크리스마스 방셀 팔아요 ^//^",
+        "viewers": 18,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290239350",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/290239350"
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "[고래상사]💙크리스마스는 너랑 보내려고🐸",
-        "viewers": 33,
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/290237252",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290237252"
     },
@@ -71,7 +79,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사]7시)얼빵목빙의 산타없는 루돌프들의 크리스마스",
-        "viewers": 154,
+        "viewers": 146,
         "thumbnail": "https://liveimg.afreecatv.com/m/290232804",
         "live_url": "https://play.sooplive.co.kr/dmng50/290232804"
     },
