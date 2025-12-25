@@ -37,7 +37,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 🎄오르카 첫 단체 합방 !! 파티애니멀즈🎁",
+        "viewers": 34,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290225108",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290225108"
     },
     {
         "id": "gatgdf",
@@ -55,7 +59,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[말티즈/고래상사] 크리스마스의 악몽 [덕코프 API 농장마을까지 노방종...]",
-        "viewers": 44,
+        "viewers": 59,
         "thumbnail": "https://liveimg.afreecatv.com/m/290209922",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290209922"
     }
