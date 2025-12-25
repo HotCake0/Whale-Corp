@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 클쓰는 나 혼로 파티",
+        "viewers": 13,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290228136",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290228136"
     },
     {
         "id": "joaras2",
@@ -38,7 +42,7 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 🎄마슈랑 히나랑 싱크룸🎁",
+        "title": "[오르카/고래상사] 🎄메리크리스마스 ~🎁",
         "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/290225108",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290225108"
@@ -59,7 +63,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[말티즈/고래상사] 크리스마스의 악몽 [덕코프 API 농장마을까지 노방종...]",
-        "viewers": 84,
+        "viewers": 86,
         "thumbnail": "https://liveimg.afreecatv.com/m/290209922",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290209922"
     }
