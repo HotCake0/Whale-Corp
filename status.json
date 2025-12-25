@@ -17,11 +17,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]후열 고래상사와 / 즐찾 이벤트 많관부",
-        "viewers": 30,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290236398",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290236398"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
