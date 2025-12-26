@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 8시) GTA 깃발 점령전. 이제 시작인가 후..",
-        "viewers": 228,
+        "viewers": 322,
         "thumbnail": "https://liveimg.afreecatv.com/m/290259652",
         "live_url": "https://play.sooplive.co.kr/bach023/290259652"
     },
@@ -49,15 +49,19 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]💙크리스마스 다음날에 해장국🐸",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290259920",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290259920"
     },
     {
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사]하잉",
-        "viewers": 79,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290258418",
-        "live_url": "https://play.sooplive.co.kr/dmng50/290258418"
+        "viewers": 53,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290259932",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290259932"
     },
     {
         "id": "nunknown314",
