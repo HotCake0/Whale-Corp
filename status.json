@@ -17,13 +17,17 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]이빨 사이에 낀 스파게티 / 즐찾 이벤트 많관부",
+        "viewers": 1,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290286230",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290286230"
     },
     {
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 2025 SOOP시상식 MC 견자희🌹",
-        "viewers": 402,
+        "viewers": 411,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282328",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290282328"
     },
@@ -39,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 슈퍼캐치나 받자",
-        "viewers": 59,
+        "viewers": 58,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282676",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290282676"
     },
@@ -51,7 +55,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] SOOP시상식! 자희웅니 응원하기🎁",
-        "viewers": 72,
+        "viewers": 71,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282816",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290282816"
     },
@@ -63,7 +67,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 8시 배그전까지 밥먹는 미션 시작🐸",
-        "viewers": 15,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/290285498",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290285498"
     },
@@ -78,8 +82,8 @@
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[고래상사] 열심히 하겠습니다. 반성의 국토 대장정.",
-        "viewers": 171,
+        "title": "[고래상사] 열심히 하겠습니다. 국토 대장정 완 , 미이괜 시작",
+        "viewers": 174,
         "thumbnail": "https://liveimg.afreecatv.com/m/290277870",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290277870"
     }
