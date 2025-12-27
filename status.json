@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁이에오",
+        "viewers": 11,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290287280",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290287280"
     },
     {
         "id": "ducke77",
@@ -19,7 +23,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]이빨 사이에 낀 스파게티 / 즐찾 이벤트 많관부",
-        "viewers": 17,
+        "viewers": 21,
         "thumbnail": "https://liveimg.afreecatv.com/m/290286230",
         "live_url": "https://play.sooplive.co.kr/joaras2/290286230"
     },
@@ -27,7 +31,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 2025 SOOP시상식 MC 견자희🌹",
-        "viewers": 426,
+        "viewers": 425,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282328",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290282328"
     },
@@ -35,7 +39,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 공지없이 와서 시상식 구경하기",
-        "viewers": 26,
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/290284700",
         "live_url": "https://play.sooplive.co.kr/melodingding/290284700"
     },
@@ -43,7 +47,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 슈퍼캐치나 받자",
-        "viewers": 72,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282676",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290282676"
     },
@@ -55,7 +59,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] SOOP시상식! 자희웅니 응원하기🎁",
-        "viewers": 74,
+        "viewers": 71,
         "thumbnail": "https://liveimg.afreecatv.com/m/290282816",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290282816"
     },
@@ -67,7 +71,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 8시 배그전까지 밥먹는 미션 시작🐸",
-        "viewers": 26,
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/290285498",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290285498"
     },
@@ -75,7 +79,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 숲 시장식 같이보기",
-        "viewers": 90,
+        "viewers": 91,
         "thumbnail": "https://liveimg.afreecatv.com/m/290280164",
         "live_url": "https://play.sooplive.co.kr/dmng50/290280164"
     },
@@ -83,7 +87,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 열심히 하겠습니다. 국토 대장정 완 , 미이괜 시작",
-        "viewers": 162,
+        "viewers": 160,
         "thumbnail": "https://liveimg.afreecatv.com/m/290277870",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290277870"
     }
