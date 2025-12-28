@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 나는 버추얼이다",
+        "viewers": 41,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290300684",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290300684"
     },
     {
         "id": "joaras2",
