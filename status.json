@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 고래상사 시상식 후열: 증강 칼바람 내전",
-        "viewers": 448,
+        "viewers": 458,
         "thumbnail": "https://liveimg.afreecatv.com/m/290310406",
         "live_url": "https://play.sooplive.co.kr/bach023/290310406"
     },
@@ -29,17 +29,13 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사] 후열:증강칼바람🌹",
-        "viewers": 251,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290315444",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290315444"
+        "is_live": false
     },
     {
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 9시 고래상사 시상식 //",
-        "viewers": 26,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/290312786",
         "live_url": "https://play.sooplive.co.kr/melodingding/290312786"
     },
@@ -47,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 재미땅 후후",
-        "viewers": 40,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290309872",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290309872"
     },
@@ -57,17 +53,13 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] 고래상사 시상식 후열🎁",
-        "viewers": 13,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290313734",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/290313734"
+        "is_live": false
     },
     {
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 후열 칼바람",
-        "viewers": 18,
+        "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/290316060",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290316060"
     },
@@ -75,7 +67,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]시상식 이후 후열 증강 칼바람 내전!🐸",
-        "viewers": 36,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290315156",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290315156"
     },
@@ -87,7 +79,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 고래상사 시상식... 후열 롤",
-        "viewers": 37,
+        "viewers": 40,
         "thumbnail": "https://liveimg.afreecatv.com/m/290311700",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290311700"
     }
