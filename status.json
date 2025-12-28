@@ -1,7 +1,11 @@
 [
     {
         "id": "bach023",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 9시 고래상사 시상식 전에 카페 소통ㄱㄱㄱ 어제 숲 시상식 무대 좀 볼까요??",
+        "viewers": 400,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290310406",
+        "live_url": "https://play.sooplive.co.kr/bach023/290310406"
     },
     {
         "id": "doki0818",
@@ -10,8 +14,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 안녕하세요:) 오늘 9주년이에욤! 히히 축하해주셔서 감사합니다:-)",
-        "viewers": 188,
+        "title": "[고래상사] 오늘 9주년이에욤! 히히 축하해주셔서 감사합니다:-)",
+        "viewers": 115,
         "thumbnail": "https://liveimg.afreecatv.com/m/290307304",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290307304"
     },
@@ -19,7 +23,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 괴도 밀냠 싸장님 카페털기 3시20분 사장님 유튜브도 털자",
-        "viewers": 46,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290300684",
         "live_url": "https://play.sooplive.co.kr/ducke77/290300684"
     },
@@ -39,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 방갑숨미다",
-        "viewers": 51,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290309872",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290309872"
     },
