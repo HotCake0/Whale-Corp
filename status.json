@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 9시 고래상사 시상식 전에 카페 소통ㄱㄱㄱ 어제 숲 시상식 무대 좀 볼까요??",
-        "viewers": 787,
+        "viewers": 795,
         "thumbnail": "https://liveimg.afreecatv.com/m/290310406",
         "live_url": "https://play.sooplive.co.kr/bach023/290310406"
     },
@@ -43,7 +43,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 9시 고래상사 시상식 // 오랜만에 소통",
-        "viewers": 49,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290312786",
         "live_url": "https://play.sooplive.co.kr/melodingding/290312786"
     },
@@ -51,7 +51,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 방갑숨미다",
-        "viewers": 98,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290309872",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290309872"
     },
@@ -63,7 +63,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 어울리는 노래 찾기🎁",
-        "viewers": 30,
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/290313734",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290313734"
     },
@@ -73,7 +73,11 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사]9시에 고래상사 시상식 있습니다. 밥상은 제껍니다.🐸",
+        "viewers": 16,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290315156",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290315156"
     },
     {
         "id": "dmng50",
@@ -83,7 +87,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 시상식 전에 고래상사 카페털기",
-        "viewers": 72,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290311700",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290311700"
     }
