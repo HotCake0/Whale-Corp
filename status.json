@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 배그 멸망전 경매날. 과연 나의 팀은?!",
-        "viewers": 326,
+        "viewers": 581,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335210",
         "live_url": "https://play.sooplive.co.kr/bach023/290335210"
     },
@@ -13,7 +13,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 멸망전 경매 저는 어디팀과 함께할까요?",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290336298",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290336298"
     },
     {
         "id": "ducke77",
@@ -34,8 +38,8 @@
     {
         "id": "soyoung6056",
         "is_live": true,
-        "title": "[고래상사] 연말정산 그거 어떻게 하는거에여 ?",
-        "viewers": 0,
+        "title": "[고래상사] 지력사무소 오랜만에 모여요",
+        "viewers": 24,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335650",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290335650"
     },
@@ -51,7 +55,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 배그 멸망전 경매 보기",
-        "viewers": 1,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335620",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290335620"
     },
@@ -59,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]배그 멸망전 8티어 물티슈의 꿈🐸",
-        "viewers": 38,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335136",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290335136"
     },
@@ -71,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이봤이랑 카페를 털어버려",
-        "viewers": 113,
+        "viewers": 63,
         "thumbnail": "https://liveimg.afreecatv.com/m/290329924",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290329924"
     }
