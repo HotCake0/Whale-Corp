@@ -1,27 +1,19 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 배그 멸망전 연습 w빙밍 난워니 배민정",
-        "viewers": 314,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290335210",
-        "live_url": "https://play.sooplive.co.kr/bach023/290335210"
+        "is_live": false
     },
     {
         "id": "doki0818",
         "is_live": true,
         "title": "[고래상사]FC26감독모드 축알못인데오...",
-        "viewers": 49,
+        "viewers": 84,
         "thumbnail": "https://liveimg.afreecatv.com/m/290343204",
         "live_url": "https://play.sooplive.co.kr/doki0818/290343204"
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사] 멸망전 대비 연습 w.강칠득 김마렌 쏭이",
-        "viewers": 18,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290336298",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290336298"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -43,7 +35,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 지력1기와 지스테리",
-        "viewers": 74,
+        "viewers": 69,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335650",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290335650"
     },
@@ -59,7 +51,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 8주년이에옹 ^ㅇ^ 멸망전연습",
-        "viewers": 31,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335620",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290335620"
     },
@@ -67,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]멸망전 세리아님팀 물티슈 나머지 공부🐸",
-        "viewers": 27,
+        "viewers": 26,
         "thumbnail": "https://liveimg.afreecatv.com/m/290335136",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290335136"
     },
