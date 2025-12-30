@@ -41,17 +41,13 @@
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 57,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290363462",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/290363462"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]멸망전 세리아님팀!! 나머지공부팟🐸",
-        "viewers": 32,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290361780",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290361780"
     },
