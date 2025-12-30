@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 278,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290358636",
-        "live_url": "https://play.sooplive.co.kr/bach023/290358636"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -47,7 +43,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 멸망전배그연습 (w.요코.마렌.지수)",
-        "viewers": 46,
+        "viewers": 63,
         "thumbnail": "https://liveimg.afreecatv.com/m/290363462",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290363462"
     },
@@ -55,7 +51,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]멸망전 세리아님팀!! 나머지공부팟🐸",
-        "viewers": 29,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290361780",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290361780"
     },
