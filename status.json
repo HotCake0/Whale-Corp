@@ -37,7 +37,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 새해가 얼마 남지 않아 나이먹을자들의 모임🎁",
+        "viewers": 20,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290358050",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290358050"
     },
     {
         "id": "gatgdf",
@@ -55,7 +59,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 17팬치가 진행하는 왁컬로이드 월드컵!",
-        "viewers": 723,
+        "viewers": 631,
         "thumbnail": "https://liveimg.afreecatv.com/m/290354646",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290354646"
     }
