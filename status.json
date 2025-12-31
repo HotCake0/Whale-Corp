@@ -33,7 +33,11 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "혼자서 해돋이봐요",
+        "viewers": 36,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290399928",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/290399928"
     },
     {
         "id": "akdma9692",
@@ -43,7 +47,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 일출 라이브 보기 2026 파이팅!",
-        "viewers": 32,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290383594",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290383594"
     },
