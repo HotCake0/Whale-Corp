@@ -35,15 +35,15 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 마지막 이야기..............................................(2025년도ㅎ)",
-        "viewers": 78,
+        "viewers": 80,
         "thumbnail": "https://liveimg.afreecatv.com/m/290385510",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290385510"
     },
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 2025년 안녕 🎁",
-        "viewers": 103,
+        "title": "[오르카/고래상사] 노래녹음중🎁",
+        "viewers": 81,
         "thumbnail": "https://liveimg.afreecatv.com/m/290383594",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290383594"
     },
@@ -51,24 +51,32 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 멸망전 연습 w.찌로리.댕뚜비.클로이",
-        "viewers": 72,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290382570",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290382570"
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사]마지막이 아닌 새로운 시작🐸",
+        "viewers": 30,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290386748",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290386748"
     },
     {
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 새해 마지막날 신과함께2 봅시당",
-        "viewers": 87,
+        "viewers": 84,
         "thumbnail": "https://liveimg.afreecatv.com/m/290381510",
         "live_url": "https://play.sooplive.co.kr/dmng50/290381510"
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 잘가!",
+        "viewers": 43,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290386870",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290386870"
     }
 ]
