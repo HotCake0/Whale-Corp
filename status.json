@@ -13,11 +13,7 @@
     },
     {
         "id": "ducke77",
-        "is_live": true,
-        "title": "[고래상사] 안녕 25 안녕 26 일출서버 죽기빵",
-        "viewers": 38,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290389864",
-        "live_url": "https://play.sooplive.co.kr/ducke77/290389864"
+        "is_live": false
     },
     {
         "id": "joaras2",
@@ -33,11 +29,7 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "혼자서 해돋이봐요",
-        "viewers": 77,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290399928",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/290399928"
+        "is_live": false
     },
     {
         "id": "akdma9692",
