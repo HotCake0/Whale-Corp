@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 안녕 25 안녕 26 일출서버 죽기빵",
-        "viewers": 35,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290389864",
         "live_url": "https://play.sooplive.co.kr/ducke77/290389864"
     },
@@ -25,11 +25,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사] 안녕 2026년🌹",
-        "viewers": 240,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290391210",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290391210"
+        "is_live": false
     },
     {
         "id": "melodingding",
