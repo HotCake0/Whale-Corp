@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 안녕 25 안녕 26 일출서버 죽기빵",
-        "viewers": 32,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290389864",
         "live_url": "https://play.sooplive.co.kr/ducke77/290389864"
     },
@@ -45,11 +45,7 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] 일출 라이브 보기 2026 파이팅!",
-        "viewers": 18,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290383594",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/290383594"
+        "is_live": false
     },
     {
         "id": "gatgdf",
