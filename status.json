@@ -49,13 +49,17 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 안녕하쇼",
+        "viewers": 74,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290406222",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290406222"
     },
     {
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 어서와 2026년!",
-        "viewers": 41,
+        "viewers": 60,
         "thumbnail": "https://liveimg.afreecatv.com/m/290405562",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290405562"
     }
