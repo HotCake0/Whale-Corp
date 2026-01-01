@@ -11,7 +11,7 @@
         "id": "doki0818",
         "is_live": true,
         "title": "[고래상사]엑스컴 신입사령관 사철임니다",
-        "viewers": 65,
+        "viewers": 64,
         "thumbnail": "https://liveimg.afreecatv.com/m/290417080",
         "live_url": "https://play.sooplive.co.kr/doki0818/290417080"
     },
@@ -19,7 +19,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 새해 복 많이 받으세요:-) 쫀밤",
-        "viewers": 17,
+        "viewers": 18,
         "thumbnail": "https://liveimg.afreecatv.com/m/290421532",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290421532"
     },
@@ -39,7 +39,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "[고래상사] 행배 w.킴나니,김일분 미쇼니죠아요 // 33개 한복방셀 7퍼룰렛 // 1000개 확정",
-        "viewers": 39,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290418206",
         "live_url": "https://play.sooplive.co.kr/melodingding/290418206"
     },
@@ -59,7 +59,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 배그멸망전 연습",
-        "viewers": 33,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290415638",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290415638"
     },
@@ -73,11 +73,7 @@
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 48,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290406222",
-        "live_url": "https://play.sooplive.co.kr/dmng50/290406222"
+        "is_live": false
     },
     {
         "id": "nunknown314",
