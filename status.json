@@ -1,17 +1,13 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 319,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290432234",
-        "live_url": "https://play.sooplive.co.kr/bach023/290432234"
+        "is_live": false
     },
     {
         "id": "doki0818",
         "is_live": true,
         "title": "[고래상사]엑스컴 신입이지만 사령관난이도",
-        "viewers": 36,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290440694",
         "live_url": "https://play.sooplive.co.kr/doki0818/290440694"
     },
@@ -41,11 +37,7 @@
     },
     {
         "id": "akdma9692",
-        "is_live": true,
-        "title": "[고래상사] 낭만교향곡",
-        "viewers": 20,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290434338",
-        "live_url": "https://play.sooplive.co.kr/akdma9692/290434338"
+        "is_live": false
     },
     {
         "id": "nlov555jij",
@@ -57,11 +49,7 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": true,
-        "title": "💙[고래상사]멸망전 9시 스크림!🐸",
-        "viewers": 18,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290434686",
-        "live_url": "https://play.sooplive.co.kr/kimmaren77/290434686"
+        "is_live": false
     },
     {
         "id": "dmng50",
