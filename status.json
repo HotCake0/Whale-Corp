@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 배그 멸망전 스크림날: 후팀 (w난워니,우서,배민정",
-        "viewers": 345,
+        "viewers": 366,
         "thumbnail": "https://liveimg.afreecatv.com/m/290432234",
         "live_url": "https://play.sooplive.co.kr/bach023/290432234"
     },
@@ -13,7 +13,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁이에오! 새해 복 많이 받으세요:-)",
+        "viewers": 10,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290433518",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290433518"
     },
     {
         "id": "ducke77",
@@ -55,7 +59,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 빵이봤보기",
-        "viewers": 110,
+        "viewers": 113,
         "thumbnail": "https://liveimg.afreecatv.com/m/290429636",
         "live_url": "https://play.sooplive.co.kr/dmng50/290429636"
     },
@@ -63,7 +67,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 원하는 프사를 그려드립니다! 근데 타이머가 지나가는...똑딱똑딱 (그림뱅) +신청 공지확인",
-        "viewers": 59,
+        "viewers": 54,
         "thumbnail": "https://liveimg.afreecatv.com/m/290427548",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290427548"
     }
