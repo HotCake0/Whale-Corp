@@ -25,7 +25,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 검은화면소통방송",
+        "viewers": 41,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290426784",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290426784"
     },
     {
         "id": "soyoung6056",
@@ -53,6 +57,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 와 오늘 진짜 춥다",
+        "viewers": 29,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290427548",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290427548"
     }
 ]
