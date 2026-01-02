@@ -2,8 +2,8 @@
     {
         "id": "bach023",
         "is_live": true,
-        "title": "[고래상사] 배그 멸망전 스크림날: 후팀 (w난워니,우서,배민정",
-        "viewers": 353,
+        "title": "[고래상사] 배그 멸망전 스크림 전 손풀기 (w난워니,우서,배민정)",
+        "viewers": 337,
         "thumbnail": "https://liveimg.afreecatv.com/m/290432234",
         "live_url": "https://play.sooplive.co.kr/bach023/290432234"
     },
@@ -14,8 +14,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 좋은 저녁이에오!",
-        "viewers": 57,
+        "title": "[고래상사] 9시 멸망전 스크림",
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290433518",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290433518"
     },
@@ -25,7 +25,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]읏추읏추",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290436730",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290436730"
     },
     {
         "id": "gyeonjahee",
@@ -43,15 +47,15 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 낭만교향곡 솔로 미션중",
-        "viewers": 22,
+        "viewers": 27,
         "thumbnail": "https://liveimg.afreecatv.com/m/290434338",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290434338"
     },
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 오늘 개춥더라.....",
-        "viewers": 33,
+        "title": "[오르카/고래상사] 쌀먹의 날 ( 월드컵 )",
+        "viewers": 55,
         "thumbnail": "https://liveimg.afreecatv.com/m/290434968",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290434968"
     },
@@ -59,7 +63,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 킴성태팀 멸망전 연습",
-        "viewers": 12,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/290435664",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290435664"
     },
@@ -67,15 +71,15 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]멸망전 9시 스크림!🐸",
-        "viewers": 25,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290434686",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290434686"
     },
     {
         "id": "dmng50",
         "is_live": true,
-        "title": "[고래상사] 빵이봤보기",
-        "viewers": 110,
+        "title": "[고래상사] 빵이봤봤는데 3시간이 지나있었어요 진짜 억마 월드컵",
+        "viewers": 127,
         "thumbnail": "https://liveimg.afreecatv.com/m/290429636",
         "live_url": "https://play.sooplive.co.kr/dmng50/290429636"
     },
@@ -83,7 +87,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 원하는 프사를 그려드립니다! 근데 타이머가 지나가는...똑딱똑딱 (그림뱅) +신청 공지확인",
-        "viewers": 55,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290427548",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290427548"
     }
