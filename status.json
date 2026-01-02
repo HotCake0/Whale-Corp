@@ -25,11 +25,7 @@
     },
     {
         "id": "melodingding",
-        "is_live": true,
-        "title": "고래상사) 검은화면소통방송",
-        "viewers": 41,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290426784",
-        "live_url": "https://play.sooplive.co.kr/melodingding/290426784"
+        "is_live": false
     },
     {
         "id": "soyoung6056",
@@ -58,8 +54,8 @@
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[고래상사] 와 오늘 진짜 춥다",
-        "viewers": 29,
+        "title": "[고래상사] 금요일 점심 노래 요정 자리 노리기 1일차 (노래뱅)",
+        "viewers": 61,
         "thumbnail": "https://liveimg.afreecatv.com/m/290427548",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290427548"
     }
