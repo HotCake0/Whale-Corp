@@ -1,7 +1,11 @@
 [
     {
         "id": "bach023",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 대망의 배그 멸망전 1일차!! 꼴찌의 유쾌한 반란이 시작된다",
+        "viewers": 239,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290458406",
+        "live_url": "https://play.sooplive.co.kr/bach023/290458406"
     },
     {
         "id": "doki0818",
@@ -50,8 +54,8 @@
     {
         "id": "dmng50",
         "is_live": true,
-        "title": "[고래상사] 하이용",
-        "viewers": 140,
+        "title": "[고래상사] 사람들이 T라고 합니다 F인증하겠습니다 마이리틀 퍼피",
+        "viewers": 91,
         "thumbnail": "https://liveimg.afreecatv.com/m/290455728",
         "live_url": "https://play.sooplive.co.kr/dmng50/290455728"
     },
@@ -59,7 +63,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 저는 오늘부터 매주 토요일에 링피트를 30분씩 어쩌구 ...더보기",
-        "viewers": 42,
+        "viewers": 43,
         "thumbnail": "https://liveimg.afreecatv.com/m/290457596",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290457596"
     }
