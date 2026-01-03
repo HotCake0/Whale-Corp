@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 대망의 배그 멸망전 1일차!! 꼴찌의 유쾌한 반란이 시작된다",
-        "viewers": 313,
+        "viewers": 328,
         "thumbnail": "https://liveimg.afreecatv.com/m/290458406",
         "live_url": "https://play.sooplive.co.kr/bach023/290458406"
     },
@@ -15,7 +15,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 좋은 저녁이에요:-)",
-        "viewers": 8,
+        "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/290459168",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290459168"
     },
@@ -49,17 +49,25 @@
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 킴성태팀 멸망전 대기",
+        "viewers": 9,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290459502",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/290459502"
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사]드디어 멸망전!! 세리아팀 화이팅!!🐸",
+        "viewers": 19,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290459312",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290459312"
     },
     {
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 사람들이 T라고 합니다 F인증하겠습니다 마이리틀 퍼피",
-        "viewers": 95,
+        "viewers": 97,
         "thumbnail": "https://liveimg.afreecatv.com/m/290455728",
         "live_url": "https://play.sooplive.co.kr/dmng50/290455728"
     },
@@ -67,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 저는 오늘부터 매주 토요일에 링피트를 30분씩 어쩌구 ...더보기",
-        "viewers": 46,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290457596",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290457596"
     }
