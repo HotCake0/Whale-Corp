@@ -17,11 +17,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]개새듀오 싱크룸 w. 삐요코",
-        "viewers": 25,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290461752",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290461752"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -43,7 +39,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사]개새즈 싱크룸 w. 조아라",
-        "viewers": 49,
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/290459744",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290459744"
     },
