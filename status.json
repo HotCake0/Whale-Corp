@@ -43,7 +43,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사]개새즈 싱크룸 w. 조아라",
-        "viewers": 55,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290459744",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290459744"
     },
@@ -53,11 +53,7 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": true,
-        "title": "💙[고래상사]나머지 공부 쪼금만~ 소화시키고 가야지!🐸",
-        "viewers": 22,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290459312",
-        "live_url": "https://play.sooplive.co.kr/kimmaren77/290459312"
+        "is_live": false
     },
     {
         "id": "dmng50",
