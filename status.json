@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 배그 멸망전 전에 카페 소통. 아니 근데 이건 좀;;",
-        "viewers": 237,
+        "viewers": 360,
         "thumbnail": "https://liveimg.afreecatv.com/m/290482436",
         "live_url": "https://play.sooplive.co.kr/bach023/290482436"
     },
@@ -18,8 +18,8 @@
     {
         "id": "ducke77",
         "is_live": true,
-        "title": "[고래상사] 하이큐 \"끝과 시작\" 진심인 눈 같이보기 찐찐찐찐찐 짐진심입니다",
-        "viewers": 57,
+        "title": "[고래상사] 하이큐 \"승자와 패자\" 진심인 눈 같이보기 찐찐찐찐찐 짐진심입니다",
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/290476692",
         "live_url": "https://play.sooplive.co.kr/ducke77/290476692"
     },
@@ -57,7 +57,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 안녕하심까",
+        "viewers": 41,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290482786",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290482786"
     },
     {
         "id": "nunknown314",
