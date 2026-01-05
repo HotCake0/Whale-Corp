@@ -10,8 +10,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 좋은 저녁이에오:0",
-        "viewers": 43,
+        "title": "[고래상사] 지수랑 마렌이랑 방과후 배그교실",
+        "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/290510794",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290510794"
     },
@@ -33,7 +33,11 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 누나 밥먹고왔다",
+        "viewers": 36,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290511624",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/290511624"
     },
     {
         "id": "akdma9692",
@@ -41,7 +45,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 야호 요코등장🎇",
+        "viewers": 64,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290511272",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290511272"
     },
     {
         "id": "gatgdf",
@@ -51,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]오늘도 배그 나머지공부 할건데🐸",
-        "viewers": 44,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290510266",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290510266"
     },
@@ -59,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 누명쓰고 감옥에 왔는데 모범수가되었다 / 백투더던",
-        "viewers": 70,
+        "viewers": 66,
         "thumbnail": "https://liveimg.afreecatv.com/m/290507304",
         "live_url": "https://play.sooplive.co.kr/dmng50/290507304"
     },
@@ -67,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이봤이랑 카페 털기기기기",
-        "viewers": 70,
+        "viewers": 73,
         "thumbnail": "https://liveimg.afreecatv.com/m/290508002",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290508002"
     }
