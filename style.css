@@ -22,10 +22,17 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     
-    /* [수정] 무거운 Canvas 대신 CSS 그라데이션 사용 */
-    background: linear-gradient(135deg, #0d1a2f 0%, #162a45 100%);
+    /* [수정됨] 그라데이션 대신 이미지 사용 */
+    /* linear-gradient를 섞어서 사진을 약간 어둡게 만들어 글씨 가독성을 높입니다 */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('background.png');
+    
+    /* 배경 이미지 배치 설정 */
+    background-size: cover;       /* 화면 전체를 꽉 채우도록 설정 */
+    background-position: center;  /* 이미지 중앙 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    background-attachment: fixed; /* 스크롤을 내려도 배경은 고정됨 */
+    
     min-height: 100vh;
-    background-attachment: fixed; /* 스크롤해도 배경 고정 */
 }
 
 .container {
