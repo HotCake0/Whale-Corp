@@ -106,21 +106,32 @@ body {
     font-weight: 500;
     opacity: 0.9;
 }
+/* style.css 약 78라인 근처 */
+
 .hero-button {
     display: inline-block;
     padding: 12px 30px;
-    border: 2px solid #fff;
-    border-radius: 30px;
+    
+    /* [수정] 모든 버튼을 진한 남색으로 통일 */
+    background-color: #0d1a2f; 
+    border: 2px solid #0d1a2f;
     color: #fff;
+    /* ----------------------------- */
+    
+    border-radius: 30px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 0.3s, color 0.3s;
 }
+
+/* 마우스 올렸을 때 효과 */
 .hero-button:hover {
-    background-color: #fff;
-    color: #0d1a2f;
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
 }
+
 .section {
     padding: 100px 0;
     background-color: rgba(255, 255, 255, 0.85); 
@@ -324,15 +335,7 @@ body {
     max-width: 800px;
     margin: 40px auto 0 auto;
 }
-.video-description .hero-button {
-    background-color: #0d1a2f;
-    border-color: #0d1a2f;
-    color: #fff;
-}
-.video-description .hero-button:hover {
-    background-color: #3498db;
-    border-color: #3498db;
-}
+
 .md-slider-container { position: relative; }
 .md-slider {
     display: flex;
@@ -496,4 +499,5 @@ body {
     .section { margin: 0 2%; margin-bottom: 30px; }
     .logo-image { height: 40px; }
 }
+
 
