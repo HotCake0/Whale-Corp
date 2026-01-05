@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁이에오:0",
+        "viewers": 43,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290510794",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290510794"
     },
     {
         "id": "ducke77",
@@ -47,15 +51,15 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]오늘도 배그 나머지공부 할건데🐸",
-        "viewers": 15,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/290510266",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290510266"
     },
     {
         "id": "dmng50",
         "is_live": true,
-        "title": "[고래상사] 겨울간식 월드컵 당신의 최애간식에 투표하세요",
-        "viewers": 85,
+        "title": "[고래상사] 누명쓰고 감옥에 왔는데 모범수가되었다 / 백투더던",
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/290507304",
         "live_url": "https://play.sooplive.co.kr/dmng50/290507304"
     },
@@ -63,7 +67,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이봤이랑 카페 털기기기기",
-        "viewers": 69,
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/290508002",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290508002"
     }
