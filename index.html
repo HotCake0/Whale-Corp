@@ -17,10 +17,9 @@
     <meta name="twitter:description" content="초격차 꽁트력으로 지속가능한 미래 방송 사회를 구현합니다.">
     <meta name="twitter:image" content="미리보기.png">
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-    <canvas id="background-canvas"></canvas>
     <div id="popup-modal" class="modal-overlay">
         <div class="modal-content">
             <a href="CCTV.html" target="_blank">
@@ -29,6 +28,7 @@
             <button id="modal-close-btn" class="modal-close">&times;</button>
         </div>
     </div>
+
     <header class="main-header">
         <div class="container">
             <a href="#home" class="logo-link">
@@ -46,13 +46,19 @@
         </div>
     </header>
     
-    <section id="home" class="hero"><div class="hero-content"><h1 class="hero-title">고래상사</h1><p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p><p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p><a href="#about" class="hero-button">더 알아보기</a></div></section>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">고래상사</h1>
+            <p class="hero-subtitle-en">Shaping the future of sustainable broadcasting with next-level comedy.</p>
+            <p class="hero-subtitle-ko">초격차 꽁트력으로 지속가능한 미래 방송 사회 구현</p>
+            <a href="#about" class="hero-button">더 알아보기</a>
+        </div>
+    </section>
     
     <section id="about" class="section">
         <div class="container" style="text-align: center; max-width: 800px;">
             <h2>고래상사 이야기</h2>
             <p>고래상사는 단순한 즐거움을 넘어, 참여하고 몰입하며 온몸으로 웃는 경험을 만듭니다. 우리는 '웃음'이라는 가치를 기반으로, 고객과 함께 성장하는 상생의 가치를 실현합니다.</p>
-            
             <a href="https://magic-mink-e82.notion.site/2c5e955ad773803f9036e03d0468d5fa" class="hero-button">자세히 알아보기</a>
         </div>
     </section>
@@ -188,31 +194,51 @@
                             <p class="catchphrase">"아 머리 나올뻔"</p>
                         </a>
                     </div>
-                    <button id="prevBtn" class="slider-btn">‹</button><button id="nextBtn" class="slider-btn">›</button>
+                    <button id="prevBtn" class="slider-btn" aria-label="이전">‹</button>
+                    <button id="nextBtn" class="slider-btn" aria-label="다음">›</button>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id="video" class="section"><div class="container"><h2>대표 영상</h2><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GvqzH3jVVs4?si=LEw4MYeYWEXGcLTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-description"><p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p><a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a></div></div></section>
-    <section id="md-shop" class="section bg-light"><div class="container"><h2>MD샵</h2><div class="md-slider-container"><div class="md-slider">
-        <div class="md-item"><div class="md-image-container"><img src="울큰고_소바바_킥.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 고매 소바바치킨.</p><a href="https://www.youtube.com/shopcollection/SCUCMFwpgB_rjp4Jk-oopLMFIoAuZSVHWHoJQ?scp=EAE%3D" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_상품.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="김마렌_상품.png" alt="김마렌 굿즈"></div><div class="md-info"><h3>김마렌 에디션</h3><p>(독)개구리대장, 김마렌의 팬덤 올챙구의 수많은 감정들!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/61f7eb8badb1e" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="견자희_상품.png" alt="견자희 굿즈"></div><div class="md-info"><h3>견자희 에디션</h3><p>견자희의 팬덤 장미들의 인방생활 OGQ!!</p><a href="https://ogqmarket.sooplive.co.kr/search/%EA%B2%AC%EC%9E%90%ED%9D%AC" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="감자가비_상품.png" alt="감자가비 굿즈"></div><div class="md-info"><h3>감자가비 에디션</h3><p>감자가비와 팬들의 일상을 담은 귀여운 이모티콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/63d34efbda135" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="빵땅콩_상품.png" alt="빵땅콩 굿즈"></div><div class="md-info"><h3>빵땅콩 에디션</h3><p>고래상사 최고의 모기 빵땅콩의 빵땅콩콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/6435451a4f3a9" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="빡쏘_카페.png" alt="빡쏘_카페"></div><div class="md-info"><h3>빡쏘 카페</h3><p>빡쏘의 단칸방 카페</p><a href="https://cafe.naver.com/f-e/cafes/31483587/menus/0?t=1747908504607" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="삐요코_카페.png" alt="삐요코_카페"></div><div class="md-info"><h3>삐요코 카페</h3><p>삐요코의 떡방앗간</p><a href="https://cafe.naver.com/bbiyoco" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="이지수_카페.png" alt="이지수_카페"></div><div class="md-info"><h3>이지수 카페</h3><p>이지수의 꿀단</p><a href="https://cafe.naver.com/easysoo" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="조아라_카페.png" alt="조아라_카페"></div><div class="md-info"><h3>조아라 카페</h3><p>조아라의 아이돌(?) 카페</p><a href="https://cafe.naver.com/projectuniversee#" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="밀크티냠_카페.png" alt="밀크티냠_카페"></div><div class="md-info"><h3>밀크티냠 카페</h3><p>밀냠이의 티백꾸러미</p><a href="https://cafe.naver.com/lovelymilknyam" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="온자두_카페.png" alt="온자두_카페"></div><div class="md-info"><h3>온자두 카페</h3><p>자두의 자두밭</p><a href="https://cafe.naver.com/onjadu" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="미현영_현이봤.png" alt="현이봤"></div><div class="md-info"><h3>미현영 현이봤</h3><p>현영이의 방송국 현이봤</p><a href="https://www.sooplive.co.kr/station/nunknown314/board/115107217" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-        <div class="md-item"><div class="md-image-container"><img src="쏭이_쏭이봤.png" alt="숭이봤나?"></div><div class="md-info"><h3>쏭이 숭이봤나?</h3><p>쏭이의 방송국 숭이봤나?</p><a href="https://www.sooplive.co.kr/station/gatgdf/board/114714227" target="_blank" class="hero-button md-button">구매하기</a></div></div>
-    </div>
-        <button id="mdPrevBtn" class="slider-btn">‹</button><button id="mdNextBtn" class="slider-btn">›</button></div></div></section>
-    
+    <section id="video" class="section">
+        <div class="container">
+            <h2>대표 영상</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/GvqzH3jVVs4?si=LEw4MYeYWEXGcLTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-description">
+                <p>고래상사의 대표 콘텐츠를 감상해 보세요. 늘 새롭고 유쾌한 웃음을 만들기 위해 노력합니다.</p>
+                <a href="https://www.youtube.com/channel/UCIchCOLwLBMD87quHlNuXjQ" target="_blank" class="hero-button">채널에서 더보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="md-shop" class="section bg-light">
+        <div class="container">
+            <h2>MD샵</h2>
+            <div class="md-slider-container">
+                <div class="md-slider">
+                    <div class="md-item"><div class="md-image-container"><img src="울큰고_소바바_킥.png" alt="울산큰고래 굿즈"></div><div class="md-info"><h3>울산큰고래 에디션</h3><p>대기업의 맛. 울산큰고래가 추천하는 고매 소바바치킨.</p><a href="https://www.youtube.com/shopcollection/SCUCMFwpgB_rjp4Jk-oopLMFIoAuZSVHWHoJQ?scp=EAE%3D" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="멜로딩딩_상품.png" alt="멜로딩딩 굿즈"></div><div class="md-info"><h3>멜로딩딩 에디션</h3><p>비서는 항상 곁에. 천사 멜로딩딩 아크릴 무드등.</p><a href="https://sooptore.sooplive.co.kr/products/128821929?stationId=melodingding" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="김마렌_상품.png" alt="김마렌 굿즈"></div><div class="md-info"><h3>김마렌 에디션</h3><p>(독)개구리대장, 김마렌의 팬덤 올챙구의 수많은 감정들!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/61f7eb8badb1e" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="견자희_상품.png" alt="견자희 굿즈"></div><div class="md-info"><h3>견자희 에디션</h3><p>견자희의 팬덤 장미들의 인방생활 OGQ!!</p><a href="https://ogqmarket.sooplive.co.kr/search/%EA%B2%AC%EC%9E%90%ED%9D%AC" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="감자가비_상품.png" alt="감자가비 굿즈"></div><div class="md-info"><h3>감자가비 에디션</h3><p>감자가비와 팬들의 일상을 담은 귀여운 이모티콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/63d34efbda135" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="빵땅콩_상품.png" alt="빵땅콩 굿즈"></div><div class="md-info"><h3>빵땅콩 에디션</h3><p>고래상사 최고의 모기 빵땅콩의 빵땅콩콘!!</p><a href="https://ogqmarket.sooplive.co.kr/emoticon/6435451a4f3a9" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="빡쏘_카페.png" alt="빡쏘_카페"></div><div class="md-info"><h3>빡쏘 카페</h3><p>빡쏘의 단칸방 카페</p><a href="https://cafe.naver.com/f-e/cafes/31483587/menus/0?t=1747908504607" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="삐요코_카페.png" alt="삐요코_카페"></div><div class="md-info"><h3>삐요코 카페</h3><p>삐요코의 떡방앗간</p><a href="https://cafe.naver.com/bbiyoco" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="이지수_카페.png" alt="이지수_카페"></div><div class="md-info"><h3>이지수 카페</h3><p>이지수의 꿀단</p><a href="https://cafe.naver.com/easysoo" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="조아라_카페.png" alt="조아라_카페"></div><div class="md-info"><h3>조아라 카페</h3><p>조아라의 아이돌(?) 카페</p><a href="https://cafe.naver.com/projectuniversee#" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="밀크티냠_카페.png" alt="밀크티냠_카페"></div><div class="md-info"><h3>밀크티냠 카페</h3><p>밀냠이의 티백꾸러미</p><a href="https://cafe.naver.com/lovelymilknyam" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="온자두_카페.png" alt="온자두_카페"></div><div class="md-info"><h3>온자두 카페</h3><p>자두의 자두밭</p><a href="https://cafe.naver.com/onjadu" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="미현영_현이봤.png" alt="현이봤"></div><div class="md-info"><h3>미현영 현이봤</h3><p>현영이의 방송국 현이봤</p><a href="https://www.sooplive.co.kr/station/nunknown314/board/115107217" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                    <div class="md-item"><div class="md-image-container"><img src="쏭이_쏭이봤.png" alt="숭이봤나?"></div><div class="md-info"><h3>쏭이 숭이봤나?</h3><p>쏭이의 방송국 숭이봤나?</p><a href="https://www.sooplive.co.kr/station/gatgdf/board/114714227" target="_blank" class="hero-button md-button">구매하기</a></div></div>
+                </div>
+                <button id="mdPrevBtn" class="slider-btn" aria-label="이전">‹</button>
+                <button id="mdNextBtn" class="slider-btn" aria-label="다음">›</button>
+            </div>
+        </div>
+    </section>
     
     <footer class="main-footer">
         <div class="container">
@@ -285,159 +311,77 @@
                 }
             });
 
-            // --- Canvas Background Animation ---
-            const canvas = document.getElementById('background-canvas');
-            if (canvas) {
-                const ctx = canvas.getContext('2d');
-                let particlesArray;
-                const mouse = { x: null, y: null, radius: 150 };
-                const setCanvasSize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-                class Particle {
-                    constructor(x, y, dX, dY, size, color) { this.x=x; this.y=y; this.directionX=dX; this.directionY=dY; this.size=size; this.color=color; }
-                    draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI*2, false); ctx.fillStyle=this.color; ctx.fill(); }
-                    update() {
-                        if(this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
-                        if(this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
-                        if(mouse.x !== null) {
-                            let dx = mouse.x - this.x, dy = mouse.y - this.y, distance = Math.sqrt(dx*dx+dy*dy);
-                            if (distance < mouse.radius + this.size) {
-                                if(mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 5;
-                                if(mouse.x > this.x && this.x > this.size * 10) this.x -= 5;
-                                if(mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 5;
-                                if(mouse.y > this.y && this.y > this.size * 10) this.y -= 5;
-                            }
-                        }
-                        this.x += this.directionX; this.y += this.directionY; this.draw();
-                    }
-                }
-                const init = () => {
-                    particlesArray = [];
-                    let num = (canvas.height * canvas.width) / 9000;
-                    for (let i = 0; i < num; i++) {
-                        let size = (Math.random() * 4) + 1;
-                        let x = Math.random() * (innerWidth - size * 2) + size;
-                        let y = Math.random() * (innerHeight - size * 2) + size;
-                        let dX = (Math.random() * 0.4) - 0.2, dY = (Math.random() * 0.4) - 0.2;
-                        let color = `rgba(173, 216, 230, ${Math.random() * 0.5 + 0.2})`;
-                        particlesArray.push(new Particle(x, y, dX, dY, size, color));
-                    }
-                };
-                const connect = () => {
-                    const dist = (canvas.width/7) * (canvas.height/7);
-                    for (let a = 0; a < particlesArray.length; a++) {
-                        for (let b = a; b < particlesArray.length; b++) {
-                            let distance = ((particlesArray[a].x - particlesArray[b].x) ** 2) + ((particlesArray[a].y - particlesArray[b].y) ** 2);
-                            if (distance < dist) {
-                                let opacity = 1 - (distance / 20000);
-                                ctx.strokeStyle = `rgba(173, 216, 230, ${opacity})`;
-                                ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(particlesArray[a].x, particlesArray[a].y); ctx.lineTo(particlesArray[b].x, particlesArray[b].y); ctx.stroke();
-                            }
-                        }
-                    }
-                };
-                const animate = () => {
-                    requestAnimationFrame(animate);
-                    ctx.clearRect(0, 0, innerWidth, innerHeight);
-                    let grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-                    grad.addColorStop(0, '#1a2a4f'); grad.addColorStop(1, '#346a9a');
-                    ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
-                    particlesArray.forEach(p => p.update());
-                    connect();
-                };
-                window.addEventListener('mousemove', (e) => { mouse.x = e.x; mouse.y = e.y; });
-                window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
-                window.addEventListener('resize', () => { setCanvasSize(); init(); });
-                setCanvasSize(); init(); animate();
-            }
+            // (파티클/Canvas 관련 스크립트가 여기서 삭제되었습니다)
         });
         
-async function updateLiveStatus() {
-    try {
-        // [중요] 깃허브 페이지에서 작동하도록 상대 경로 사용
-        const response = await fetch('./status.json?v=' + new Date().getTime());
-        
-        if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
-
-        const data = await response.json();
-        
-        data.forEach(member => {
-            const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
-            
-            if (memberElement) {
-                const badge = memberElement.querySelector('.live-badge');
-                const img = memberElement.querySelector('img');
-                const link = memberElement.querySelector('a');
-                const originalSrc = img.getAttribute('data-original-src');
+        async function updateLiveStatus() {
+            try {
+                // 캐싱 방지용 타임스탬프
+                const response = await fetch('./status.json?v=' + new Date().getTime());
                 
-                if (!link.getAttribute('data-original-href')) {
-                    link.setAttribute('data-original-href', link.getAttribute('href'));
-                }
-                const originalHref = link.getAttribute('data-original-href');
+                if (!response.ok) throw new Error("파일을 찾을 수 없습니다");
 
-                if (member.is_live) {
-                    memberElement.setAttribute('data-is-live', 'true');
-                    if(badge) badge.style.display = 'block';
-                    if (member.thumbnail && img.src !== member.thumbnail) img.src = member.thumbnail;
-                    if (member.live_url) link.href = member.live_url;
+                const data = await response.json();
+                
+                data.forEach(member => {
+                    const memberElement = document.querySelector(`.cast-item[data-bj-id="${member.id}"]`);
                     
-                    img.style.width = '256px';
-                    img.style.height = '144px';
-                    img.style.borderRadius = '12px';
-                    img.style.borderColor = '#e74c3c';
-                    img.style.borderWidth = '3px';
-                    link.title = `방송중: ${member.title}`;
-                } else {
-                    memberElement.setAttribute('data-is-live', 'false');
-                    if(badge) badge.style.display = 'none';
-                    if (originalSrc && img.src !== originalSrc) img.src = originalSrc;
-                    if (originalHref) link.href = originalHref;
+                    if (memberElement) {
+                        const img = memberElement.querySelector('img');
+                        const link = memberElement.querySelector('a');
+                        const originalSrc = img.getAttribute('data-original-src');
+                        
+                        // data-original-href 저장
+                        if (!link.getAttribute('data-original-href')) {
+                            link.setAttribute('data-original-href', link.getAttribute('href'));
+                        }
+                        const originalHref = link.getAttribute('data-original-href');
 
-                    img.style.width = '180px';
-                    img.style.height = '180px';
-                    img.style.borderRadius = '50%';
-                    img.style.borderColor = '#fff';
-                    img.style.borderWidth = '5px';
-                    link.title = '';
-                }
+                        if (member.is_live) {
+                            // [최적화] 인라인 스타일 제거하고 클래스로 제어
+                            memberElement.classList.add('live');
+                            memberElement.setAttribute('data-is-live', 'true');
+                            
+                            // 이미지 및 링크 교체
+                            if (member.thumbnail && img.src !== member.thumbnail) img.src = member.thumbnail;
+                            if (member.live_url) link.href = member.live_url;
+                            link.title = `방송중: ${member.title}`;
+                        } else {
+                            // 클래스 제거
+                            memberElement.classList.remove('live');
+                            memberElement.setAttribute('data-is-live', 'false');
+                            
+                            // 원래 이미지/링크로 복구
+                            if (originalSrc && img.src !== originalSrc) img.src = originalSrc;
+                            if (originalHref) link.href = originalHref;
+                            link.title = '';
+                        }
+                    }
+                });
+
+                // 방송 중인 멤버 앞으로 정렬
+                const container = document.querySelector('.cast-slider');
+                const items = Array.from(container.querySelectorAll('.cast-item'));
+                const buttons = Array.from(container.querySelectorAll('.slider-btn'));
+
+                items.sort((a, b) => {
+                    const aLive = a.getAttribute('data-is-live') === 'true';
+                    const bLive = b.getAttribute('data-is-live') === 'true';
+                    if (aLive && !bLive) return -1;
+                    if (!aLive && bLive) return 1;
+                    return 0;
+                });
+
+                items.forEach(item => container.appendChild(item));
+                buttons.forEach(btn => container.appendChild(btn));
+
+            } catch (error) {
+                console.error("데이터 로드 실패:", error);
             }
-        });
+        }
 
-        const container = document.querySelector('.cast-slider');
-        const items = Array.from(container.querySelectorAll('.cast-item'));
-        const buttons = Array.from(container.querySelectorAll('.slider-btn'));
-
-        items.sort((a, b) => {
-            const aLive = a.getAttribute('data-is-live') === 'true';
-            const bLive = b.getAttribute('data-is-live') === 'true';
-            if (aLive && !bLive) return -1;
-            if (!aLive && bLive) return 1;
-            return 0;
-        });
-
-        items.forEach(item => container.appendChild(item));
-        buttons.forEach(btn => container.appendChild(btn));
-
-    } catch (error) {
-        console.error("데이터 로드 실패:", error);
-    }
-}
-
-updateLiveStatus();
-setInterval(updateLiveStatus, 60000);
+        updateLiveStatus();
+        setInterval(updateLiveStatus, 60000); // 1분마다 갱신
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
