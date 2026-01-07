@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 오늘 고래상사 기강잡겠습니다. 울검 울검!",
-        "viewers": 474,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290561980",
-        "live_url": "https://play.sooplive.co.kr/bach023/290561980"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -14,8 +10,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 후열 토크토크",
-        "viewers": 29,
+        "title": "[고래상사] 후열 토크토크 애드벌룬5개 팬가입시 퀵뷰",
+        "viewers": 113,
         "thumbnail": "https://liveimg.afreecatv.com/m/290561824",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290561824"
     },
@@ -39,7 +35,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 후여르",
-        "viewers": 51,
+        "viewers": 91,
         "thumbnail": "https://liveimg.afreecatv.com/m/290562482",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290562482"
     },
@@ -59,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]※오늘은 올챙구랑 작업할거야※🐸",
-        "viewers": 37,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290560612",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290560612"
     },
@@ -67,7 +63,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 만개 선입금 받아버린 좀막 켠왕이 되어버렸습니다 ...",
-        "viewers": 143,
+        "viewers": 135,
         "thumbnail": "https://liveimg.afreecatv.com/m/290559180",
         "live_url": "https://play.sooplive.co.kr/dmng50/290559180"
     },
