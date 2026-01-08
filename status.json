@@ -25,7 +25,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) -",
+        "viewers": 21,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290584208",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290584208"
     },
     {
         "id": "soyoung6056",
@@ -49,11 +53,7 @@
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사] 만개 선입금 받아버린 좀막 켠왕이 되어버렸습니다 ...",
-        "viewers": 265,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290559180",
-        "live_url": "https://play.sooplive.co.kr/dmng50/290559180"
+        "is_live": false
     },
     {
         "id": "nunknown314",
