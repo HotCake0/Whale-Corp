@@ -27,7 +27,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) -",
-        "viewers": 70,
+        "viewers": 69,
         "thumbnail": "https://liveimg.afreecatv.com/m/290584208",
         "live_url": "https://play.sooplive.co.kr/melodingding/290584208"
     },
@@ -57,6 +57,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 어제 무슨일이 있었냐묜...",
+        "viewers": 0,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290588034",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290588034"
     }
 ]
