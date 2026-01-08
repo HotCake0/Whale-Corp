@@ -17,7 +17,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]감기 조심하세요 쌰갈",
+        "viewers": 23,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290590624",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290590624"
     },
     {
         "id": "gyeonjahee",
@@ -27,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 낚시하는버추얼 // 댐보이 뇌대리중",
-        "viewers": 62,
+        "viewers": 66,
         "thumbnail": "https://liveimg.afreecatv.com/m/290584208",
         "live_url": "https://play.sooplive.co.kr/melodingding/290584208"
     },
@@ -59,7 +63,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 어제 무슨일이 있었냐묜...",
-        "viewers": 63,
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/290588034",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290588034"
     }
