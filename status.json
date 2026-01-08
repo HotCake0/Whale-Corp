@@ -6,14 +6,18 @@
     {
         "id": "doki0818",
         "is_live": true,
-        "title": "[고래상사]저녁가비 오랜만~",
-        "viewers": 136,
+        "title": "[고래상사]고래상사 재판 사장님 유튜브 같이보기",
+        "viewers": 170,
         "thumbnail": "https://liveimg.afreecatv.com/m/290594064",
         "live_url": "https://play.sooplive.co.kr/doki0818/290594064"
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁입니다:)",
+        "viewers": 11,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290598140",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290598140"
     },
     {
         "id": "ducke77",
@@ -23,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]안녕하세요 랩밑조입니다",
-        "viewers": 35,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290590624",
         "live_url": "https://play.sooplive.co.kr/joaras2/290590624"
     },
@@ -39,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 아농하쎄요",
-        "viewers": 41,
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/290596224",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290596224"
     },
@@ -59,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]레전드노곤함레전드따끈따끈개구리🐸",
-        "viewers": 32,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290595714",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290595714"
     },
