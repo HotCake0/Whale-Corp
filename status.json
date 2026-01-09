@@ -7,7 +7,7 @@
         "id": "doki0818",
         "is_live": true,
         "title": "라인CK 딮기응원방!! 쇼메 스매쉬 화이팅!!!#2026시즌오프닝 [고래상사]",
-        "viewers": 76,
+        "viewers": 90,
         "thumbnail": "https://liveimg.afreecatv.com/m/290618220",
         "live_url": "https://play.sooplive.co.kr/doki0818/290618220"
     },
@@ -15,19 +15,23 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 사장님 카페에서 따땃한 커피한잔~",
-        "viewers": 113,
+        "viewers": 110,
         "thumbnail": "https://liveimg.afreecatv.com/m/290615964",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290615964"
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]  DNS 응원 모여라~ LCK 라인 CK #2026시즌오프닝",
+        "viewers": 18,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290620044",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290620044"
     },
     {
         "id": "joaras2",
         "is_live": true,
-        "title": "[유니버스/고래상사]lck 최애팀 정해보기#2026시즌오프닝",
-        "viewers": 30,
+        "title": "[유니버스/고래상사]최애팀 정해보기#2026시즌오프닝",
+        "viewers": 26,
         "thumbnail": "https://liveimg.afreecatv.com/m/290618314",
         "live_url": "https://play.sooplive.co.kr/joaras2/290618314"
     },
@@ -39,7 +43,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사)LAC)  내이름 김점례 오늘부터 다시 태어난다",
-        "viewers": 83,
+        "viewers": 90,
         "thumbnail": "https://liveimg.afreecatv.com/m/290616136",
         "live_url": "https://play.sooplive.co.kr/melodingding/290616136"
     },
@@ -54,8 +58,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 마이크 세팅 바꾼 요코🎇",
-        "viewers": 14,
+        "title": "[오르카/고래상사] 마이크 세팅 바꾼 요코 /노래방🎇",
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/290619770",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290619770"
     },
@@ -67,7 +71,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]하이큐 보기전에 사장님 유튜브 훔치기🐸",
-        "viewers": 55,
+        "viewers": 63,
         "thumbnail": "https://liveimg.afreecatv.com/m/290618742",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290618742"
     },
@@ -79,7 +83,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 노래대회 노래를 연습하자 [구플]",
-        "viewers": 12,
+        "viewers": 11,
         "thumbnail": "https://liveimg.afreecatv.com/m/290617310",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290617310"
     }
