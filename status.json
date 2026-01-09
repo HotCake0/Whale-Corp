@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 사장님 카페에서 따땃한 커피한잔~",
-        "viewers": 85,
+        "viewers": 116,
         "thumbnail": "https://liveimg.afreecatv.com/m/290615964",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290615964"
     },
@@ -31,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 드릴이 드릴드릴하다.",
-        "viewers": 54,
+        "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/290616136",
         "live_url": "https://play.sooplive.co.kr/melodingding/290616136"
     },
@@ -61,6 +61,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 노래대회 노래를 연습하자 [구플]",
+        "viewers": 11,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290617310",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290617310"
     }
 ]
