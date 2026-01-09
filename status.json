@@ -5,13 +5,17 @@
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "라인CK 딮기응원방!! 쇼메 스매쉬 화이팅!!!#2026시즌오프닝 [고래상사]",
+        "viewers": 27,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290618220",
+        "live_url": "https://play.sooplive.co.kr/doki0818/290618220"
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 사장님 카페에서 따땃한 커피한잔~",
-        "viewers": 116,
+        "viewers": 62,
         "thumbnail": "https://liveimg.afreecatv.com/m/290615964",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290615964"
     },
@@ -21,7 +25,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]lck 최애팀 정해보기#2026시즌오프닝",
+        "viewers": 15,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290618314",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290618314"
     },
     {
         "id": "gyeonjahee",
@@ -30,8 +38,8 @@
     {
         "id": "melodingding",
         "is_live": true,
-        "title": "고래상사) 드릴이 드릴드릴하다.",
-        "viewers": 51,
+        "title": "고래상사)LAC)  내이름 김점례 오늘부터 다시 태어난다",
+        "viewers": 74,
         "thumbnail": "https://liveimg.afreecatv.com/m/290616136",
         "live_url": "https://play.sooplive.co.kr/melodingding/290616136"
     },
@@ -63,7 +71,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 노래대회 노래를 연습하자 [구플]",
-        "viewers": 11,
+        "viewers": 12,
         "thumbnail": "https://liveimg.afreecatv.com/m/290617310",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290617310"
     }
