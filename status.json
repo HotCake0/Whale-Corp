@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 오랜만입니다. 오늘 좀 뜨거울 수 있습니다",
-        "viewers": 462,
+        "viewers": 491,
         "thumbnail": "https://liveimg.afreecatv.com/m/290646962",
         "live_url": "https://play.sooplive.co.kr/bach023/290646962"
     },
@@ -21,7 +21,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]미각을 잃었읍니다.",
+        "viewers": 1,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290648414",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290648414"
     },
     {
         "id": "gyeonjahee",
@@ -31,7 +35,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) LAC > 도둑질좀 배워보겠습니다.",
-        "viewers": 53,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/290644222",
         "live_url": "https://play.sooplive.co.kr/melodingding/290644222"
     },
@@ -39,7 +43,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 잔잔바리",
-        "viewers": 43,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/290646402",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290646402"
     },
@@ -51,7 +55,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 울큰고 유튜브 재판편 보기",
-        "viewers": 62,
+        "viewers": 59,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643558",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290643558"
     },
@@ -63,7 +67,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 토스,............토스를 올려줘.,🐸",
-        "viewers": 28,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290647554",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290647554"
     },
@@ -71,7 +75,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 5시 김병살이랑 팝유컴",
-        "viewers": 63,
+        "viewers": 60,
         "thumbnail": "https://liveimg.afreecatv.com/m/290642134",
         "live_url": "https://play.sooplive.co.kr/dmng50/290642134"
     },
@@ -79,7 +83,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 유키라님 노래 대회 1등 감사합니다~!!",
-        "viewers": 63,
+        "viewers": 58,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643244",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290643244"
     }
