@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] LCK 서포터즈 지원하기 DNS",
+        "viewers": 42,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290637022",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290637022"
     },
     {
         "id": "joaras2",
