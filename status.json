@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 미현영 삐요코 응원하기",
-        "viewers": 56,
+        "viewers": 53,
         "thumbnail": "https://liveimg.afreecatv.com/m/290637022",
         "live_url": "https://play.sooplive.co.kr/ducke77/290637022"
     },
@@ -30,14 +30,18 @@
     {
         "id": "melodingding",
         "is_live": true,
-        "title": "고래상사) 소똥하고 도둑질하러갈거임",
-        "viewers": 60,
+        "title": "고래상사) LAC > 도둑질좀 배워보겠습니다.",
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290644222",
         "live_url": "https://play.sooplive.co.kr/melodingding/290644222"
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 잔잔바리",
+        "viewers": 20,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290646402",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/290646402"
     },
     {
         "id": "akdma9692",
@@ -46,8 +50,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 유키라님 노래대회 나왔어요 ~!",
-        "viewers": 69,
+        "title": "[오르카/고래상사] 유키라님 노래대회 나왔어요 ~! 4번투표 부탁드립니다!",
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643558",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290643558"
     },
@@ -63,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 5시 김병살이랑 팝유컴",
-        "viewers": 65,
+        "viewers": 66,
         "thumbnail": "https://liveimg.afreecatv.com/m/290642134",
         "live_url": "https://play.sooplive.co.kr/dmng50/290642134"
     },
@@ -71,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 유키라님 노래 대회 나가요!",
-        "viewers": 91,
+        "viewers": 101,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643244",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290643244"
     }
