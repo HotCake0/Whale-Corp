@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 하이큐 15번본 사람 재능과 센스 컨셉트의 싸움 몰아보기 DNS",
-        "viewers": 79,
+        "viewers": 77,
         "thumbnail": "https://liveimg.afreecatv.com/m/290637022",
         "live_url": "https://play.sooplive.co.kr/ducke77/290637022"
     },
@@ -57,6 +57,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 세팅중",
+        "viewers": 1,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290642032",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290642032"
     }
 ]
