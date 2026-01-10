@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] Ai 구분하는 게임",
-        "viewers": 432,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290646962",
-        "live_url": "https://play.sooplive.co.kr/bach023/290646962"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -13,11 +9,7 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사] 땅콩컵 롤 연습 w.울산큰고래 견자희 김마렌 쏭이",
-        "viewers": 36,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290648584",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290648584"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -46,8 +38,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 잔잔 노래뱅 🌟",
-        "viewers": 19,
+        "title": "[오르카/고래상사] 신과함께 인과연/오늘 끝장나게 영화까지 보기",
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290660998",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290660998"
     },
@@ -59,7 +51,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 힐링하긔🐸",
-        "viewers": 36,
+        "viewers": 47,
         "thumbnail": "https://liveimg.afreecatv.com/m/290647554",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290647554"
     },
