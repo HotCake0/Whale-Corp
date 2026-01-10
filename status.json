@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 오랜만입니다. 오늘 좀 뜨거울 수 있습니다",
-        "viewers": 491,
+        "viewers": 501,
         "thumbnail": "https://liveimg.afreecatv.com/m/290646962",
         "live_url": "https://play.sooplive.co.kr/bach023/290646962"
     },
@@ -13,7 +13,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 좋은 저녁이에요:)",
+        "viewers": 18,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290648584",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290648584"
     },
     {
         "id": "ducke77",
@@ -23,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]미각을 잃었읍니다.",
-        "viewers": 1,
+        "viewers": 21,
         "thumbnail": "https://liveimg.afreecatv.com/m/290648414",
         "live_url": "https://play.sooplive.co.kr/joaras2/290648414"
     },
@@ -35,15 +39,15 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) LAC > 도둑질좀 배워보겠습니다.",
-        "viewers": 50,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290644222",
         "live_url": "https://play.sooplive.co.kr/melodingding/290644222"
     },
     {
         "id": "soyoung6056",
         "is_live": true,
-        "title": "[고래상사] 잔잔바리",
-        "viewers": 44,
+        "title": "[고래상사] 추운겨울 따뜻한 노래 듣고 가세요 w. 하나 두부",
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290646402",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290646402"
     },
@@ -55,7 +59,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 울큰고 유튜브 재판편 보기",
-        "viewers": 59,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643558",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290643558"
     },
@@ -67,7 +71,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 토스,............토스를 올려줘.,🐸",
-        "viewers": 35,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290647554",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290647554"
     },
@@ -75,15 +79,15 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 5시 김병살이랑 팝유컴",
-        "viewers": 60,
+        "viewers": 58,
         "thumbnail": "https://liveimg.afreecatv.com/m/290642134",
         "live_url": "https://play.sooplive.co.kr/dmng50/290642134"
     },
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[고래상사] 유키라님 노래 대회 1등 감사합니다~!!",
-        "viewers": 58,
+        "title": "[고래상사] 유키라님 노래 대회 1등  하고 바로 링피트로 기강잡기",
+        "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/290643244",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290643244"
     }
