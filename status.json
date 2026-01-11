@@ -5,7 +5,11 @@
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]세기의 경매 시작합니다w.삐요코,밀크티냠",
+        "viewers": 49,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290673840",
+        "live_url": "https://play.sooplive.co.kr/doki0818/290673840"
     },
     {
         "id": "xpdpfv2",
@@ -47,7 +51,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 최약체 결정전 오늘 하겠습니다. 오빵이들 도와주세요.",
-        "viewers": 132,
+        "viewers": 134,
         "thumbnail": "https://liveimg.afreecatv.com/m/290671420",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290671420"
     },
@@ -63,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 5시 빵땅콩 첫 커머스 바삭팝콘🍿",
-        "viewers": 87,
+        "viewers": 88,
         "thumbnail": "https://liveimg.afreecatv.com/m/290671070",
         "live_url": "https://play.sooplive.co.kr/dmng50/290671070"
     },
@@ -71,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 롤 하러 왔습니다",
-        "viewers": 74,
+        "viewers": 64,
         "thumbnail": "https://liveimg.afreecatv.com/m/290672564",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290672564"
     }
