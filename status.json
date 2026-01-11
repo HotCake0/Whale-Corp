@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 6시 에어컨은 내꺼다",
-        "viewers": 68,
+        "viewers": 72,
         "thumbnail": "https://liveimg.afreecatv.com/m/290664042",
         "live_url": "https://play.sooplive.co.kr/ducke77/290664042"
     },
@@ -31,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 안녕? 모니터랑 싸우고왔어",
-        "viewers": 51,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290669286",
         "live_url": "https://play.sooplive.co.kr/melodingding/290669286"
     },
@@ -57,7 +57,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 5시 빵땅콩 첫 커머스 바삭팝콘🍿",
+        "viewers": 14,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290671070",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290671070"
     },
     {
         "id": "nunknown314",
