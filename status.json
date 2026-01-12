@@ -25,7 +25,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 딩딩이 아퍼쬬, 호해죠",
+        "viewers": 33,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290694850",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290694850"
     },
     {
         "id": "soyoung6056",
