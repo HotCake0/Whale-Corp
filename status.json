@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 땅콩컵! 롤 크루대전 결승 진출!! 마지막 연습 들어갑니다",
-        "viewers": 432,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290698852",
-        "live_url": "https://play.sooplive.co.kr/bach023/290698852"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -13,11 +9,7 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사] 땅콩컵 자신이 없습니다. 질 자신이 w.울산큰고래 견자희 김마렌 쏭이 우태 단수아",
-        "viewers": 26,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290698864",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290698864"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -29,11 +21,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사] 5시 땅콩컵🌹",
-        "viewers": 222,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290698784",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290698784"
+        "is_live": false
     },
     {
         "id": "melodingding",
@@ -47,7 +35,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 스며들기 좋은 오늘",
-        "viewers": 27,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290707264",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290707264"
     },
@@ -57,17 +45,13 @@
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사] 땅콩컵 연습",
-        "viewers": 32,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290699062",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/290699062"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 땅콩컵 크루대전 B조!! 가보자!🐸",
-        "viewers": 39,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/290698816",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290698816"
     },
@@ -79,7 +63,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 월요일은 현이봤이랑 카페털기의 날~!",
-        "viewers": 85,
+        "viewers": 177,
         "thumbnail": "https://liveimg.afreecatv.com/m/290696376",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290696376"
     }
