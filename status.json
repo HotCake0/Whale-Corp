@@ -35,7 +35,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 스며들기 좋은 오늘",
-        "viewers": 31,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290707264",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290707264"
     },
@@ -57,10 +57,6 @@
     },
     {
         "id": "nunknown314",
-        "is_live": true,
-        "title": "[고래상사] 월요일은 현이봤이랑 카페털기의 날~!",
-        "viewers": 92,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290696376",
-        "live_url": "https://play.sooplive.co.kr/nunknown314/290696376"
+        "is_live": false
     }
 ]
