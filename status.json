@@ -27,7 +27,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) LAC // 점례가 간다.",
-        "viewers": 42,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290694850",
         "live_url": "https://play.sooplive.co.kr/melodingding/290694850"
     },
@@ -53,13 +53,17 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 4시 50분 땅콩컵 개최!",
+        "viewers": 59,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290697390",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290697390"
     },
     {
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 아와와 밥 머먹찌",
-        "viewers": 42,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290696376",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290696376"
     }
