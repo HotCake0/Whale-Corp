@@ -51,12 +51,16 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 안녕하심까",
-        "viewers": 37,
+        "viewers": 62,
         "thumbnail": "https://liveimg.afreecatv.com/m/290724706",
         "live_url": "https://play.sooplive.co.kr/dmng50/290724706"
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 다들 머행",
+        "viewers": 38,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290725102",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290725102"
     }
 ]
