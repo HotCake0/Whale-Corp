@@ -2,8 +2,8 @@
     {
         "id": "bach023",
         "is_live": true,
-        "title": "[고래상사] 땅콩컵 우승. 후열: AI or 리얼 w조아라 삐요코",
-        "viewers": 561,
+        "title": "[고래상사] 후열: AI or 리얼 w조아라 삐요코",
+        "viewers": 554,
         "thumbnail": "https://liveimg.afreecatv.com/m/290726172",
         "live_url": "https://play.sooplive.co.kr/bach023/290726172"
     },
@@ -23,7 +23,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]ai 맞추기 w. 울큰고, 삐요코",
-        "viewers": 47,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290728928",
         "live_url": "https://play.sooplive.co.kr/joaras2/290728928"
     },
@@ -31,7 +31,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 자..🌹",
-        "viewers": 256,
+        "viewers": 234,
         "thumbnail": "https://liveimg.afreecatv.com/m/290726130",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290726130"
     },
@@ -41,11 +41,7 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "[고래상사] 튜베릅",
-        "viewers": 38,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290729748",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/290729748"
+        "is_live": false
     },
     {
         "id": "akdma9692",
@@ -54,8 +50,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 울산 여신 겅듀님들 등장 ~!w. 조아라",
-        "viewers": 42,
+        "title": "[오르카/고래상사] ai 맞추기 게임 W. 울큰고 조아라",
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/290732724",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290732724"
     },
@@ -66,8 +62,8 @@
     {
         "id": "kimmaren77",
         "is_live": true,
-        "title": "💙[고래상사] 땅콩컵 우승! 이따 회식해요! 🐸",
-        "viewers": 44,
+        "title": "💙[고래상사] 나른한 후열~🐸",
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290726132",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290726132"
     },
@@ -75,7 +71,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 우리 크루 우승했는데 좀비막기 3만개 미션걸려서 회식 참가 못합니다...",
-        "viewers": 85,
+        "viewers": 74,
         "thumbnail": "https://liveimg.afreecatv.com/m/290724706",
         "live_url": "https://play.sooplive.co.kr/dmng50/290724706"
     },
