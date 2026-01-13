@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 땅콩컵 자신이 없습니다. 질 자신이 w.울산큰고래 견자희 김마렌 쏭이 우태 단수아",
+        "viewers": 7,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290726134",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290726134"
     },
     {
         "id": "ducke77",
@@ -21,7 +25,11 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": false
+        "is_live": true,
+        "title": "🌹 [고래상사] 5시 땅콩컵 결승전!🌹",
+        "viewers": 48,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290726130",
+        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290726130"
     },
     {
         "id": "melodingding",
@@ -45,13 +53,17 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 땅콩컵 크루대전 결승!!🐸",
+        "viewers": 9,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290726132",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290726132"
     },
     {
         "id": "dmng50",
         "is_live": true,
-        "title": "[고래상사] 안녕하심까",
-        "viewers": 83,
+        "title": "[고래상사] 땅콩컵 대망의 결승전 꾸한성vs고래상사",
+        "viewers": 113,
         "thumbnail": "https://liveimg.afreecatv.com/m/290724706",
         "live_url": "https://play.sooplive.co.kr/dmng50/290724706"
     },
@@ -59,7 +71,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 미현영 랭크 배치 진행중...",
-        "viewers": 45,
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/290725102",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290725102"
     }
