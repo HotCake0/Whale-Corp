@@ -17,11 +17,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]ai 맞추기 w. 울큰고, 삐요코",
-        "viewers": 67,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290728928",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290728928"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -41,11 +37,7 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] ai 맞추기 게임 W. 울큰고 조아라",
-        "viewers": 24,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290732724",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/290732724"
+        "is_live": false
     },
     {
         "id": "gatgdf",
@@ -55,7 +47,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 나른한 후열~🐸",
-        "viewers": 59,
+        "viewers": 61,
         "thumbnail": "https://liveimg.afreecatv.com/m/290726132",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290726132"
     },
