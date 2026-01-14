@@ -49,7 +49,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 하이이잉",
+        "viewers": 40,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290750934",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290750934"
     },
     {
         "id": "nunknown314",
