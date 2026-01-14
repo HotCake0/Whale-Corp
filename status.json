@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 지우스 w.빡쏘",
-        "viewers": 20,
+        "viewers": 25,
         "thumbnail": "https://liveimg.afreecatv.com/m/290757460",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290757460"
     },
@@ -27,7 +27,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 검문게임인데 눈이 침침해서 님들이 도와줘야함 / Quarantine Zone : The Last Check🌹",
-        "viewers": 436,
+        "viewers": 494,
         "thumbnail": "https://liveimg.afreecatv.com/m/290764784",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290764784"
     },
@@ -49,11 +49,7 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] AI 맞추기 게임🎇",
-        "viewers": 17,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290757220",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/290757220"
+        "is_live": false
     },
     {
         "id": "gatgdf",
@@ -63,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 흑백요리사2 처음부터같이보기 (스포xx)🐸",
-        "viewers": 35,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/290755484",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290755484"
     },
