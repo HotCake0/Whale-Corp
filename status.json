@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] DNS 공식 응원방 25년의 복수다!!! LCK 컵 DNS vs KT 개막전 #LckWatchParty",
+        "viewers": 34,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290753266",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290753266"
     },
     {
         "id": "joaras2",
@@ -27,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 다메다메4(다이아게임) 벌칙정하기 룰렛 4시",
-        "viewers": 52,
+        "viewers": 47,
         "thumbnail": "https://liveimg.afreecatv.com/m/290751776",
         "live_url": "https://play.sooplive.co.kr/melodingding/290751776"
     },
@@ -55,7 +59,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 쿼런틴존) 내가 검문소장이다 딱대라",
-        "viewers": 92,
+        "viewers": 99,
         "thumbnail": "https://liveimg.afreecatv.com/m/290750934",
         "live_url": "https://play.sooplive.co.kr/dmng50/290750934"
     },
