@@ -25,7 +25,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 다메다메4(다이아게임) 벌칙정하기 룰렛 4시",
+        "viewers": 36,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290751776",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290751776"
     },
     {
         "id": "soyoung6056",
@@ -51,7 +55,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 하이이잉",
-        "viewers": 40,
+        "viewers": 66,
         "thumbnail": "https://liveimg.afreecatv.com/m/290750934",
         "live_url": "https://play.sooplive.co.kr/dmng50/290750934"
     },
