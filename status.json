@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 실버 갈때까지 노방종 15연패중",
-        "viewers": 25,
+        "viewers": 27,
         "thumbnail": "https://liveimg.afreecatv.com/m/290757460",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290757460"
     },
@@ -27,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]아룡하데열",
-        "viewers": 19,
+        "viewers": 25,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785874",
         "live_url": "https://play.sooplive.co.kr/joaras2/290785874"
     },
@@ -39,7 +39,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) -",
-        "viewers": 90,
+        "viewers": 111,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -47,7 +47,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 15연패 실버갈때까지 노방종",
-        "viewers": 31,
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/290756138",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290756138"
     },
@@ -61,7 +61,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 아맞다 방제 🎇",
+        "viewers": 28,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290786982",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290786982"
     },
     {
         "id": "gatgdf",
@@ -79,7 +83,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 오느른 잔잔뱅",
-        "viewers": 33,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785940",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290785940"
     }
