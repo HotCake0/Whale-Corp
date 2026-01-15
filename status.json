@@ -29,19 +29,27 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) -",
+        "viewers": 52,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
     {
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 15연패 실버갈때까지 노방종",
-        "viewers": 37,
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/290756138",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290756138"
     },
     {
         "id": "akdma9692",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 등대!",
+        "viewers": 32,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290784126",
+        "live_url": "https://play.sooplive.co.kr/akdma9692/290784126"
     },
     {
         "id": "nlov555jij",
