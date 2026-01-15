@@ -5,17 +5,13 @@
     },
     {
         "id": "doki0818",
-        "is_live": true,
-        "title": "[고래상사]뉴걸 1일차 이소율 영정사진",
-        "viewers": 177,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290790368",
-        "live_url": "https://play.sooplive.co.kr/doki0818/290790368"
+        "is_live": false
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 실버 갈때까지 노방종 17연패중",
-        "viewers": 48,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290757460",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290757460"
     },
@@ -27,15 +23,15 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]후열 증칼 여신공듀듀오 w. 삐요코",
-        "viewers": 28,
+        "viewers": 26,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785874",
         "live_url": "https://play.sooplive.co.kr/joaras2/290785874"
     },
     {
         "id": "gyeonjahee",
         "is_live": true,
-        "title": "🌹 [고래상사] 눈이 침침하니까 도와줘야 하는 검문게임 / Quarantine Zone : The Last Check🌹",
-        "viewers": 289,
+        "title": "🌹 [고래상사] 힐링게임 / home🌹",
+        "viewers": 267,
         "thumbnail": "https://liveimg.afreecatv.com/m/290796308",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290796308"
     },
@@ -43,7 +39,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 또그소대 미니합방 / 배그빙고 / 왜냐니 한비 맛지",
-        "viewers": 42,
+        "viewers": 43,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -51,7 +47,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 17연패 실버갈때까지 노방종",
-        "viewers": 72,
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/290756138",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290756138"
     },
@@ -70,8 +66,8 @@
     {
         "id": "gatgdf",
         "is_live": true,
-        "title": "[고래상사]소율이랑 듀랭 승리시 500",
-        "viewers": 47,
+        "title": "[고래상사] 후열 칼발악",
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/290791152",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290791152"
     },
@@ -79,7 +75,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 애들이랑 놀..기? 🐸",
-        "viewers": 35,
+        "viewers": 40,
         "thumbnail": "https://liveimg.afreecatv.com/m/290791276",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290791276"
     },
