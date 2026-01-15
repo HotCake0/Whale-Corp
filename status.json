@@ -17,11 +17,19 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 숲 시네티의 간택을 받은 자",
+        "viewers": 33,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290785966",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290785966"
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]아룡하데열",
+        "viewers": 19,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290785874",
+        "live_url": "https://play.sooplive.co.kr/joaras2/290785874"
     },
     {
         "id": "gyeonjahee",
@@ -31,7 +39,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) -",
-        "viewers": 79,
+        "viewers": 90,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -47,7 +55,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 등대!",
-        "viewers": 41,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784126",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290784126"
     },
@@ -69,6 +77,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 오느른 잔잔뱅",
+        "viewers": 33,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290785940",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290785940"
     }
 ]
