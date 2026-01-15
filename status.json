@@ -5,13 +5,17 @@
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]뉴걸 1일차 이소율 오늘 데뷔했습니다!",
+        "viewers": 206,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290790368",
+        "live_url": "https://play.sooplive.co.kr/doki0818/290790368"
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 실버 갈때까지 노방종 15연패중",
-        "viewers": 27,
+        "viewers": 25,
         "thumbnail": "https://liveimg.afreecatv.com/m/290757460",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290757460"
     },
@@ -19,7 +23,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 숲 시네티의 간택을 받은 자",
-        "viewers": 40,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785966",
         "live_url": "https://play.sooplive.co.kr/ducke77/290785966"
     },
@@ -27,7 +31,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]유니버스와 미메시스 하빵",
-        "viewers": 25,
+        "viewers": 24,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785874",
         "live_url": "https://play.sooplive.co.kr/joaras2/290785874"
     },
@@ -39,7 +43,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 또그소대 미니합방 / 배그빙고 / 왜냐니 한비 맛지",
-        "viewers": 86,
+        "viewers": 71,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -47,7 +51,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 15연패 실버갈때까지 노방종",
-        "viewers": 32,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/290756138",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290756138"
     },
@@ -55,7 +59,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 등대!",
-        "viewers": 31,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784126",
         "live_url": "https://play.sooplive.co.kr/akdma9692/290784126"
     },
@@ -63,7 +67,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 아맞다 방제 🎇",
-        "viewers": 64,
+        "viewers": 104,
         "thumbnail": "https://liveimg.afreecatv.com/m/290786982",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290786982"
     },
@@ -83,7 +87,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 동물소리 내 입으로 내는 가임 (마이 보이스 주)",
-        "viewers": 52,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290785940",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290785940"
     }
