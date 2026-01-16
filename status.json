@@ -31,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 공겜 주 시작합니다.",
-        "viewers": 45,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290819546",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290819546"
     },
@@ -51,7 +51,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 사장님 여우도시 다시보기",
-        "viewers": 269,
+        "viewers": 265,
         "thumbnail": "https://liveimg.afreecatv.com/m/290821074",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290821074"
     },
@@ -59,13 +59,17 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 불금인데 시간남아서 일하기🐸",
-        "viewers": 38,
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/290813298",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290813298"
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 디스패치 그렇게 재밌다며?",
+        "viewers": 58,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290810574",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290810574"
     },
     {
         "id": "nunknown314",
