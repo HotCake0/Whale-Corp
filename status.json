@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[DNS응원/고래상사] 바론그룹희망 DNS 오늘은 복수한다  DNS vs DK | 2026 LCK CUP #LCKWatchParty",
-        "viewers": 176,
+        "viewers": 197,
         "thumbnail": "https://liveimg.afreecatv.com/m/290810420",
         "live_url": "https://play.sooplive.co.kr/ducke77/290810420"
     },
@@ -31,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 또그소대 미니합방 / 배그빙고 / 왜냐니 한비 맛지",
-        "viewers": 63,
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -45,7 +45,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 요코가 왔서이",
+        "viewers": 26,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290812192",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290812192"
     },
     {
         "id": "gatgdf",
@@ -59,15 +63,15 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 어소소",
-        "viewers": 62,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/290810574",
         "live_url": "https://play.sooplive.co.kr/dmng50/290810574"
     },
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[고래상사] 점심 노래 요정이 되어보자 [노래방송]",
-        "viewers": 60,
+        "title": "[고래상사] 퇴근발 노래 요정이 되어보자 [노래방송]",
+        "viewers": 55,
         "thumbnail": "https://liveimg.afreecatv.com/m/290806864",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290806864"
     }
