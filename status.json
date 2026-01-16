@@ -9,11 +9,7 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사] 실버 갈때까지 노방종 17연패중",
-        "viewers": 38,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290757460",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290757460"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -31,17 +27,13 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 또그소대 미니합방 / 배그빙고 / 왜냐니 한비 맛지",
-        "viewers": 54,
+        "viewers": 64,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "[고래상사] 17연패 실버갈때까지 노방종",
-        "viewers": 172,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290756138",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/290756138"
+        "is_live": false
     },
     {
         "id": "akdma9692",
