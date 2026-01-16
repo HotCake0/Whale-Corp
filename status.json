@@ -17,11 +17,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]링피트 업보청산........",
-        "viewers": 54,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290814378",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290814378"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -35,7 +31,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 공겜 주 시작합니다.",
-        "viewers": 43,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290819546",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290819546"
     },
@@ -46,8 +42,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 해피 행복 배그 w. 문다틸 한히나 해마슈",
-        "viewers": 36,
+        "title": "[오르카/고래상사] 오르카 싱크룸 해요🌟w. 한히나 문다틸 해마슈",
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290812192",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290812192"
     },
@@ -55,7 +51,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 사장님 여우도시 다시보기",
-        "viewers": 235,
+        "viewers": 256,
         "thumbnail": "https://liveimg.afreecatv.com/m/290821074",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290821074"
     },
@@ -63,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 불금인데 시간남아서 일하기🐸",
-        "viewers": 44,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290813298",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290813298"
     },
@@ -71,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 디스패치 그렇게 재밌다며?",
-        "viewers": 58,
+        "viewers": 62,
         "thumbnail": "https://liveimg.afreecatv.com/m/290810574",
         "live_url": "https://play.sooplive.co.kr/dmng50/290810574"
     },
@@ -79,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 지옥의 롤 미션 방송 (w.또오냥,쪽잉,돗챠,죠아써)",
-        "viewers": 50,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290806864",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290806864"
     }
