@@ -13,17 +13,13 @@
     },
     {
         "id": "ducke77",
-        "is_live": true,
-        "title": "[고래상사] 바론그룹희망 T1이겨줘...(DNS..) HLE vs T1 | 2026 LCK CUP #LCKWatchParty",
-        "viewers": 88,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290810420",
-        "live_url": "https://play.sooplive.co.kr/ducke77/290810420"
+        "is_live": false
     },
     {
         "id": "joaras2",
         "is_live": true,
-        "title": "[유니버스/고래상사]안용",
-        "viewers": 44,
+        "title": "[유니버스/고래상사]링피트 업보청산........",
+        "viewers": 40,
         "thumbnail": "https://liveimg.afreecatv.com/m/290814378",
         "live_url": "https://play.sooplive.co.kr/joaras2/290814378"
     },
@@ -38,8 +34,8 @@
     {
         "id": "soyoung6056",
         "is_live": true,
-        "title": "[고래상사] 머했다고 금요일",
-        "viewers": 22,
+        "title": "[고래상사] 하데스 콘서트 안본눈",
+        "viewers": 97,
         "thumbnail": "https://liveimg.afreecatv.com/m/290819546",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/290819546"
     },
@@ -51,19 +47,23 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 해피 행복 배그 w. 문다틸 한히나 해마슈",
-        "viewers": 38,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290812192",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290812192"
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 쏭항 잠깐 사장카페털기",
+        "viewers": 133,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290821074",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/290821074"
     },
     {
         "id": "kimmaren77",
         "is_live": true,
-        "title": "💙[고래상사] 눈떠보니 바론그룹의 희망? HLE vs T1 | 2026 LCK CUP #LCKWatchParty🐸",
-        "viewers": 65,
+        "title": "💙[고래상사] 불금불금🐸",
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/290813298",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290813298"
     },
@@ -71,7 +71,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 디스패치 그렇게 재밌다며?",
-        "viewers": 56,
+        "viewers": 65,
         "thumbnail": "https://liveimg.afreecatv.com/m/290810574",
         "live_url": "https://play.sooplive.co.kr/dmng50/290810574"
     },
