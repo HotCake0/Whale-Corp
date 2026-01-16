@@ -14,8 +14,8 @@
     {
         "id": "ducke77",
         "is_live": true,
-        "title": "[DNS응원/고래상사] DNS 오늘은 복수한다  DNS vs DK | 2026 LCK CUP #LCKWatchParty",
-        "viewers": 21,
+        "title": "[DNS응원/고래상사] 바론그룹희망 DNS 오늘은 복수한다  DNS vs DK | 2026 LCK CUP #LCKWatchParty",
+        "viewers": 65,
         "thumbnail": "https://liveimg.afreecatv.com/m/290810420",
         "live_url": "https://play.sooplive.co.kr/ducke77/290810420"
     },
@@ -31,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 또그소대 미니합방 / 배그빙고 / 왜냐니 한비 맛지",
-        "viewers": 58,
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/290784300",
         "live_url": "https://play.sooplive.co.kr/melodingding/290784300"
     },
@@ -57,7 +57,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 어소소",
+        "viewers": 16,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290810574",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290810574"
     },
     {
         "id": "nunknown314",
