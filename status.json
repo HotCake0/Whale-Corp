@@ -29,11 +29,7 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": true,
-        "title": "[고래상사] 공겜 주 시작합니다.",
-        "viewers": 45,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290819546",
-        "live_url": "https://play.sooplive.co.kr/soyoung6056/290819546"
+        "is_live": false
     },
     {
         "id": "akdma9692",
@@ -43,7 +39,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 왁스볼 부수기 보는방 🌟",
-        "viewers": 34,
+        "viewers": 16,
         "thumbnail": "https://liveimg.afreecatv.com/m/290812192",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290812192"
     },
@@ -55,7 +51,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 불금인데 시간남아서 일하기🐸",
-        "viewers": 37,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290813298",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290813298"
     },
