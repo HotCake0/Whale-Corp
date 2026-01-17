@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 감기 너좀 쎼디",
+        "viewers": 27,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290832412",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290832412"
     },
     {
         "id": "joaras2",
