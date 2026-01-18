@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 요즘 유행하는 좀비 검역소게임. 저도 몰입감을 좀 올려봤습니다.",
-        "viewers": 542,
+        "viewers": 505,
         "thumbnail": "https://liveimg.afreecatv.com/m/290869064",
         "live_url": "https://play.sooplive.co.kr/bach023/290869064"
     },
@@ -25,11 +25,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]후열",
-        "viewers": 35,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290863050",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290863050"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -45,11 +41,7 @@
     },
     {
         "id": "akdma9692",
-        "is_live": true,
-        "title": "[고래상사] 쥬시가 웃을 때가 가장 행복하다",
-        "viewers": 27,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290875518",
-        "live_url": "https://play.sooplive.co.kr/akdma9692/290875518"
+        "is_live": false
     },
     {
         "id": "nlov555jij",
@@ -63,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 고래사장님 이모티콘 갖고싶으시죠?🐸",
-        "viewers": 81,
+        "viewers": 78,
         "thumbnail": "https://liveimg.afreecatv.com/m/290869536",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290869536"
     },
