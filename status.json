@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 465,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290869064",
-        "live_url": "https://play.sooplive.co.kr/bach023/290869064"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -15,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 곧 만나러갑니다",
-        "viewers": 31,
+        "viewers": 43,
         "thumbnail": "https://liveimg.afreecatv.com/m/290868316",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290868316"
     },
@@ -55,7 +51,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 후열 마무리 증칼 증칼 증칼 증칼🐸",
-        "viewers": 40,
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/290869536",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290869536"
     },
