@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 울큰고 사장님 유튜브 요양타운 몰아보기",
-        "viewers": 171,
+        "viewers": 204,
         "thumbnail": "https://liveimg.afreecatv.com/m/290860120",
         "live_url": "https://play.sooplive.co.kr/ducke77/290860120"
     },
@@ -35,7 +35,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 다메다메서버] 실패벌칙 LAC에서 국토걷기",
-        "viewers": 34,
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/290860112",
         "live_url": "https://play.sooplive.co.kr/melodingding/290860112"
     },
@@ -61,7 +61,11 @@
     },
     {
         "id": "dmng50",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 안녕하쇼",
+        "viewers": 34,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290863698",
+        "live_url": "https://play.sooplive.co.kr/dmng50/290863698"
     },
     {
         "id": "nunknown314",
