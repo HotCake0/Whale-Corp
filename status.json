@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 후열: 직원들 싱크룸 쌀먹하기",
-        "viewers": 458,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290924160",
-        "live_url": "https://play.sooplive.co.kr/bach023/290924160"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -14,8 +10,8 @@
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 그녀를 기다립니다..견자희 w.견자희 감자가비 삐요코 조아라",
-        "viewers": 33,
+        "title": "[고래상사] ㅎ.ㅎ",
+        "viewers": 86,
         "thumbnail": "https://liveimg.afreecatv.com/m/290924666",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290924666"
     },
@@ -35,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 다메다메 // 광산 노래방",
-        "viewers": 33,
+        "viewers": 60,
         "thumbnail": "https://liveimg.afreecatv.com/m/290926926",
         "live_url": "https://play.sooplive.co.kr/melodingding/290926926"
     },
@@ -55,7 +51,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 마렌이랑 바이패드2",
-        "viewers": 38,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290929030",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290929030"
     },
