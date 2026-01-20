@@ -9,11 +9,7 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": true,
-        "title": "[고래상사] ㅎ.ㅎ",
-        "viewers": 86,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290924666",
-        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290924666"
+        "is_live": false
     },
     {
         "id": "ducke77",
@@ -31,7 +27,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 다메다메 // 광산 노래방",
-        "viewers": 60,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290926926",
         "live_url": "https://play.sooplive.co.kr/melodingding/290926926"
     },
@@ -51,7 +47,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 마렌이랑 바이패드2",
-        "viewers": 37,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290929030",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290929030"
     },
@@ -59,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 얼렁뚱땅 쏭이랑 바이패드2🐸",
-        "viewers": 31,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290927580",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290927580"
     },
