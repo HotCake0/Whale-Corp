@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 후열: 직원들 싱크룸 쌀먹하기",
-        "viewers": 456,
+        "viewers": 458,
         "thumbnail": "https://liveimg.afreecatv.com/m/290924160",
         "live_url": "https://play.sooplive.co.kr/bach023/290924160"
     },
@@ -15,7 +15,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 그녀를 기다립니다..견자희 w.견자희 감자가비 삐요코 조아라",
-        "viewers": 35,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290924666",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290924666"
     },
@@ -25,11 +25,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]자희선배 존버 싱크룸w.감자가비 견자희 삐요코 이지수",
-        "viewers": 31,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290919248",
-        "live_url": "https://play.sooplive.co.kr/joaras2/290919248"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -39,7 +35,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 다메다메 // 광산 노래방",
-        "viewers": 29,
+        "viewers": 33,
         "thumbnail": "https://liveimg.afreecatv.com/m/290926926",
         "live_url": "https://play.sooplive.co.kr/melodingding/290926926"
     },
@@ -53,17 +49,13 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] 자희찬양방 w.견자희 이지수 조아라",
-        "viewers": 74,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290919030",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/290919030"
+        "is_live": false
     },
     {
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 마렌이랑 바이패드2",
-        "viewers": 39,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290929030",
         "live_url": "https://play.sooplive.co.kr/gatgdf/290929030"
     },
@@ -71,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 얼렁뚱땅 쏭이랑 바이패드2🐸",
-        "viewers": 35,
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/290927580",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290927580"
     },
