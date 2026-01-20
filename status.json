@@ -53,6 +53,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 핑핑 돌아버리게찌",
+        "viewers": 40,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290916142",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290916142"
     }
 ]
