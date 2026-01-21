@@ -7,7 +7,7 @@
         "id": "doki0818",
         "is_live": true,
         "title": "딮기DK응원방! 조1위 놓치지 않는다!!! #LCKWATCHPARTY[고래상사]",
-        "viewers": 213,
+        "viewers": 229,
         "thumbnail": "https://liveimg.afreecatv.com/m/290947072",
         "live_url": "https://play.sooplive.co.kr/doki0818/290947072"
     },
@@ -17,7 +17,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "DNS응원방 오늘이니 1승? DNS vs DRX #LCKWatchParty #고래상사",
+        "viewers": 17,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290951244",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290951244"
     },
     {
         "id": "joaras2",
@@ -34,8 +38,8 @@
     {
         "id": "melodingding",
         "is_live": true,
-        "title": "고래상사) 다메다메 // 다이아좀 캐다가 7시 운못생길드 합방",
-        "viewers": 34,
+        "title": "고래상사) 운못생 // 맹든링길드합방! 오랜만이다 애두랑",
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290946284",
         "live_url": "https://play.sooplive.co.kr/melodingding/290946284"
     },
@@ -49,7 +53,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 💕",
+        "viewers": 18,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290951534",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/290951534"
     },
     {
         "id": "gatgdf",
