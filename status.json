@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 돌발적으로 남자셋이서 을왕리 노래방 (w황지상, 진호)",
-        "viewers": 412,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290953396",
-        "live_url": "https://play.sooplive.co.kr/bach023/290953396"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -15,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 3부",
-        "viewers": 37,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/290953004",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290953004"
     },
@@ -29,11 +25,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사] 역시 후열은 증칼이지🌹",
-        "viewers": 393,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290958318",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290958318"
+        "is_live": false
     },
     {
         "id": "melodingding",
@@ -63,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]오랜만에 세피리아 하기~ 뭐가 바꼈는데!?🐸",
-        "viewers": 35,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/290954358",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290954358"
     },
