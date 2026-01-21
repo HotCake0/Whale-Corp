@@ -25,7 +25,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 다메다메 // 다이아좀 캐다가 7시 운못생길드 합방",
+        "viewers": 25,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290946284",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290946284"
     },
     {
         "id": "soyoung6056",
