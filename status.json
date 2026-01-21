@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 3부",
-        "viewers": 52,
+        "viewers": 49,
         "thumbnail": "https://liveimg.afreecatv.com/m/290953004",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/290953004"
     },
@@ -29,11 +29,7 @@
     },
     {
         "id": "melodingding",
-        "is_live": true,
-        "title": "고래상사) 다메다메 // 천벌서버 up 부탁드립니당 ㅠ",
-        "viewers": 47,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290946284",
-        "live_url": "https://play.sooplive.co.kr/melodingding/290946284"
+        "is_live": false
     },
     {
         "id": "soyoung6056",
@@ -55,7 +51,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]오랜만에 세피리아 하기~ 뭐가 바꼈는데!?🐸",
-        "viewers": 42,
+        "viewers": 43,
         "thumbnail": "https://liveimg.afreecatv.com/m/290954358",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290954358"
     },
