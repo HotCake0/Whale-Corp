@@ -5,11 +5,7 @@
     },
     {
         "id": "doki0818",
-        "is_live": true,
-        "title": "[고래상사]구플뱅마려운 짧노래뱅~",
-        "viewers": 50,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290940154",
-        "live_url": "https://play.sooplive.co.kr/doki0818/290940154"
+        "is_live": false
     },
     {
         "id": "xpdpfv2",
@@ -57,6 +53,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 세발 남았다",
+        "viewers": 40,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290941410",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290941410"
     }
 ]
