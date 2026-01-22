@@ -13,19 +13,27 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] LCK 쇼츠 박제 오열파티 예 접니다",
+        "viewers": 39,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290979744",
+        "live_url": "https://play.sooplive.co.kr/ducke77/290979744"
     },
     {
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]방굽띠띠욧",
-        "viewers": 1,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/290979654",
         "live_url": "https://play.sooplive.co.kr/joaras2/290979654"
     },
     {
         "id": "gyeonjahee",
-        "is_live": false
+        "is_live": true,
+        "title": "🌹 [고래상사] 8시 고래상사 퍼즐게임🌹",
+        "viewers": 113,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290980650",
+        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290980650"
     },
     {
         "id": "melodingding",
@@ -43,7 +51,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 배치원 백빙고중 w. 클라비스 시라유리",
-        "viewers": 48,
+        "viewers": 40,
         "thumbnail": "https://liveimg.afreecatv.com/m/290976016",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290976016"
     },
@@ -59,7 +67,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 하이용!",
-        "viewers": 55,
+        "viewers": 70,
         "thumbnail": "https://liveimg.afreecatv.com/m/290978498",
         "live_url": "https://play.sooplive.co.kr/dmng50/290978498"
     },
@@ -67,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 내가 왔따",
-        "viewers": 60,
+        "viewers": 48,
         "thumbnail": "https://liveimg.afreecatv.com/m/290977562",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290977562"
     }
