@@ -39,7 +39,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 배치원 첫수업 w.학일쌤",
-        "viewers": 36,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/290976016",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290976016"
     },
@@ -57,6 +57,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 내가 왔따",
+        "viewers": 28,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290977562",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/290977562"
     }
 ]
