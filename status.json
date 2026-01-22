@@ -21,19 +21,11 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹[장미상사] 후열 증칼내전🌹",
-        "viewers": 226,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290980650",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/290980650"
+        "is_live": false
     },
     {
         "id": "melodingding",
-        "is_live": true,
-        "title": "고래상사) 8시 장미상사 후열 증칼 w.고래상사내전",
-        "viewers": 32,
-        "thumbnail": "https://liveimg.afreecatv.com/m/290981252",
-        "live_url": "https://play.sooplive.co.kr/melodingding/290981252"
+        "is_live": false
     },
     {
         "id": "soyoung6056",
@@ -54,8 +46,8 @@
     {
         "id": "kimmaren77",
         "is_live": true,
-        "title": "💙[고래상사] 장미상사 후열 증칼 내전! w.밀크티냠, 감자가비, 견자희, 김마렌, 멜로딩딩, 미현영, 온자두, 조아라🐸",
-        "viewers": 41,
+        "title": "💙[고래상사] 후열~🐸",
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/290980880",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/290980880"
     },
