@@ -9,13 +9,17 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 쫗은 저녁이에오:D",
+        "viewers": 23,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290980964",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/290980964"
     },
     {
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] LCK 쇼츠 박제 오열파티 예 접니다",
-        "viewers": 39,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290979744",
         "live_url": "https://play.sooplive.co.kr/ducke77/290979744"
     },
@@ -23,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]방굽띠띠욧",
-        "viewers": 32,
+        "viewers": 36,
         "thumbnail": "https://liveimg.afreecatv.com/m/290979654",
         "live_url": "https://play.sooplive.co.kr/joaras2/290979654"
     },
@@ -31,13 +35,17 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 8시 고래상사 퍼즐게임🌹",
-        "viewers": 113,
+        "viewers": 262,
         "thumbnail": "https://liveimg.afreecatv.com/m/290980650",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/290980650"
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 8시 고래상사 합방잇지롱",
+        "viewers": 21,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290981252",
+        "live_url": "https://play.sooplive.co.kr/melodingding/290981252"
     },
     {
         "id": "soyoung6056",
@@ -45,13 +53,17 @@
     },
     {
         "id": "akdma9692",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 8시 장미상사 합방 2인 퀴즈게임",
+        "viewers": 25,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290981466",
+        "live_url": "https://play.sooplive.co.kr/akdma9692/290981466"
     },
     {
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 배치원 백빙고중 w. 클라비스 시라유리",
-        "viewers": 40,
+        "viewers": 38,
         "thumbnail": "https://liveimg.afreecatv.com/m/290976016",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/290976016"
     },
@@ -61,13 +73,17 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 8시에 장미상사 2인 퀴즈게임🐸",
+        "viewers": 35,
+        "thumbnail": "https://liveimg.afreecatv.com/m/290980880",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/290980880"
     },
     {
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 하이용!",
-        "viewers": 70,
+        "viewers": 80,
         "thumbnail": "https://liveimg.afreecatv.com/m/290978498",
         "live_url": "https://play.sooplive.co.kr/dmng50/290978498"
     },
@@ -75,7 +91,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 내가 왔따",
-        "viewers": 48,
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/290977562",
         "live_url": "https://play.sooplive.co.kr/nunknown314/290977562"
     }
