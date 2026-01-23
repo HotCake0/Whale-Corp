@@ -17,7 +17,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]낮에 번쩍",
+        "viewers": 32,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291002666",
+        "live_url": "https://play.sooplive.co.kr/joaras2/291002666"
     },
     {
         "id": "gyeonjahee",
@@ -25,7 +29,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) [다메다메] 안녕히계세오, 오늘 저는 떠납니다.",
+        "viewers": 19,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291002766",
+        "live_url": "https://play.sooplive.co.kr/melodingding/291002766"
     },
     {
         "id": "soyoung6056",
@@ -45,7 +53,11 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 통신사 더비!! T1 vs KT #LckWatchParty🐸",
+        "viewers": 9,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291003026",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/291003026"
     },
     {
         "id": "dmng50",
