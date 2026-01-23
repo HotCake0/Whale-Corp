@@ -1,11 +1,7 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 쇠구컵 대비 원딜 챔피언 깎기",
-        "viewers": 310,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291007784",
-        "live_url": "https://play.sooplive.co.kr/bach023/291007784"
+        "is_live": false
     },
     {
         "id": "doki0818",
@@ -15,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 마렌이 실버보내기 프로젝트",
-        "viewers": 22,
+        "viewers": 23,
         "thumbnail": "https://liveimg.afreecatv.com/m/291009714",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291009714"
     },
@@ -34,8 +30,8 @@
     {
         "id": "melodingding",
         "is_live": true,
-        "title": "고래상사) 고래상사 빙고배그!!!!!!!!!!!!!!w. 삐요코 쏭이 온자두",
-        "viewers": 33,
+        "title": "고래상사) 후열 소통 / 소통이 메인일지도",
+        "viewers": 28,
         "thumbnail": "https://liveimg.afreecatv.com/m/291002766",
         "live_url": "https://play.sooplive.co.kr/melodingding/291002766"
     },
@@ -50,16 +46,16 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사]ㄹㅇ 배린비 빙고 벌칙 공겜w. 쏭이 온자두 멜로딩딩 / 킬룰렛중 요코만",
-        "viewers": 37,
+        "title": "[오르카/고래상사]하,,,",
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/291006814",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291006814"
     },
     {
         "id": "gatgdf",
         "is_live": true,
-        "title": "[고래상사] 공겜확정빙고  w.온자두.멜로딩딩.삐요코",
-        "viewers": 27,
+        "title": "[고래상사] 후열 ㅎㅅㅎ",
+        "viewers": 58,
         "thumbnail": "https://liveimg.afreecatv.com/m/291012198",
         "live_url": "https://play.sooplive.co.kr/gatgdf/291012198"
     },
@@ -67,7 +63,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 지수랑 롤데이트🐸",
-        "viewers": 31,
+        "viewers": 29,
         "thumbnail": "https://liveimg.afreecatv.com/m/291003026",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291003026"
     },
@@ -79,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 자랭팟 (w.오아,망구랑,뮤즈,엣치쿠)",
-        "viewers": 51,
+        "viewers": 57,
         "thumbnail": "https://liveimg.afreecatv.com/m/291003672",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291003672"
     }
