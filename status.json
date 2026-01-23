@@ -18,8 +18,8 @@
     {
         "id": "joaras2",
         "is_live": true,
-        "title": "[유니버스/고래상사]낮에 번쩍",
-        "viewers": 40,
+        "title": "[유니버스/고래상사]T1vsKT 도련님 화이팅 #LckWatchparty",
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/291002666",
         "live_url": "https://play.sooplive.co.kr/joaras2/291002666"
     },
@@ -55,7 +55,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 통신사 더비!! T1 vs KT #LckWatchParty🐸",
-        "viewers": 23,
+        "viewers": 41,
         "thumbnail": "https://liveimg.afreecatv.com/m/291003026",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291003026"
     },
@@ -65,6 +65,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사]  쇠구컵 원딜 미현영 롤 공부합니다.",
+        "viewers": 35,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291003672",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/291003672"
     }
 ]
