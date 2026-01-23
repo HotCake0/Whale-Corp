@@ -14,8 +14,8 @@
     {
         "id": "ducke77",
         "is_live": true,
-        "title": "[장미상사]나는 감기가 싫ㅎ어",
-        "viewers": 16,
+        "title": "[고래상사]나는 감기가 싫ㅎ어",
+        "viewers": 19,
         "thumbnail": "https://liveimg.afreecatv.com/m/291022582",
         "live_url": "https://play.sooplive.co.kr/ducke77/291022582"
     },
@@ -41,11 +41,7 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": true,
-        "title": "[오르카/고래상사] 아침 노래 연습뱅 🐤",
-        "viewers": 59,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291006814",
-        "live_url": "https://play.sooplive.co.kr/nlov555jij/291006814"
+        "is_live": false
     },
     {
         "id": "gatgdf",
