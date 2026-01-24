@@ -19,7 +19,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]자두네 민박 전 짧소통",
-        "viewers": 64,
+        "viewers": 59,
         "thumbnail": "https://liveimg.afreecatv.com/m/291028306",
         "live_url": "https://play.sooplive.co.kr/joaras2/291028306"
     },
@@ -41,7 +41,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 오늘 빵땅콩과 ufc🐤(체인투게더)",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291031712",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/291031712"
     },
     {
         "id": "gatgdf",
@@ -55,7 +59,7 @@
         "id": "dmng50",
         "is_live": true,
         "title": "[고래상사] 환자콩 등장",
-        "viewers": 70,
+        "viewers": 76,
         "thumbnail": "https://liveimg.afreecatv.com/m/291029056",
         "live_url": "https://play.sooplive.co.kr/dmng50/291029056"
     },
