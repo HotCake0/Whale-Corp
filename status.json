@@ -17,11 +17,7 @@
     },
     {
         "id": "joaras2",
-        "is_live": true,
-        "title": "[유니버스/고래상사]자두네 민박 전 짧소통",
-        "viewers": 64,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291028306",
-        "live_url": "https://play.sooplive.co.kr/joaras2/291028306"
+        "is_live": false
     },
     {
         "id": "gyeonjahee",
@@ -42,8 +38,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 오늘 빵땅콩과 ufc🐤(체인투게더)",
-        "viewers": 24,
+        "title": "[오르카/고래상사] 🐤",
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/291031712",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291031712"
     },
@@ -53,18 +49,22 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 집나간 밀냠이대신 든스 경기 보기 DNS vs HLE #LckWatchParty🐸",
+        "viewers": 35,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291032060",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/291032060"
     },
     {
         "id": "dmng50",
-        "is_live": true,
-        "title": "[고래상사] 환자콩 등장",
-        "viewers": 82,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291029056",
-        "live_url": "https://play.sooplive.co.kr/dmng50/291029056"
+        "is_live": false
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 아 패턴 꼬였어~!~!~",
+        "viewers": 25,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291032016",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/291032016"
     }
 ]
