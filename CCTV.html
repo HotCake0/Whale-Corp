@@ -8,7 +8,12 @@
         :root {
             --bg-dark: #0f0f0f;
             --card-bg: #1e1e1e;
-            --accent-green: #00ffa3;
+            --header-bg: #151515;
+            
+            /* 고래상사 테마 색상 */
+            --accent-main: #00ffa3; 
+            --accent-sub: #00b894;
+
             --text-white: #ffffff;
             --text-gray: #aaaaaa;
         }
@@ -24,198 +29,338 @@
             overflow: hidden;
         }
 
-        /* 상단 선택 바 */
-        header {
-            background-color: var(--card-bg);
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border-bottom: 2px solid #333;
-            z-index: 10;
+        /* 공통 버튼 스타일 */
+        .filter-btn {
+            background: #2a2a2a; border: 1px solid #444; color: var(--text-gray);
+            padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover { background: #333; transform: scale(1.05); }
+        .filter-btn.active { background: #1a3a2a; color: var(--accent-main); border-color: var(--accent-main); }
+
+        /* --- 1. 대기실 (Waiting Room) --- */
+        #waiting-room {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(15, 15, 15, 0.98);
+            z-index: 9999;
+            display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+            padding-top: 50px;
+            overflow-y: auto;
+            transition: opacity 0.3s;
+        }
+        #waiting-room.hidden { opacity: 0; pointer-events: none; }
+
+        .wr-header { text-align: center; margin-bottom: 30px; }
+        .wr-title { font-size: 2rem; font-weight: bold; margin-bottom: 10px; color: var(--accent-main); }
+        
+        .wr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%; max-width: 1400px; padding-bottom: 50px;
         }
 
-        .live-dot {
-            width: 10px; height: 10px;
-            background-color: #ff4d4d;
-            border-radius: 50%;
-            display: inline-block;
-            animation: blink 1.5s infinite;
+        .wr-card {
+            background: var(--card-bg); border-radius: 10px; overflow: hidden;
+            cursor: pointer; transition: transform 0.2s, border-color 0.2s;
+            border: 2px solid transparent; position: relative;
         }
-        @keyframes blink { 50% { opacity: 0.3; } }
+        .wr-card:hover { transform: translateY(-5px); border-color: var(--accent-main); }
+        .wr-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+        .wr-info { padding: 15px; }
+        .wr-name { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; }
+        .wr-title-text { font-size: 0.9rem; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .wr-viewers { font-size: 0.8rem; color: var(--accent-main); margin-top: 5px; font-weight: bold; }
+
+        /* --- 2. 헤더 (Header) --- */
+        header {
+            background-color: var(--header-bg); border-bottom: 1px solid #333;
+            display: flex; flex-direction: column; flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-top {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 10px 20px; background: #111;
+        }
+
+        .header-controls { display: flex; align-items: center; gap: 15px; }
+        .home-btn { background: var(--accent-main); border: none; padding: 6px 12px; border-radius: 4px; color: black; font-weight: bold; cursor: pointer; }
+        
+        #toggle-view-btn {
+            background: #444; color: white; border: none; padding: 5px 12px;
+            border-radius: 4px; cursor: pointer; font-size: 0.8rem;
+        }
+
+        /* --- 헤더 멤버 리스트 (가로 스크롤 & 1줄) --- */
+        #member-list-container {
+            padding: 10px 20px;
+            background: var(--card-bg);
+            overflow-x: auto; /* 가로 스크롤 */
+            overflow-y: hidden;
+            white-space: nowrap; /* 줄바꿈 방지 */
+            transition: height 0.3s ease;
+        }
+        
+        /* 스크롤바 커스텀 */
+        #member-list-container::-webkit-scrollbar { height: 8px; }
+        #member-list-container::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        #member-list-container::-webkit-scrollbar-track { background: #222; }
 
         #member-list {
             display: flex;
+            flex-wrap: nowrap; /* 절대 줄바꿈 하지 않음 */
             gap: 10px;
-            overflow-x: auto;
         }
 
-        .member-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: #2a2a2a;
-            border: 2px solid transparent;
-            padding: 6px 14px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.2s;
-            white-space: nowrap;
+        /* 확장 모드 (썸네일) */
+        header.expanded #member-list-container { height: 160px; }
+        header.expanded .member-item {
+            width: 140px; flex-shrink: 0; 
+            background: #252525; border-radius: 8px; cursor: pointer;
+            overflow: hidden; border: 2px solid transparent;
         }
+        header.expanded .member-thumb { width: 100%; height: 79px; object-fit: cover; background: #000; }
+        header.expanded .member-info { padding: 6px; text-align: center; }
+        header.expanded .member-name { font-size: 0.85rem; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+        header.expanded .member-status { font-size: 0.75rem; color: #888; }
 
-        .member-btn.active {
-            border-color: var(--accent-green);
-            background: #1a3a2a;
+        /* 축소 모드 (이름만) */
+        header.collapsed #member-list-container { height: 50px; padding: 8px 20px; }
+        header.collapsed .member-item {
+            display: flex; align-items: center; padding: 6px 12px;
+            background: #333; border-radius: 20px; cursor: pointer;
+            border: 2px solid transparent; flex-shrink: 0;
         }
+        header.collapsed .member-thumb, 
+        header.collapsed .member-status { display: none; }
+        header.collapsed .member-name { font-size: 0.9rem; margin: 0; }
 
-        .member-btn img {
-            width: 32px; height: 20px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
+        /* 활성화 상태 */
+        .member-item.active { border-color: var(--accent-main); background: #1a3a2a; }
+        .member-item.offline { opacity: 0.4; pointer-events: none; filter: grayscale(100%); }
 
-        .member-info { font-size: 0.85rem; font-weight: bold; }
-        .viewer-count { font-size: 0.7rem; color: var(--text-gray); font-weight: normal; }
-
-        /* 멀티뷰 그리드 */
-        #view-grid {
-            flex-grow: 1;
-            display: grid;
-            gap: 5px;
-            padding: 5px;
-            background-color: #000;
-        }
-
+        /* --- 3. 비디오 그리드 --- */
+        #view-grid { flex-grow: 1; display: grid; gap: 4px; background: #000; position: relative; }
         .grid-1 { grid-template-columns: 1fr; }
         .grid-2 { grid-template-columns: 1fr 1fr; }
         .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
-
         .video-wrapper { position: relative; width: 100%; height: 100%; }
         iframe { width: 100%; height: 100%; border: none; }
-
-        .empty-msg {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            color: #555;
-            text-align: center;
-        }
+        
+        .empty-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #555; text-align: center; }
+        .close-btn { position: absolute; top: 5px; right: 5px; background: rgba(0,0,0,0.7); color: white; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer; z-index: 10; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div style="min-width: 110px;">
-            <span class="live-dot"></span>
-            <strong style="font-size: 0.9rem; margin-left: 5px;">LIVE (<span id="count">0</span>/4)</strong>
+    <div id="waiting-room">
+        <div class="wr-header">
+            <div class="wr-title">🐳 고래상사 LIVE 대기실</div>
+            <div style="color: #888;">시청할 멤버를 선택하면 바로 이동합니다.</div>
         </div>
-        <div id="member-list"></div>
+
+        <div id="wr-grid" class="wr-grid">
+            </div>
+    </div>
+
+    <header id="main-header" class="expanded">
+        <div class="header-top">
+            <div class="header-controls">
+                <button class="home-btn" onclick="showWaitingRoom()">🏠 대기실</button>
+                <button class="filter-btn active" onclick="renderHeaderList()">전체 멤버</button>
+            </div>
+            
+            <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:0.8rem; color:#888;">(<span id="selected-count">0</span>/4)</span>
+                <button id="toggle-view-btn" onclick="toggleHeaderMode()">🔽 접기</button>
+            </div>
+        </div>
+
+        <div id="member-list-container">
+            <div id="member-list">
+                </div>
+        </div>
     </header>
 
     <div id="view-grid" class="grid-1">
         <div class="empty-msg">
-            <h2>고래상사 멀티뷰</h2>
-            <p>최대 4명까지 선택하여 시청할 수 있습니다.</p>
+            <h2>화면을 선택해주세요</h2>
+            <button onclick="showWaitingRoom()" style="padding:10px 20px; background:#333; color:white; border:none; margin-top:10px; cursor:pointer;">대기실 열기</button>
         </div>
     </div>
 
     <script>
-        // 1. 직원 ID와 이름 매핑
         const MEMBER_NAMES = {
-            "bach023": "울산큰고래",
-            "doki0818": "감자가비",
-            "xpdpfv2": "이지수",
-            "ducke77": "밀크티냠",
-            "joaras2": "조아라",
-            "gyeonjahee": "견자희",
-            "melodingding": "멜로딩딩",
-            "soyoung6056": "빡쏘",
-            "akdma9692": "온자두",
-            "nlov555jij": "삐요코",
-            "gatgdf": "쏭이",
-            "kimmaren77": "김마렌",
-            "dmng50": "빵땅콩",
-            "nunknown314": "미현영"
+            "bach023": "울산큰고래", "doki0818": "감자가비", "xpdpfv2": "이지수", "ducke77": "밀크티냠",
+            "joaras2": "조아라", "gyeonjahee": "견자희", "melodingding": "멜로딩딩", "soyoung6056": "빡쏘",
+            "akdma9692": "온자두", "nlov555jij": "삐요코", "gatgdf": "쏭이", "kimmaren77": "김마렌",
+            "dmng50": "빵땅콩", "nunknown314": "미현영"
         };
 
+        let allMembers = [];
         let selectedMembers = new Set();
-        let statusData = [];
+        let isHeaderExpanded = true;
 
+        // 1. 데이터 로드 (status.json 하나만 사용)
         async function fetchStatus() {
             try {
-                const response = await fetch('status.json');
-                statusData = await response.json();
-                renderSelector();
-            } catch (err) {
-                console.error("데이터 로드 실패");
-            }
-        }
+                const ts = new Date().getTime();
+                const response = await fetch(`status.json?t=${ts}`);
+                const data = await response.json();
 
-        function renderSelector() {
-            const listContainer = document.getElementById('member-list');
-            listContainer.innerHTML = '';
-            const liveOnes = statusData.filter(m => m.is_live);
+                // 데이터 가공
+                allMembers = data.map(m => ({
+                    ...m,
+                    display_name: MEMBER_NAMES[m.id] || m.id,
+                    team: 'main' // 고래상사는 단일 팀 처리
+                }));
 
-            liveOnes.forEach(member => {
-                const btn = document.createElement('div');
-                btn.className = `member-btn ${selectedMembers.has(member.id) ? 'active' : ''}`;
-                btn.onclick = () => toggleView(member.id);
+                renderWaitingRoom();
+                renderHeaderList();
                 
-                // 이름 매핑 확인 후 표시
-                const displayName = MEMBER_NAMES[member.id] || member.id;
-
-                btn.innerHTML = `
-                    <img src="${member.thumbnail}">
-                    <div class="member-info">
-                        <div>${displayName}</div>
-                        <div class="viewer-count">👤 ${member.viewers.toLocaleString()}</div>
-                    </div>
-                `;
-                listContainer.appendChild(btn);
-            });
-            document.getElementById('count').innerText = selectedMembers.size;
-        }
-
-        function toggleView(id) {
-            if (selectedMembers.has(id)) {
-                selectedMembers.delete(id);
-            } else {
-                // 인원 제한 로직 (4명)
-                if (selectedMembers.size >= 4) {
-                    alert("멀티뷰는 최대 4명까지만 시청 가능합니다.");
-                    return;
-                }
-                selectedMembers.add(id);
+            } catch (err) {
+                console.error("데이터 로드 실패:", err);
             }
-            renderSelector();
-            updateGrid();
         }
 
-        function updateGrid() {
-            const gridContainer = document.getElementById('view-grid');
-            gridContainer.innerHTML = '';
-            const count = selectedMembers.size;
-
-            if (count === 0) {
-                gridContainer.innerHTML = '<div class="empty-msg"><p>선택된 방송이 없습니다.</p></div>';
+        // 2. 대기실 렌더링
+        function renderWaitingRoom() {
+            const wrGrid = document.getElementById('wr-grid');
+            
+            // 방송 중인 멤버만 필터링
+            const liveMembers = allMembers.filter(m => m.is_live);
+            
+            if (liveMembers.length === 0) {
+                wrGrid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:50px; color:#666;">현재 방송 중인 멤버가 없습니다.</div>';
                 return;
             }
 
-            // 레이아웃 클래스 적용 (최대 4인용)
-            gridContainer.className = count >= 3 ? 'grid-3' : count === 2 ? 'grid-2' : 'grid-1';
+            wrGrid.innerHTML = liveMembers.map(m => `
+                <div class="wr-card" onclick="selectAndClose('${m.id}')" style="border-bottom: 3px solid var(--accent-main)">
+                    <img src="${m.thumbnail}" alt="${m.display_name}">
+                    <div class="wr-info">
+                        <div class="wr-name">${m.display_name}</div>
+                        <div class="wr-title-text">${m.title || '방송 중'}</div>
+                        <div class="wr-viewers">👤 ${m.viewers.toLocaleString()}명</div>
+                    </div>
+                </div>
+            `).join('');
+        }
 
+        // 3. 헤더 리스트 렌더링 (가로 스크롤)
+        function renderHeaderList() {
+            const listContainer = document.getElementById('member-list');
+            listContainer.innerHTML = '';
+
+            if (allMembers.length === 0) {
+                listContainer.innerHTML = '<div style="color:#666; padding:10px;">멤버 정보 로딩 중...</div>';
+                return;
+            }
+
+            allMembers.forEach(m => {
+                const isActive = selectedMembers.has(m.id);
+                const isLive = m.is_live;
+                
+                const item = document.createElement('div');
+                item.className = `member-item ${isActive ? 'active' : ''} ${isLive ? '' : 'offline'}`;
+                item.onclick = () => isLive ? toggleMember(m.id) : null;
+                
+                const thumbUrl = isLive ? m.thumbnail : 'https://via.placeholder.com/160x90/333/666?text=OFF';
+                
+                item.innerHTML = `
+                    <img class="member-thumb" src="${thumbUrl}">
+                    <div class="member-info">
+                        <div class="member-name">${m.display_name}</div>
+                        <div class="member-status">${isLive ? '🔴 ' + m.viewers.toLocaleString() : 'OFF'}</div>
+                    </div>
+                `;
+                listContainer.appendChild(item);
+            });
+            
+            document.getElementById('selected-count').innerText = selectedMembers.size;
+        }
+
+        // 4. 기능 로직
+        function selectAndClose(bjId) {
+            if (selectedMembers.size >= 4 && !selectedMembers.has(bjId)) {
+                alert("최대 4명까지만 시청 가능합니다.");
+                return;
+            }
+            selectedMembers.add(bjId);
+            hideWaitingRoom();
+            updateViewGrid();
+            renderHeaderList();
+        }
+
+        function toggleMember(bjId) {
+            if (selectedMembers.has(bjId)) {
+                selectedMembers.delete(bjId);
+            } else {
+                if (selectedMembers.size >= 4) {
+                    alert("최대 4명까지만 시청 가능합니다.");
+                    return;
+                }
+                selectedMembers.add(bjId);
+            }
+            updateViewGrid();
+            renderHeaderList();
+        }
+
+        function updateViewGrid() {
+            const grid = document.getElementById('view-grid');
+            grid.innerHTML = '';
+            
+            const count = selectedMembers.size;
+            if (count === 0) {
+                grid.innerHTML = `
+                    <div class="empty-msg">
+                        <h2>시청 중인 방송이 없습니다.</h2>
+                        <button onclick="showWaitingRoom()" class="home-btn" style="margin-top:10px;">대기실에서 선택하기</button>
+                    </div>`;
+                return;
+            }
+
+            grid.className = count >= 3 ? 'grid-4' : count === 2 ? 'grid-2' : 'grid-1';
+            
             selectedMembers.forEach(id => {
                 const wrapper = document.createElement('div');
                 wrapper.className = 'video-wrapper';
                 wrapper.innerHTML = `
+                    <button class="close-btn" onclick="toggleMember('${id}')">X</button>
                     <iframe src="https://play.sooplive.co.kr/${id}/embed" allowfullscreen scrolling="no"></iframe>
                 `;
-                gridContainer.appendChild(wrapper);
+                grid.appendChild(wrapper);
             });
         }
 
+        function showWaitingRoom() {
+            document.getElementById('waiting-room').classList.remove('hidden');
+            renderWaitingRoom();
+        }
+
+        function hideWaitingRoom() {
+            document.getElementById('waiting-room').classList.add('hidden');
+        }
+
+        function toggleHeaderMode() {
+            const header = document.getElementById('main-header');
+            const btn = document.getElementById('toggle-view-btn');
+            isHeaderExpanded = !isHeaderExpanded;
+            
+            if (isHeaderExpanded) {
+                header.classList.remove('collapsed');
+                header.classList.add('expanded');
+                btn.innerHTML = '🔽 접기';
+            } else {
+                header.classList.remove('expanded');
+                header.classList.add('collapsed');
+                btn.innerHTML = '🔼 펼치기';
+            }
+        }
+
         fetchStatus();
-        setInterval(fetchStatus, 30000); 
+        setInterval(fetchStatus, 30000); // 30초마다 갱신
     </script>
 </body>
 </html>
