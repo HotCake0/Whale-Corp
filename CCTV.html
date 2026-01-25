@@ -71,6 +71,7 @@
         .wr-name { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; }
         .wr-title-text { font-size: 0.9rem; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .wr-viewers { font-size: 0.8rem; color: var(--accent-main); margin-top: 5px; font-weight: bold; }
+        .wr-badge { position: absolute; top: 10px; left: 10px; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; color: #000; background: var(--accent-main); }
 
         /* --- 2. 헤더 (Header) --- */
         header {
@@ -138,7 +139,9 @@
 
         /* 활성화 상태 */
         .member-item.active { border-color: var(--accent-main); background: #1a3a2a; }
-        .member-item.offline { opacity: 0.4; pointer-events: none; filter: grayscale(100%); }
+        
+        /* [중요] 오프라인 멤버는 아예 보이지 않게 처리 */
+        .member-item.offline { display: none; }
 
         /* --- 3. 비디오 그리드 --- */
         #view-grid { flex-grow: 1; display: grid; gap: 4px; background: #000; position: relative; }
@@ -202,7 +205,7 @@
         let selectedMembers = new Set();
         let isHeaderExpanded = true;
 
-        // 1. 데이터 로드 (status.json 하나만 사용)
+        // 1. 데이터 로드
         async function fetchStatus() {
             try {
                 const ts = new Date().getTime();
@@ -213,7 +216,7 @@
                 allMembers = data.map(m => ({
                     ...m,
                     display_name: MEMBER_NAMES[m.id] || m.id,
-                    team: 'main' // 고래상사는 단일 팀 처리
+                    team: 'main'
                 }));
 
                 renderWaitingRoom();
@@ -238,6 +241,7 @@
 
             wrGrid.innerHTML = liveMembers.map(m => `
                 <div class="wr-card" onclick="selectAndClose('${m.id}')" style="border-bottom: 3px solid var(--accent-main)">
+                    <span class="wr-badge">LIVE</span>
                     <img src="${m.thumbnail}" alt="${m.display_name}">
                     <div class="wr-info">
                         <div class="wr-name">${m.display_name}</div>
@@ -248,31 +252,34 @@
             `).join('');
         }
 
-        // 3. 헤더 리스트 렌더링 (가로 스크롤)
+        // 3. 헤더 리스트 렌더링
         function renderHeaderList() {
             const listContainer = document.getElementById('member-list');
             listContainer.innerHTML = '';
 
-            if (allMembers.length === 0) {
-                listContainer.innerHTML = '<div style="color:#666; padding:10px;">멤버 정보 로딩 중...</div>';
+            // [수정됨] 상단바에는 오직 '방송 중인(is_live)' 멤버만 표시
+            const liveMembers = allMembers.filter(m => m.is_live);
+
+            if (liveMembers.length === 0) {
+                listContainer.innerHTML = '<div style="color:#666; padding:10px;">방송 중인 멤버가 없습니다.</div>';
                 return;
             }
 
-            allMembers.forEach(m => {
+            liveMembers.forEach(m => {
                 const isActive = selectedMembers.has(m.id);
-                const isLive = m.is_live;
+                // 이미 is_live=true인 멤버들만 반복하므로 별도 체크 불필요
                 
                 const item = document.createElement('div');
-                item.className = `member-item ${isActive ? 'active' : ''} ${isLive ? '' : 'offline'}`;
-                item.onclick = () => isLive ? toggleMember(m.id) : null;
+                item.className = `member-item ${isActive ? 'active' : ''}`;
+                item.onclick = () => toggleMember(m.id);
                 
-                const thumbUrl = isLive ? m.thumbnail : 'https://via.placeholder.com/160x90/333/666?text=OFF';
+                const thumbUrl = m.thumbnail;
                 
                 item.innerHTML = `
                     <img class="member-thumb" src="${thumbUrl}">
                     <div class="member-info">
                         <div class="member-name">${m.display_name}</div>
-                        <div class="member-status">${isLive ? '🔴 ' + m.viewers.toLocaleString() : 'OFF'}</div>
+                        <div class="member-status">🔴 ${m.viewers.toLocaleString()}</div>
                     </div>
                 `;
                 listContainer.appendChild(item);
