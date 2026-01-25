@@ -47,7 +47,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 절대 방심하지마! T1 vs BFX #LckWatchParty🐸",
-        "viewers": 78,
+        "viewers": 75,
         "thumbnail": "https://liveimg.afreecatv.com/m/291059792",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291059792"
     },
@@ -57,6 +57,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 쇠구컵 비상원딜 미현영 비상서폿 또오냥 듀오",
+        "viewers": 23,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291062676",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/291062676"
     }
 ]
