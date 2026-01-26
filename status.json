@@ -27,7 +27,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 후열",
-        "viewers": 32,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/291094466",
         "live_url": "https://play.sooplive.co.kr/melodingding/291094466"
     },
@@ -49,11 +49,7 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": true,
-        "title": "💙[고래상사] 언레일드2 쏭딩양이랑 해보기🐸",
-        "viewers": 15,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291091728",
-        "live_url": "https://play.sooplive.co.kr/kimmaren77/291091728"
+        "is_live": false
     },
     {
         "id": "dmng50",
@@ -63,7 +59,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이상호팀 원딜 미현영 세팅 고치고왔습니다",
-        "viewers": 142,
+        "viewers": 141,
         "thumbnail": "https://liveimg.afreecatv.com/m/291088662",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291088662"
     }
