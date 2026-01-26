@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 원딜. 스크림 2일차",
-        "viewers": 625,
+        "viewers": 579,
         "thumbnail": "https://liveimg.afreecatv.com/m/291085718",
         "live_url": "https://play.sooplive.co.kr/bach023/291085718"
     },
@@ -19,7 +19,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 자두네 민박 후기",
-        "viewers": 47,
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/291089054",
         "live_url": "https://play.sooplive.co.kr/ducke77/291089054"
     },
@@ -33,7 +33,11 @@
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 사장남 유튜브 밀린거 2개만 보깅",
+        "viewers": 34,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291094466",
+        "live_url": "https://play.sooplive.co.kr/melodingding/291094466"
     },
     {
         "id": "soyoung6056",
@@ -49,13 +53,17 @@
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 송하",
+        "viewers": 15,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291095626",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/291095626"
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 배부르고 따끈한 개구락지 등장🐸",
-        "viewers": 29,
+        "viewers": 34,
         "thumbnail": "https://liveimg.afreecatv.com/m/291091728",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291091728"
     },
@@ -67,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이상호팀 원딜 미현영 세팅 고치고왔습니다",
-        "viewers": 111,
+        "viewers": 79,
         "thumbnail": "https://liveimg.afreecatv.com/m/291088662",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291088662"
     }
