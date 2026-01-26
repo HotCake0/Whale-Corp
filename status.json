@@ -2,8 +2,8 @@
     {
         "id": "bach023",
         "is_live": true,
-        "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 우리팀 이대로 괜찮은가",
-        "viewers": 556,
+        "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 원딜. 스크림 2일차",
+        "viewers": 607,
         "thumbnail": "https://liveimg.afreecatv.com/m/291085718",
         "live_url": "https://play.sooplive.co.kr/bach023/291085718"
     },
@@ -19,7 +19,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 자두네 민박 후기",
-        "viewers": 59,
+        "viewers": 53,
         "thumbnail": "https://liveimg.afreecatv.com/m/291089054",
         "live_url": "https://play.sooplive.co.kr/ducke77/291089054"
     },
@@ -43,7 +43,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 감기왔쩡",
-        "viewers": 8,
+        "viewers": 20,
         "thumbnail": "https://liveimg.afreecatv.com/m/291090926",
         "live_url": "https://play.sooplive.co.kr/akdma9692/291090926"
     },
@@ -57,7 +57,11 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 배부르고 따끈한 개구락지 등장🐸",
+        "viewers": 17,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291091728",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/291091728"
     },
     {
         "id": "dmng50",
