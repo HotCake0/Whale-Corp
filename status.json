@@ -21,11 +21,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹[고래상사] 노가리🌹",
-        "viewers": 289,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291098864",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/291098864"
+        "is_live": false
     },
     {
         "id": "melodingding",
@@ -51,7 +47,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사]언레일드 2  w.마렌.딩딩.양꼬",
-        "viewers": 29,
+        "viewers": 26,
         "thumbnail": "https://liveimg.afreecatv.com/m/291095626",
         "live_url": "https://play.sooplive.co.kr/gatgdf/291095626"
     },
@@ -71,7 +67,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이상호팀 원딜 미현영 세팅 고치고왔습니다",
-        "viewers": 168,
+        "viewers": 167,
         "thumbnail": "https://liveimg.afreecatv.com/m/291088662",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291088662"
     }
