@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 원딜.. 우주를 들 수 있을까?",
-        "viewers": 547,
+        "viewers": 550,
         "thumbnail": "https://liveimg.afreecatv.com/m/291114330",
         "live_url": "https://play.sooplive.co.kr/bach023/291114330"
     },
@@ -15,7 +15,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 잘 쉬고 왔습니다:D",
-        "viewers": 43,
+        "viewers": 56,
         "thumbnail": "https://liveimg.afreecatv.com/m/291113716",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291113716"
     },
@@ -51,19 +51,23 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 배그 미션 빙고 (학트치원) 🐤학일쌤 복당 라비스",
-        "viewers": 29,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/291110820",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291110820"
     },
     {
         "id": "gatgdf",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 쏭하!",
+        "viewers": 12,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291120788",
+        "live_url": "https://play.sooplive.co.kr/gatgdf/291120788"
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사]노동요와 사장에 대한 리스펙 가득한 성주티콘 작업하기🐸",
-        "viewers": 39,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/291113522",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291113522"
     },
@@ -75,7 +79,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 이상호팀 원딜 미현영 야수성 장착했습니다 내가 너는 죽이고 간다",
-        "viewers": 133,
+        "viewers": 147,
         "thumbnail": "https://liveimg.afreecatv.com/m/291113640",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291113640"
     }
