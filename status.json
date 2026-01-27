@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 지흐와 쏭카소 하루살이 화가..그림 방셀 팝니다..",
-        "viewers": 43,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/291113716",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291113716"
     },
@@ -45,17 +45,13 @@
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사] 후열",
-        "viewers": 36,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291120788",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/291120788"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 야식먹으면서 쉬~기🐸",
-        "viewers": 42,
+        "viewers": 36,
         "thumbnail": "https://liveimg.afreecatv.com/m/291113522",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291113522"
     },
