@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 잘 쉬고 왔습니다:D",
+        "viewers": 23,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291113716",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/291113716"
     },
     {
         "id": "ducke77",
@@ -17,7 +21,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]자두네 민박 잘 다녀왔스미다",
+        "viewers": 36,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291113592",
+        "live_url": "https://play.sooplive.co.kr/joaras2/291113592"
     },
     {
         "id": "gyeonjahee",
@@ -39,7 +47,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 배치원 2번째 수업 🐤",
-        "viewers": 37,
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/291110820",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291110820"
     },
@@ -49,7 +57,11 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 오느른~ 작업을 좀 할것입니다~🐸",
+        "viewers": 26,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291113522",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/291113522"
     },
     {
         "id": "dmng50",
@@ -57,6 +69,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 이상호팀 원딜 미현영 야수성 장착했습니다 내가 너는 죽이고 간다",
+        "viewers": 66,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291113640",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/291113640"
     }
 ]
