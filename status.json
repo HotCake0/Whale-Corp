@@ -47,7 +47,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 응원 다했으니까 다른거하기 (마렌티콘 출시!)🐸",
-        "viewers": 25,
+        "viewers": 26,
         "thumbnail": "https://liveimg.afreecatv.com/m/291144340",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291144340"
     },
@@ -57,10 +57,6 @@
     },
     {
         "id": "nunknown314",
-        "is_live": true,
-        "title": "[쇠구컵 상토피아] 이상호팀 원딜 미현영 결전의 날.",
-        "viewers": 77,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291142818",
-        "live_url": "https://play.sooplive.co.kr/nunknown314/291142818"
+        "is_live": false
     }
 ]
