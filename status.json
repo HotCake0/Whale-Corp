@@ -19,7 +19,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]낮에 번쩍",
-        "viewers": 40,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/291139068",
         "live_url": "https://play.sooplive.co.kr/joaras2/291139068"
     },
@@ -33,7 +33,11 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 보고싶었냐 ? ㅋㅋ",
+        "viewers": 16,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291141148",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/291141148"
     },
     {
         "id": "akdma9692",
