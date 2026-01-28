@@ -3,7 +3,7 @@
         "id": "bach023",
         "is_live": true,
         "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 원딜. 오늘이 대회 당일!!! 4강 가보입시더",
-        "viewers": 577,
+        "viewers": 536,
         "thumbnail": "https://liveimg.afreecatv.com/m/291144216",
         "live_url": "https://play.sooplive.co.kr/bach023/291144216"
     },
@@ -15,17 +15,13 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 오호이 후열",
-        "viewers": 34,
+        "viewers": 32,
         "thumbnail": "https://liveimg.afreecatv.com/m/291142526",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291142526"
     },
     {
         "id": "ducke77",
-        "is_live": true,
-        "title": "[고래상사] 후열이라고 적는다",
-        "viewers": 29,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291143928",
-        "live_url": "https://play.sooplive.co.kr/ducke77/291143928"
+        "is_live": false
     },
     {
         "id": "joaras2",
@@ -42,8 +38,8 @@
     {
         "id": "melodingding",
         "is_live": true,
-        "title": "고래상사) 고래상사 하드코어 엔더런 API 만들기",
-        "viewers": 32,
+        "title": "고래상사) 고래상사 내일 하드코어 엔더런 마크 서버 API 만들기",
+        "viewers": 31,
         "thumbnail": "https://liveimg.afreecatv.com/m/291150350",
         "live_url": "https://play.sooplive.co.kr/melodingding/291150350"
     },
@@ -79,7 +75,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[쇠구컵 상토피아] 이상호팀 원딜 미현영 결전의 날.",
-        "viewers": 113,
+        "viewers": 80,
         "thumbnail": "https://liveimg.afreecatv.com/m/291142818",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291142818"
     }
