@@ -9,7 +9,11 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 안녕핫세요:) 쫗은 저녁이에오",
+        "viewers": 23,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291142526",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/291142526"
     },
     {
         "id": "ducke77",
@@ -19,7 +23,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]낮에 번쩍",
-        "viewers": 48,
+        "viewers": 42,
         "thumbnail": "https://liveimg.afreecatv.com/m/291139068",
         "live_url": "https://play.sooplive.co.kr/joaras2/291139068"
     },
@@ -61,6 +65,10 @@
     },
     {
         "id": "nunknown314",
-        "is_live": false
+        "is_live": true,
+        "title": "[쇠구컵 상토피아] 이상호팀 원딜 미현영 결전의 날.",
+        "viewers": 47,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291142818",
+        "live_url": "https://play.sooplive.co.kr/nunknown314/291142818"
     }
 ]
