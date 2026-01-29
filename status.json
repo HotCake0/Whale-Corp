@@ -5,11 +5,7 @@
     },
     {
         "id": "doki0818",
-        "is_live": true,
-        "title": "[고래상사]후열캘배람",
-        "viewers": 20,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291172946",
-        "live_url": "https://play.sooplive.co.kr/doki0818/291172946"
+        "is_live": false
     },
     {
         "id": "xpdpfv2",
@@ -25,11 +21,7 @@
     },
     {
         "id": "gyeonjahee",
-        "is_live": true,
-        "title": "🌹 [고래상사] 후우우열🌹",
-        "viewers": 258,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291172206",
-        "live_url": "https://play.sooplive.co.kr/gyeonjahee/291172206"
+        "is_live": false
     },
     {
         "id": "melodingding",
@@ -55,7 +47,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 엔더런 끝나고 쪼끔만. (마렌티콘 출시!)🐸",
-        "viewers": 24,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/291171908",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291171908"
     },
