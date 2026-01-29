@@ -1,25 +1,21 @@
 [
     {
         "id": "bach023",
-        "is_live": true,
-        "title": "[고래상사] 쇠구컵 팀저라뎃''가보입시더'' 우승 가보입시더!!",
-        "viewers": 661,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291174348",
-        "live_url": "https://play.sooplive.co.kr/bach023/291174348"
+        "is_live": false
     },
     {
         "id": "doki0818",
         "is_live": true,
         "title": "[고래상사]하드코어 엔더런 우리 깰 수 있겠지...?",
-        "viewers": 31,
+        "viewers": 73,
         "thumbnail": "https://liveimg.afreecatv.com/m/291172946",
         "live_url": "https://play.sooplive.co.kr/doki0818/291172946"
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 아기돼지 8자매 하드코어 도전ㅋㅋ",
-        "viewers": 40,
+        "title": "[고래상사] 하드코어 도전 아기돼지 8자매",
+        "viewers": 60,
         "thumbnail": "https://liveimg.afreecatv.com/m/291171618",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291171618"
     },
@@ -31,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]고래상사 하드코어 엔더런 켠왕.....",
-        "viewers": 35,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/291170184",
         "live_url": "https://play.sooplive.co.kr/joaras2/291170184"
     },
@@ -39,7 +35,7 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] (9시) 하드코어 엔더런🌹",
-        "viewers": 333,
+        "viewers": 369,
         "thumbnail": "https://liveimg.afreecatv.com/m/291172206",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/291172206"
     },
@@ -47,7 +43,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 고래상사 하드코어 엔더런",
-        "viewers": 26,
+        "viewers": 46,
         "thumbnail": "https://liveimg.afreecatv.com/m/291172676",
         "live_url": "https://play.sooplive.co.kr/melodingding/291172676"
     },
@@ -55,7 +51,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 마크 하코런 나 어뜨케 ??",
-        "viewers": 67,
+        "viewers": 98,
         "thumbnail": "https://liveimg.afreecatv.com/m/291169278",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/291169278"
     },
@@ -71,7 +67,7 @@
         "id": "gatgdf",
         "is_live": true,
         "title": "[고래상사] 탐험가 등장 하드코어런 고래상사",
-        "viewers": 44,
+        "viewers": 88,
         "thumbnail": "https://liveimg.afreecatv.com/m/291173614",
         "live_url": "https://play.sooplive.co.kr/gatgdf/291173614"
     },
@@ -79,7 +75,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 이따 고래상사 마크하드엔더런 시작! (마렌티콘 출시!)🐸",
-        "viewers": 38,
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/291171908",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291171908"
     },
