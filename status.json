@@ -15,7 +15,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "DNS 응원방 오늘 우리 이기는 날이다 바론그룹 응원방 DNS vs BFX 슈퍼위크 LCK컵 #LCKWatchParty #고래상사",
-        "viewers": 189,
+        "viewers": 166,
         "thumbnail": "https://liveimg.afreecatv.com/m/291167486",
         "live_url": "https://play.sooplive.co.kr/ducke77/291167486"
     },
@@ -33,11 +33,19 @@
     },
     {
         "id": "soyoung6056",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 하이룽",
+        "viewers": 34,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291169278",
+        "live_url": "https://play.sooplive.co.kr/soyoung6056/291169278"
     },
     {
         "id": "akdma9692",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 살고싶다고 말해",
+        "viewers": 20,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291169378",
+        "live_url": "https://play.sooplive.co.kr/akdma9692/291169378"
     },
     {
         "id": "nlov555jij",
