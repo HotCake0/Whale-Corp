@@ -9,27 +9,35 @@
     },
     {
         "id": "xpdpfv2",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 쫗은 저녁이에요:)",
+        "viewers": 35,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291171618",
+        "live_url": "https://play.sooplive.co.kr/xpdpfv2/291171618"
     },
     {
         "id": "ducke77",
         "is_live": true,
         "title": "DNS 응원방 오늘 우리 이기는 날이다 바론그룹 응원방 DNS vs BFX 슈퍼위크 LCK컵 #LCKWatchParty #고래상사",
-        "viewers": 188,
+        "viewers": 235,
         "thumbnail": "https://liveimg.afreecatv.com/m/291167486",
         "live_url": "https://play.sooplive.co.kr/ducke77/291167486"
     },
     {
         "id": "joaras2",
         "is_live": true,
-        "title": "[유니버스/고래상사]반갑숑숑",
-        "viewers": 35,
+        "title": "[유니버스/고래상사]8시)고래상사 하드코어 엔더런",
+        "viewers": 22,
         "thumbnail": "https://liveimg.afreecatv.com/m/291170184",
         "live_url": "https://play.sooplive.co.kr/joaras2/291170184"
     },
     {
         "id": "gyeonjahee",
-        "is_live": false
+        "is_live": true,
+        "title": "🌹 [고래상사] (8시) 하드코어 엔더런🌹",
+        "viewers": 158,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291172206",
+        "live_url": "https://play.sooplive.co.kr/gyeonjahee/291172206"
     },
     {
         "id": "melodingding",
@@ -39,7 +47,7 @@
         "id": "soyoung6056",
         "is_live": true,
         "title": "[고래상사] 노래맞추시고 퀵뷰 가져가세요",
-        "viewers": 84,
+        "viewers": 82,
         "thumbnail": "https://liveimg.afreecatv.com/m/291169278",
         "live_url": "https://play.sooplive.co.kr/soyoung6056/291169278"
     },
@@ -47,7 +55,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 살고싶다고 말해",
-        "viewers": 32,
+        "viewers": 30,
         "thumbnail": "https://liveimg.afreecatv.com/m/291169378",
         "live_url": "https://play.sooplive.co.kr/akdma9692/291169378"
     },
@@ -61,7 +69,11 @@
     },
     {
         "id": "kimmaren77",
-        "is_live": false
+        "is_live": true,
+        "title": "💙[고래상사] 이따 고래상사 마크하드엔더런. (마렌티콘 출시!)🐸",
+        "viewers": 24,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291171908",
+        "live_url": "https://play.sooplive.co.kr/kimmaren77/291171908"
     },
     {
         "id": "dmng50",
