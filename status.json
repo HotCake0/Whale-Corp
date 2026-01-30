@@ -17,7 +17,11 @@
     },
     {
         "id": "joaras2",
-        "is_live": false
+        "is_live": true,
+        "title": "[유니버스/고래상사]좋은날인ㄷ ㅔ 데숙입니다",
+        "viewers": 30,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291195918",
+        "live_url": "https://play.sooplive.co.kr/joaras2/291195918"
     },
     {
         "id": "gyeonjahee",
@@ -38,8 +42,8 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 으와아앙 오랜만이야 ㅠㅅㅠ🐤",
-        "viewers": 48,
+        "title": "[오르카/고래상사] 노래 재활 🐤 8시 달해님 운마카세",
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/291195340",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291195340"
     },
@@ -59,7 +63,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 쇠구컵 리아들",
-        "viewers": 89,
+        "viewers": 80,
         "thumbnail": "https://liveimg.afreecatv.com/m/291192588",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291192588"
     }
