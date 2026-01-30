@@ -37,7 +37,11 @@
     },
     {
         "id": "nlov555jij",
-        "is_live": false
+        "is_live": true,
+        "title": "[오르카/고래상사] 으와아앙 오랜만이야 ㅠㅅㅠ🐤",
+        "viewers": 48,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291195340",
+        "live_url": "https://play.sooplive.co.kr/nlov555jij/291195340"
     },
     {
         "id": "gatgdf",
@@ -55,7 +59,7 @@
         "id": "nunknown314",
         "is_live": true,
         "title": "[고래상사] 쇠구컵 리아들",
-        "viewers": 84,
+        "viewers": 89,
         "thumbnail": "https://liveimg.afreecatv.com/m/291192588",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291192588"
     }
