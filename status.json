@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 8시 달해 운마카세 뭣? 다이아1개당 1만원?",
-        "viewers": 46,
+        "viewers": 44,
         "thumbnail": "https://liveimg.afreecatv.com/m/291198034",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291198034"
     },
@@ -19,7 +19,7 @@
         "id": "ducke77",
         "is_live": true,
         "title": "[고래상사] 9시 난 왜 공겜을 하는 가.. BrokenLore: UNFOLLOW",
-        "viewers": 51,
+        "viewers": 61,
         "thumbnail": "https://liveimg.afreecatv.com/m/291198134",
         "live_url": "https://play.sooplive.co.kr/ducke77/291198134"
     },
@@ -27,7 +27,7 @@
         "id": "joaras2",
         "is_live": true,
         "title": "[유니버스/고래상사]8시)달해님 운마카세 월세벌고 갑니다",
-        "viewers": 40,
+        "viewers": 37,
         "thumbnail": "https://liveimg.afreecatv.com/m/291195918",
         "live_url": "https://play.sooplive.co.kr/joaras2/291195918"
     },
@@ -35,13 +35,17 @@
         "id": "gyeonjahee",
         "is_live": true,
         "title": "🌹 [고래상사] 로아 짧뱅🌹",
-        "viewers": 129,
+        "viewers": 131,
         "thumbnail": "https://liveimg.afreecatv.com/m/291201272",
         "live_url": "https://play.sooplive.co.kr/gyeonjahee/291201272"
     },
     {
         "id": "melodingding",
-        "is_live": false
+        "is_live": true,
+        "title": "고래상사) 빡쏘가 보내준 중국 과자 까먹는중",
+        "viewers": 21,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291203318",
+        "live_url": "https://play.sooplive.co.kr/melodingding/291203318"
     },
     {
         "id": "soyoung6056",
@@ -51,7 +55,7 @@
         "id": "akdma9692",
         "is_live": true,
         "title": "[고래상사] 밤이라서 하는 말",
-        "viewers": 19,
+        "viewers": 21,
         "thumbnail": "https://liveimg.afreecatv.com/m/291202700",
         "live_url": "https://play.sooplive.co.kr/akdma9692/291202700"
     },
@@ -59,7 +63,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 달해님 운마카세 참여해요! 🐤",
-        "viewers": 59,
+        "viewers": 58,
         "thumbnail": "https://liveimg.afreecatv.com/m/291195340",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291195340"
     },
@@ -71,7 +75,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 배부르,,다,, (마렌티콘 출시!)🐸",
-        "viewers": 19,
+        "viewers": 28,
         "thumbnail": "https://liveimg.afreecatv.com/m/291202708",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291202708"
     },
@@ -82,8 +86,8 @@
     {
         "id": "nunknown314",
         "is_live": true,
-        "title": "[고래상사] 막간을 이용한 동의겜. 나 겜 잘스 / 릴동파 업 부탁한다는거임~!",
-        "viewers": 56,
+        "title": "[고래상사] 막간을 이용한 미현영 뉴바타 추천받기 / 릴동파 업 부탁한다는거임~!",
+        "viewers": 51,
         "thumbnail": "https://liveimg.afreecatv.com/m/291192588",
         "live_url": "https://play.sooplive.co.kr/nunknown314/291192588"
     }
