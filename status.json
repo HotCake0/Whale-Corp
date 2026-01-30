@@ -5,17 +5,13 @@
     },
     {
         "id": "doki0818",
-        "is_live": true,
-        "title": "[고래상사]병살이랑 오만년만의 싱크룸",
-        "viewers": 51,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291204688",
-        "live_url": "https://play.sooplive.co.kr/doki0818/291204688"
+        "is_live": false
     },
     {
         "id": "xpdpfv2",
         "is_live": true,
-        "title": "[고래상사] 귀여운 애기곤듀 딩딩이랑 자두랑 마렌이랑 배그",
-        "viewers": 85,
+        "title": "[고래상사] 지인수타인 아이디어 주머니",
+        "viewers": 72,
         "thumbnail": "https://liveimg.afreecatv.com/m/291198034",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291198034"
     },
@@ -35,7 +31,7 @@
         "id": "melodingding",
         "is_live": true,
         "title": "고래상사) 빡쏘가 보내준 중국 과자 까먹으면서 쉬는중",
-        "viewers": 48,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/291203318",
         "live_url": "https://play.sooplive.co.kr/melodingding/291203318"
     },
@@ -45,17 +41,13 @@
     },
     {
         "id": "akdma9692",
-        "is_live": true,
-        "title": "[고래상사] 1월 31일 생일인사람 ㅈ두",
-        "viewers": 44,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291202700",
-        "live_url": "https://play.sooplive.co.kr/akdma9692/291202700"
+        "is_live": false
     },
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 킬을 열심히 까보자🐤 (배린이!룰렛)",
-        "viewers": 33,
+        "title": "[오르카/고래상사] 노래연습뱅뱅 잔잔🐤",
+        "viewers": 35,
         "thumbnail": "https://liveimg.afreecatv.com/m/291195340",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291195340"
     },
@@ -67,7 +59,7 @@
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 후?열 작업뱅 (마렌티콘 출시!)🐸",
-        "viewers": 48,
+        "viewers": 52,
         "thumbnail": "https://liveimg.afreecatv.com/m/291202708",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291202708"
     },
