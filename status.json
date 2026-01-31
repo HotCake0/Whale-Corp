@@ -5,7 +5,11 @@
     },
     {
         "id": "doki0818",
-        "is_live": false
+        "is_live": true,
+        "title": "DK딮기응원방!장로팀의 (진)주장 딮기 등장#LCKWATCHPARTY[고래상사]",
+        "viewers": 41,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291221900",
+        "live_url": "https://play.sooplive.co.kr/doki0818/291221900"
     },
     {
         "id": "xpdpfv2",
@@ -14,8 +18,8 @@
     {
         "id": "ducke77",
         "is_live": true,
-        "title": "[고래상사] 하이큐 미친사람의  쓰레기장의 결전 같이보기",
-        "viewers": 46,
+        "title": "[고래상사]5시 바론그룹의 희망 T1응원 방 T1 vs DK | 2026 LCK CUP #LCKWatchParty",
+        "viewers": 66,
         "thumbnail": "https://liveimg.afreecatv.com/m/291214616",
         "live_url": "https://play.sooplive.co.kr/ducke77/291214616"
     },
@@ -43,7 +47,7 @@
         "id": "nlov555jij",
         "is_live": true,
         "title": "[오르카/고래상사] 마슈랑 힐링배그🐤",
-        "viewers": 52,
+        "viewers": 45,
         "thumbnail": "https://liveimg.afreecatv.com/m/291219176",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291219176"
     },
