@@ -11,7 +11,7 @@
         "id": "xpdpfv2",
         "is_live": true,
         "title": "[고래상사] 후열",
-        "viewers": 49,
+        "viewers": 50,
         "thumbnail": "https://liveimg.afreecatv.com/m/291226992",
         "live_url": "https://play.sooplive.co.kr/xpdpfv2/291226992"
     },
@@ -42,24 +42,20 @@
     {
         "id": "nlov555jij",
         "is_live": true,
-        "title": "[오르카/고래상사] 지수 마렌이랑 수다하면서 게임🚨",
-        "viewers": 45,
+        "title": "[오르카/고래상사] 사일런트 힐 같이보기 👻",
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/291219176",
         "live_url": "https://play.sooplive.co.kr/nlov555jij/291219176"
     },
     {
         "id": "gatgdf",
-        "is_live": true,
-        "title": "[고래상사] 후열 고래상사 롤!",
-        "viewers": 40,
-        "thumbnail": "https://liveimg.afreecatv.com/m/291230810",
-        "live_url": "https://play.sooplive.co.kr/gatgdf/291230810"
+        "is_live": false
     },
     {
         "id": "kimmaren77",
         "is_live": true,
         "title": "💙[고래상사] 새벽 실버 등반부 (마렌티콘 출시!)🐸",
-        "viewers": 42,
+        "viewers": 39,
         "thumbnail": "https://liveimg.afreecatv.com/m/291223858",
         "live_url": "https://play.sooplive.co.kr/kimmaren77/291223858"
     },
