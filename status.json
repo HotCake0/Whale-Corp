@@ -13,7 +13,11 @@
     },
     {
         "id": "ducke77",
-        "is_live": false
+        "is_live": true,
+        "title": "[고래상사] 아침이야",
+        "viewers": 43,
+        "thumbnail": "https://liveimg.afreecatv.com/m/291214616",
+        "live_url": "https://play.sooplive.co.kr/ducke77/291214616"
     },
     {
         "id": "joaras2",
